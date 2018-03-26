@@ -9,7 +9,7 @@
 
 #### Credentials on the workstation
 
-- Set softlinks
+- Set softlinks (not quite safe)
 ```
 $ rm -f /home/alexey/.netrc; ln -s /home/alexey/.net-rc/netrc-Alexey-Orlov /home/alexey/.netrc
 $ rm -f /home/alexey/.netrc; ln -s /home/alexey/.net-rc/netrc-Tyrn /home/alexey/.netrc
@@ -27,3 +27,4 @@ machine github.com
 login Alexey-Orlov
 password pwdb
 ```
+- [What is the best practice for dealing with passwords in github?](https://stackoverflow.com/questions/2397822/what-is-the-best-practice-for-dealing-with-passwords-in-github)
