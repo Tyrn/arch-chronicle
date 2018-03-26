@@ -5,6 +5,8 @@
 
 - [Force LF eol in git repo and working copy](https://stackoverflow.com/questions/9976986/force-lf-eol-in-git-repo-and-working-copy)
 
+- [Dealing with line endings, official](https://help.github.com/articles/dealing-with-line-endings/)
+
 #### Credentials on the workstation
 
 - Set softlinks
