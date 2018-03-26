@@ -1,0 +1,10 @@
+table Icon
+  Caption: Krusader
+  ToolTip.Caption: File Manager
+  Icon: /usr/share/icons/hicolor/48x48/apps/krusader_shield.png
+  Width: 48
+  Height: 48
+  X: 120
+  Y: 696
+  Command[0]: krusader
+end

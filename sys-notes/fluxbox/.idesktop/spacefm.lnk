@@ -1,0 +1,10 @@
+table Icon
+  Caption: SpaceFM
+  ToolTip.Caption: File Manager
+  Icon: /usr/share/icons/hicolor/48x48/apps/spacefm-48-pyramid-blue.png
+  Width: 48
+  Height: 48
+  X: 24
+  Y: 600
+  Command[0]: spacefm
+end

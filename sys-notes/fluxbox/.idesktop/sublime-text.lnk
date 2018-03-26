@@ -1,0 +1,10 @@
+table Icon
+  Caption: Sublime Text
+  ToolTip.Caption: Plain Text Editor
+  Icon: /opt/sublime_text_3/Icon/48x48/sublime-text.png
+  Width: 48
+  Height: 48
+  X: 120
+  Y: 120
+  Command[0]: /opt/sublime_text_3/sublime_text
+end

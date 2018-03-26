@@ -1,0 +1,10 @@
+table Icon
+  Caption: Eric
+  ToolTip.Caption: Python RAD IDE
+  Icon: /usr/share/pixmaps/eric.png
+  Width: 48
+  Height: 48
+  X: 24
+  Y: 312
+  Command[0]: eric6
+end

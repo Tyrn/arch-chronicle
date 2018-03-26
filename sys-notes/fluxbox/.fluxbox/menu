@@ -1,0 +1,116 @@
+[begin] (FluxBox)
+    [exec] (SpaceFM) {spacefm}
+    [exec] (PCManFM) {pcmanfm}
+    [exec] (Dolphin) {dolphin}
+    [exec] (Sublime Text) {/opt/sublime_text_3/sublime_text}
+    [exec] (XAMPP) {kdesu /opt/lampp/manager-linux-x64.run}
+    [exec] (Konsole) {konsole}
+    [exec] (XTerm) {xterm -rv -geometry 110x55}
+    [exec] (Terminator) {terminator}
+	[submenu] (Development)
+	    [exec] (Sublime Text) {/opt/sublime_text_3/sublime_text}
+	    [exec] (LiteIDE) {liteide}
+		[exec] (Emacs) {emacs -fh}
+		[exec] (Geany) {geany}
+		[exec] (Geany Root Mode) {kdesu geany}
+        [exec] (Kate) {kate}
+		[exec] (TeXstudio) {texstudio}
+		[exec] (Spyder3) {spyder3}
+		[exec] (Eric) {eric6}
+		[exec] (ipython) {xterm -e ipython}
+		[exec] (IPython Qt console) {ipython qtconsole}
+		[exec] (Qt Assistant) {/usr/lib/qt/bin/assistant}
+		[exec] (Qt Designer) {/usr/lib/qt/bin/designer}
+		[exec] (Qt Linguist) {/usr/lib/qt/bin/linguist}
+		[exec] (Qt QDbusViewer) {/usr/lib/qt/bin/qdbusviewer}
+		[exec] (Qt4 Assistant) {assistant-qt4}
+		[exec] (Qt4 Designer) {designer-qt4}
+		[exec] (Qt4 Linguist) {linguist-qt4}
+		[exec] (Qt4 QDbusViewer) {qdbusviewer-qt4}
+	[end]
+	[submenu] (Network)
+		[exec] (Google Chrome) {google-chrome-stable}
+		[exec] (Tor Browser) {tor-browser-en}
+		[exec] (Midori) {midori}
+		[exec] (eric6 Web Browser) {eric6_webbrowser}
+		[exec] (Qtransmission Bittorrent Client) {transmission-qt}
+		[exec] (Avahi SSH Server Browser) {bssh}
+		[exec] (Avahi VNC Server Browser) {bvnc}
+		[exec] (BlueDevil) {bluedevil-monolithic}
+		[exec] (KNetAttach) {knetattach}
+	[end]
+	[submenu] (Graphics)
+		[exec] (QElectroTech) {qelectrotech}
+		[exec] (Feh) {feh}
+		[exec] (Gwenview) {gwenview}
+	[end]
+	[submenu] (Multimedia)
+		[exec] (K3b) {k3b}
+		[exec] (Kid3) {kid3}
+		[exec] (KMix) {kmix}
+		[exec] (VLC media player) {vlc}
+		[exec] (SMPlayer) {smplayer}
+	[end]
+	[submenu] (Office)
+	    [exec] (Evince) {evince}
+	    [exec] (OmegaT) {omegat}
+		[exec] (LibreOffice Writer) {libreoffice --writer}
+		[exec] (LibreOffice) {libreoffice}
+		[exec] (Okular) {okular}
+	[end]
+	[submenu] (Other)
+#	    [exec] (RH Dictionary) {alltray wine "/home/alexey/.wine/drive_c/Program Files (x86)/Random House, Inc/Random House Webster's Unabridged Dictionary/RHUD30.EXE"}
+	    [exec] (RH Dictionary) {wine "/home/alexey/.wine/drive_c/Program Files (x86)/Random House, Inc/Random House Webster's Unabridged Dictionary/RHUD30.EXE"}
+		[exec] (CMake) {cmake-gui}
+		[exec] (Dropbox) {dropbox}
+		[exec] (Help) {khelpcenter}
+		[exec] (Qt V4L2 test Utility) {qv4l2}
+	[end]
+	[submenu] (Shells)
+		[exec] (Dolphin) {dolphin}
+		[exec] (Konsole) {konsole}
+		[exec] (UXTerm) {uxterm}
+		[exec] (XTerm) {xterm -rv}
+	[end]
+	[submenu] (System)
+		[submenu] (Settings)
+			[exec] (KDE System Settings) {systemsettings5}
+			[exec] (Manage Printing) {xdg-open http://localhost:631/}
+		[end]
+		[exec] (Avahi Zeroconf Browser) {avahi-discover}
+		[exec] (dconf Editor) {dconf-editor}
+		[exec] (GParted) {kdesu gparted}
+#		[exec] (GParted) {gparted_polkit}
+		[exec] (Htop) {xterm -e htop}
+		[exec] (System Monitor) {systemmonitor}
+		[exec] (KInfoCenter) {kinfocenter}
+		[exec] (KSysGuard) {ksysguard}
+	[end]
+	[submenu] (Utilities)
+	    [exec] (Krusader) {krusader}
+	    [exec] (Krusader Root Mode) {gksu krusader}
+		[exec] (SpaceFM) {spacefm}
+		[exec] (SpeedCrunch) {speedcrunch}
+		[exec] (Klipper) {klipper}
+	[end]
+	[separator]
+	[submenu] (FluxBox)
+		[workspaces] (Workspaces)
+                [submenu] (Backgrounds)
+                        [wallpapers] (~/.fluxbox/backgrounds) {feh --bg-scale}
+                        [wallpapers] (/usr/share/fluxbox/backgrounds) {feh --bg-scale}
+                [end]
+		[submenu] (System Styles) {Choose a style...}
+			[stylesdir] (/usr/share/fluxbox/styles)
+		[end]
+		[submenu] (User Styles)
+			[stylesdir] (~/.fluxbox/styles)
+		[end]
+		[config] (Configure)
+		[reconfig] (Reconfig)
+		[restart] (Restart)
+		[separator]
+		[exit] (Exit)
+	[end]
+	[exec] (Lock) {xscreensaver-command -lock}
+[end]

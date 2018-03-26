@@ -1,0 +1,10 @@
+table Icon
+  Caption: Terminator
+  ToolTip.Caption: System Terminal
+  Icon: /usr/share/icons/hicolor/48x48/apps/terminator.png
+  Width: 48
+  Height: 48
+  X: 216
+  Y: 696
+  Command[0]: terminator
+end

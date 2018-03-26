@@ -1,0 +1,10 @@
+table Icon
+  Caption: Transmission
+  ToolTip.Caption: Torrent Client
+  Icon: /usr/share/icons/HighContrast/48x48/apps/transmission.png
+  Width: 48
+  Height: 48
+  X: 408
+  Y: 696
+  Command[0]: transmission-qt
+end

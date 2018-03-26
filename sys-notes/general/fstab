@@ -1,0 +1,13 @@
+# 
+# /etc/fstab: static file system information
+#
+# <file system>	<dir>	<type>	<options>	<dump>	<pass>
+# /dev/sdb2 LABEL=RootB
+UUID=e51771a9-b65f-4c00-bae0-bdbb6e5374f0	/         	ext4      	rw,relatime,data=ordered	0 1
+
+# /dev/sdb3 LABEL=HomeB
+UUID=cd5fbebf-2a39-41e0-97c4-f0c3b3db3f1b	/home     	ext4      	rw,relatime,data=ordered	0 2
+
+#//192.168.0.125/Obmen /home/alexey/smb4k/WSERVER/Obmen cifs noauto,uid=1000,credentials=/home/alexey/.smbcredentials,x-systemd.automount 0 0
+
+#//192.168.0.125/БОС /home/alexey/smb4k/WSERVER/БОС cifs noauto,uid=1000,credentials=/home/alexey/.smbcredentials,x-systemd.automount 0 0

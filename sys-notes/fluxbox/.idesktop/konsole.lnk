@@ -1,0 +1,11 @@
+table Icon
+  Caption: Konsole
+  ToolTip.Caption: System Terminal
+#  Icon: /usr/share/icons/hicolor/48x48/apps/terminator.png
+  Icon: /usr/share/icons/Adwaita/48x48/apps/utilities-terminal.png
+  Width: 48
+  Height: 48
+  X: 24
+  Y: 504
+  Command[0]: konsole
+end

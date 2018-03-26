@@ -1,0 +1,11 @@
+table Icon
+  Caption: GParted
+  ToolTip.Caption: Partition Tool
+#  Icon: /usr/share/icons/oxygen/base/48x48/apps/scribus.png
+  Icon: /usr/share/icons/hicolor/48x48/apps/gparted.png
+  Width: 48
+  Height: 48
+  X: 504
+  Y: 696
+  Command[0]: kdesu gparted
+end

@@ -1,0 +1,10 @@
+table Icon
+  Caption: Spyder
+  ToolTip.Caption: Python IDE
+  Icon: /usr/share/pixmaps/spyder3.png
+  Width: 48
+  Height: 48
+  X: 24
+  Y: 408
+  Command[0]: spyder3
+end

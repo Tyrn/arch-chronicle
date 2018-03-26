@@ -1,0 +1,11 @@
+table Icon
+  Caption: Emacs
+  ToolTip.Caption: Plain Text Editor
+  Icon: /usr/share/icons/hicolor/48x48/apps/emacs.png
+  Width: 48
+  Height: 48
+  X: 24
+  Y: 120
+  Command[0]: emacs -fh
+end
+

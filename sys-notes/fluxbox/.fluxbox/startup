@@ -1,0 +1,39 @@
+#!/bin/sh
+#
+# fluxbox startup-script:
+#
+# Lines starting with a '#' are ignored.
+
+# Change your keymap:
+xmodmap "/home/alexey/.Xmodmap"
+
+# Adjust TouchPad:
+# xinput --set-prop --type=int --format=8  "SynPS/2 Synaptics TouchPad" "Synaptics Edge Scrolling" 1 1 0       #     vertical, horizontal, corner - values: 0=disable  1=enable
+## setxkbmap -option grp:caps_toggle,grp_led:scroll us,ru
+
+# Applications you want to run with fluxbox.
+# MAKE SURE THAT APPS THAT KEEP RUNNING HAVE AN ''&'' AT THE END.
+#
+# unclutter -idle 2 &
+# wmnd &
+# wmsmixer -w &
+idesk &
+# exec fbsetbg /home/alexey/.fluxbox/backgrounds/b81200x772.jpg &
+# exec fbsetbg /home/alexey/.fluxbox/backgrounds/Assasins1280x851.jpg &
+exec fbsetbg /home/alexey/.fluxbox/backgrounds/Erice-Castle-Sizilien-Italien-768x1280.jpg &
+# exec fbxkb &
+# exec ibus-daemon -drx &
+exec /opt/dropbox/dropboxd &
+exec nm-applet &
+exec cbatticon &
+exec gkrellm -g +1172+0 &
+exec xscreensaver -no-splash &
+# exec gis-weather &
+exec volumeicon &
+
+# And last but not least we start fluxbox.
+# Because it is the last app you have to run it with ''exec'' before it.
+
+exec fluxbox
+# or if you want to keep a log:
+# exec fluxbox -log "/home/alexey/.fluxbox/log"

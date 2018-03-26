@@ -1,0 +1,47 @@
+gksu gparted
+gksu geany
+gksu geany /home/alexey/.smbcredentials
+kdesu krusader
+gksu krusader
+gkrellm -g +10+10
+gkrellm -g 10x10+10+10
+gkrellm -g +1250+0
+gkrellm -g +1200+0
+xsane
+scrot ~/ssss.png
+scrot ~/plainshot.jpg
+qtconfig-qt4
+qelectrotech
+gwenview
+krusader
+geany
+okular
+smplayer
+yagf
+xcircuit
+sublime-text
+subl
+git-cola
+emacs
+emacs -fh
+procrserver
+ppub
+liteide
+terminator
+pcmanfm
+vlc
+pcmanfm-qt
+fontforge
+texmaker
+texstudio
+kmix
+volumeicon
+cutegram
+font-manager
+speedcrunch
+gis-weather
+kinfocenter
+kdesu geany
+dolphin
+systemmonitor
+dropbox

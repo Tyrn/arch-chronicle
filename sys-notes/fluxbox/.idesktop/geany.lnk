@@ -1,0 +1,10 @@
+table Icon
+  Caption: Geany
+  ToolTip.Caption: Plain Text Editor
+  Icon: /usr/share/icons/hicolor/48x48/apps/geany.png
+  Width: 48
+  Height: 48
+  X: 24
+  Y: 216
+  Command[0]: geany
+end

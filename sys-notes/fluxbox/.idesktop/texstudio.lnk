@@ -1,0 +1,10 @@
+table Icon
+  Caption: TeXstudio
+  ToolTip.Caption: TeX Editor
+  Icon: /usr/share/texstudio/texstudio48x48.png
+  Width: 48
+  Height: 48
+  X: 216
+  Y: 120
+  Command[0]: texstudio
+end

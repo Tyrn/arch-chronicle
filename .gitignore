@@ -1,0 +1,13 @@
+
+*.tar*
+*.zip
+*.rar
+*.7z
+
+*.jpg
+*.jpeg
+*.png
+*.gif
+
+*.kate-swp
+*.swp

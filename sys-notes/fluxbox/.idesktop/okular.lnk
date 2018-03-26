@@ -1,0 +1,10 @@
+table Icon
+  Caption: Okular
+  ToolTip.Caption: Text reader
+  Icon: /usr/share/icons/hicolor/48x48/apps/okular.png
+  Width: 48
+  Height: 48
+  X: 216
+  Y: 24
+  Command[0]: okular
+end

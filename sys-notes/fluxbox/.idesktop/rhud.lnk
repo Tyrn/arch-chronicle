@@ -1,0 +1,10 @@
+table Icon
+  Caption: RH Dictionary
+  ToolTip.Caption: Random House Dictionary
+  Icon: /usr/share/icons/oxygen/base/48x48/apps/accessories-dictionary.png
+  Width: 48
+  Height: 48
+  X: 312
+  Y: 696
+  Command[0]: wine "/home/alexey/.wine/drive_c/Program Files (x86)/Random House, Inc/Random House Webster's Unabridged Dictionary/RHUD30.EXE"
+end

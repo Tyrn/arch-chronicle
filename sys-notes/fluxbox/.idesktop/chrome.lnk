@@ -1,0 +1,10 @@
+table Icon
+  Caption: Chrome
+  ToolTip.Caption: Web Browser
+  Icon: /usr/share/icons/hicolor/48x48/apps/google-chrome.png
+  Width: 48
+  Height: 48
+  X: 24
+  Y: 24
+  Command[0]: google-chrome-stable
+end

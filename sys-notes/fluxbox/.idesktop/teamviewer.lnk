@@ -1,0 +1,10 @@
+table Icon
+  Caption: TeamViewer
+  ToolTip.Caption: Remote control and meeting solution
+  Icon: /usr/share/icons/hicolor/48x48/apps/teamviewer.png
+  Width: 48
+  Height: 48
+  X: 120
+  Y: 600
+  Command[0]: teamviewer
+end

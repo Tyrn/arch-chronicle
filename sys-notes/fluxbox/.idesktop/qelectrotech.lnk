@@ -1,0 +1,10 @@
+table Icon
+  Caption: QElectroTech
+  ToolTip.Caption: Electrical diagram editor
+  Icon: /usr/share/icons/hicolor/48x48/apps/qelectrotech.png
+  Width: 48
+  Height: 48
+  X: 120
+  Y: 24
+  Command[0]: qelectrotech
+end

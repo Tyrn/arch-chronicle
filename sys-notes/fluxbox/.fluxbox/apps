@@ -1,0 +1,16 @@
+[app] (name=fbrun)
+  [Position]	(WINCENTER)	{0 0}
+  [Layer]	{2}
+[end]
+[group]
+  [app] (name=xterm) (class=XTerm)
+[end]
+[group]
+  [app] (name=geany) (class=Geany)
+[end]
+[group]
+  [app] (name=krusader) (class=Krusader)
+[end]
+[group]
+  [app] (name=okular) (class=Okular)
+[end]
