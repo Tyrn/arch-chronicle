@@ -7,6 +7,8 @@
 
 - [Dealing with line endings, official](https://help.github.com/articles/dealing-with-line-endings/)
 
+- [Line ending thing that works](https://coderwall.com/p/dzdw_a/converting-line-endings-from-dos-carriage-returns-to-unix-line-feeds-using-git)
+
 #### Credentials on the workstation
 
 - Set softlinks (not quite safe)
