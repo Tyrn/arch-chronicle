@@ -1,5 +1,6 @@
 ## GitHub
 #### Resources
+##### Line endings
 
 - [Eclipse & Git: Mind your Windows line endings!](http://mike.meessen.biz/blog/?p=368)
 
@@ -7,7 +8,14 @@
 
 - [Dealing with line endings, official](https://help.github.com/articles/dealing-with-line-endings/)
 
-- [Line ending thing that works](https://coderwall.com/p/dzdw_a/converting-line-endings-from-dos-carriage-returns-to-unix-line-feeds-using-git)
+- [**Line ending thing that works**](https://coderwall.com/p/dzdw_a/converting-line-endings-from-dos-carriage-returns-to-unix-line-feeds-using-git)
+
+#### Rollback
+```
+$ git reset --hard f6486e8b
+$ git reset --soft HEAD@{1}
+$ git commit ...
+```
 
 #### Credentials on the workstation
 
