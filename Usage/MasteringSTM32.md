@@ -86,7 +86,7 @@ Number      Exception type     Priority      Function
 
 - `Src/stm32f1xx_it.c` Generated ISRs; there is place for the user code.
 
-- `startup/startup_stm32f103xb.s` 
+- `startup/startup_stm32f103xb.s`
 ```
 ...
 g_pfnVectors:
@@ -100,3 +100,123 @@ g_pfnVectors:
 ...
 ```
 - `Src/stm32f1xx_hal_msp.c` Setting ISRs; user code. IP settings according to user configuration.
+
+#### I2C
+
+```
+typedef struct {
+I2C_TypeDef                *Instance;  /* I2C registers base address     */
+I2C_InitTypeDef            Init;       /* I2C communication parameters   */
+uint8_t                    *pBuffPtr;  /* Pointer to I2C transfer buffer */
+uint16_t                   XferSize;   /* I2C transfer size              */
+__IO uint16_t              XferCount;  /* I2C transfer counter           */
+DMA_HandleTypeDef          *hdmatx;    /* I2C Tx DMA handle parameters   */
+DMA_HandleTypeDef          *hdmarx;    /* I2C Rx DMA handle parameters   */
+HAL_LockTypeDef            Lock;       /* I2C locking object             */
+__IO HAL_I2C_StateTypeDef  State;      /* I2C communication state        */
+__IO HAL_I2C_ModeTypeDef   Mode;       /* I2C communication mode         */
+__IO uint32_t              ErrorCode;  /* I2C Error code                 */
+} I2C_HandleTypeDef;
+
+```
+```
+typedef struct {
+uint32_t ClockSpeed;       /* Specifies the clock frequency */
+uint32_t DutyCycle;        /* Specifies the I2C fast mode duty cycle. */
+uint32_t OwnAddress1;      /* Specifies the first device own address. */
+uint32_t OwnAddress2;      /* Specifies the second device own address if dual addressing mode is selected */
+uint32_t AddressingMode;   /* Specifies if 7-bit or 10-bit addressing mode is selected. */
+uint32_t DualAddressMode;  /* Specifies if dual addressing mode is selected. */
+uint32_t GeneralCallMode;  /* Specifies if general call mode is selected. */
+uint32_t NoStretchMode;    /* Specifies if nostretch mode is selected. */
+} I2C_InitTypeDef;
+
+```
+`stm32f1xx_hal_def.h`:
+```
+typedef enum
+{
+  HAL_OK       = 0x00U,
+  HAL_ERROR    = 0x01U,
+  HAL_BUSY     = 0x02U,
+  HAL_TIMEOUT  = 0x03U
+} HAL_StatusTypeDef;
+
+typedef enum
+{
+  HAL_UNLOCKED = 0x00U,
+  HAL_LOCKED   = 0x01U
+} HAL_LockTypeDef;
+```
+```
+HAL_StatusTypeDef HAL_I2C_Init(I2C_HandleTypeDef *hi2c);
+```
+```
+HAL_StatusTypeDef HAL_I2C_Master_Transmit(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+```
+```
+HAL_StatusTypeDef HAL_I2C_Master_Receive(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+
+```
+```
+HAL_StatusTypeDef HAL_I2C_Master_Transmit_IT(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size);
+
+HAL_StatusTypeDef HAL_I2C_Master_Receive_IT(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size);
+```
+```
+Table 3: CubeHAL available callbacks when an I2C peripheral works in interrupt or DMA mode
+
+Callback                        Calling ISR           Description
+
+
+HAL_I2C_MasterTxCpltCallback()  I2Cx_EV_IRQHandler()  Signals that the transfer from master to
+                                                      slave is completed (peripheral working in
+                                                      master mode).
+
+HAL_I2C_MasterRxCpltCallback()  I2Cx_EV_IRQHandler()  Signals that the transfer from slave to
+                                                      master is completed (peripheral working
+                                                      in master mode).
+
+HAL_I2C_SlaveTxCpltCallback()   I2Cx_EV_IRQHandler()  Signals that the transfer from slave to
+                                                      master is completed (peripheral working
+                                                      in slave mode).
+
+HAL_I2C_SlaveRxCpltCallback()   I2Cx_EV_IRQHandler()  Signals that the transfer from master to
+                                                      slave is completed (peripheral working in
+                                                      slave mode).
+
+HAL_I2C_MemTxCpltCallback()     I2Cx_EV_IRQHandler()  Signals that the transfer from master to
+                                                      an external memory is completed (this is
+                                                      called only when HAL_I2C_Mem_xxx()
+                                                      routines are used and the peripheral
+                                                      works in master mode).
+
+HAL_I2C_MemRxCpltCallback()     I2Cx_EV_IRQHandler()  Signals that the transfer from an external
+                                                      memory to the master is completed (this
+                                                      is called only when HAL_I2C_Mem_xxx()
+                                                      routines are used and the peripheral
+                                                      works in master mode).
+
+HAL_I2C_AddrCallback()          I2Cx_EV_IRQHandler()  Signals that the master has placed the
+                                                      peripheral slave address on the bus
+                                                      (peripheral working in slave mode).
+
+HAL_I2C_ListenCpltCallback()    I2Cx_EV_IRQHandler()  Signals that the listen mode is completed
+                                                      (this happens when a STOP condition is
+                                                      issued and the peripheral works in slave
+                                                      mode - more about this later).
+
+HAL_I2C_ErrorCallback()         I2Cx_ER_IRQHandler()  Signals that an error condition is
+                                                      occurred (peripheral working both in
+                                                      master and slave mode).
+
+HAL_I2C_AbortCpltCallback()     I2Cx_ER_IRQHandler()  Signals that a STOP condition has been
+                                                      raised and the I2C transaction has been
+                                                      aborted (peripheral working both in
+                                                      master and slave mode).
+```
+```
+HAL_StatusTypeDef HAL_I2C_Master_Transmit_DMA(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size);
+
+HAL_StatusTypeDef HAL_I2C_Master_Receive_DMA(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size);
+```
