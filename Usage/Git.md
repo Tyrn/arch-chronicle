@@ -10,6 +10,14 @@
 
 - [**Line ending thing that works**](https://coderwall.com/p/dzdw_a/converting-line-endings-from-dos-carriage-returns-to-unix-line-feeds-using-git)
 
+##### Workflow
+
+- [Git workflow best practices: 5 tips](https://raygun.com/blog/git-workflow/)
+
+- [Merging vs. Rebasing](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
+
+- [Collaborating](https://www.atlassian.com/git/tutorials/syncing)
+
 #### Rollback
 ```
 $ git reset --hard f6486e8b
