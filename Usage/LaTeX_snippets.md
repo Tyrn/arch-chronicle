@@ -1,4 +1,52 @@
 ## Miscellaneous snippets
+#### 5x8 character matrix paper
+```
+\documentclass[
+  10pt
+  ,a4paper
+  ,oneside
+]{article}
+
+\usepackage{wasysym}
+
+\setlength{\parindent}{0pt}
+\usepackage[margin=0.5in]{geometry}
+\pagenumbering{gobble}
+
+\usepackage{expl3}
+\ExplSyntaxOn
+\cs_new_eq:NN \Repeat \prg_replicate:nn
+\ExplSyntaxOff
+
+\renewcommand{\baselinestretch}{0.5}
+
+\newcommand{\rfive}{
+  \Repeat{5}{\Circle}
+}
+
+\newcommand{\lineoffive}{
+  \Repeat{12}{\rfive\hspace{8pt}}
+  \rfive
+}
+
+\newcommand{\lineoffivebyeight}{
+  \Repeat{7}{\lineoffive\newline}
+  \lineoffive
+}
+
+\newcommand{\pageoffivebyeight}{
+  \Repeat{13}{\lineoffivebyeight\newline\newline}
+  \lineoffivebyeight
+}
+
+\begin{document}
+
+% One page of 5x8 character matrices
+
+{\tiny \pageoffivebyeight}
+
+\end{document}
+```
 
 #### Shortcuts
 
