@@ -99,6 +99,8 @@ $ git clone --recursive https://github.com/throwtheswitch/ceedling.git
 
 - `$ ceedling help`
 
+- `$ ceedling help module`
+
 ##### Expect
 Conditional statements and loops is actually where CMock really starts to shine over just creating stubs. The idea is that you would write multiple tests to capture the different behaviors (paths) through a function. In each individual test function, you would concentrate on one path.
 
