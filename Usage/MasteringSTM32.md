@@ -101,6 +101,44 @@ g_pfnVectors:
 ```
 - `Src/stm32f1xx_hal_msp.c` Setting ISRs; user code. IP settings according to user configuration.
 
+#### Interrupts management
+
+#### Timers
+
+- Timers are asynchronous peripherals.
+
+##### Interrupt
+
+```
+HAL_TIM_Base_Start()
+```
+
+##### Polling
+
+```
+HAL_TIM_Base_Start_IT()
+```
+
+##### DMA
+
+```
+HAL_TIM_Base_Start_DMA()
+```
+- DMA Requests
+```
+DMA requests (most of them are available only in general purpose and advanced timers)
+
+Timer DMA request      Description
+
+TIM_DMA_UPDATE         Update request (it is generated on the UEV event)
+TIM_DMA_CC1            Capture/Compare 1 DMA request
+TIM_DMA_CC2            Capture/Compare 2 DMA request
+TIM_DMA_CC3            Capture/Compare 3 DMA request
+TIM_DMA_CC4            Capture/Compare 4 DMA request
+TIM_DMA_COM            Commutation request
+TIM_DMA_TRIGGER        Trigger request
+```
+
 #### I2C
 
 ```
@@ -230,6 +268,10 @@ extern I2C_HandleTypeDef hi2c1;
 
 #define SLAVE_ADDRESS_LCD 0x4E
 
+// Control bits:
+//            2    1    0
+//           en  r/w   rs
+
 void lcd_send_cmd(char cmd)
 {
   char data_u, data_l;
@@ -249,10 +291,10 @@ void lcd_send_data(char data)
   uint8_t data_t[4];
   data_u = (cmd&0xF0);
   data_l = ((cmd<<4)&0xF0);
-  data_t[0] = data_u|0x0D;    // en=1, rs=0
-  data_t[1] = data_u|0x09;    // en=0, rs=0
-  data_t[2] = data_l|0x0D;    // en=1, rs=0
-  data_t[3] = data_l|0x09;    // en=0, rs=0
+  data_t[0] = data_u|0x0D;    // en=1, rs=1
+  data_t[1] = data_u|0x09;    // en=0, rs=1
+  data_t[2] = data_l|0x0D;    // en=1, rs=1
+  data_t[3] = data_l|0x09;    // en=0, rs=1
   HAL_I2C_Master_Transmit(&hi2c1, SLAVE_ADDRESS_LCD, (uint8_t*)data_t, 4, 100);
 }
 
@@ -273,10 +315,10 @@ void lcd_send_string(char *str)
 ```
 ...
   MX_I2C1_Init();
-  
+
   lcd_init();
   lcd_send_string("HELLO WORLD!");
-  
+
   while(1)
   {
     lcd_send_cmd(0x80);   // goto 1,1
