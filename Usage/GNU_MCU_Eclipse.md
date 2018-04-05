@@ -110,3 +110,7 @@ _If the Packs perspective lacks the Packs tab and Refresh Packs button, try one 
 - Add the necessary View: `Window > Show View > Other... (Packs)`
 
 [The project and the device](https://gnu-mcu-eclipse.github.io/eclipse/project/assign-device/)
+
+#### Real world examples
+
+- [PASTILDA: open-source password manager](https://bitbucket.org/thirdpin_team/pastilda)

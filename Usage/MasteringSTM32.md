@@ -107,6 +107,27 @@ g_pfnVectors:
 
 - Timers are asynchronous peripherals.
 
+- A timer has 4 output channels and 4 CCR registers: CCR1, CCR2, CCR3, CCR4. The four channels share the timer counter and the ARR. Timer Output *Low* `if` counter < CCR `else` *High*; high-true mode (mode 2).
+```
+Mode                       Counter < CCR     Counter >= CCR
+
+PWM mode 1 (Low  True)     Active            Inactive
+PWM mode 2 (High True)     Active            Inactive
+```
+- Output polarity: program CCxP bit in the TIMx_CCER register
+```
+                    Active               Inactive
+
+Active High         High Voltage         Low Voltage
+Active Low          Low Voltage          High Voltage
+```
+
+##### ARR Update
+
+- Synchronous, ARPE == 1; ARR updated on UEV event.
+
+- Asynchronous, ARPE == 0; ARR updated immediately.
+
 ##### Interrupt
 
 ```
