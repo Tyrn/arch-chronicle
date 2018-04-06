@@ -65,6 +65,9 @@ Number      Exception type     Priority      Function
 15          SysTick            Configurable  System tick timer has fired.
 16-[47/240] IRQ                Configurable  IRQ input
 ```
+- Interrupt table: `startup/startup_stm32f103xb.s`
+
+- Interrupt numbers: `Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h`
 
 #### STM32CubeMX
 
@@ -112,7 +115,7 @@ g_pfnVectors:
 Mode                       Counter < CCR     Counter >= CCR
 
 PWM mode 1 (Low  True)     Active            Inactive
-PWM mode 2 (High True)     Active            Inactive
+PWM mode 2 (High True)     Inactive          Active
 ```
 - Output polarity: program CCxP bit in the TIMx_CCER register
 ```
