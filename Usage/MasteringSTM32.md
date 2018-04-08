@@ -104,6 +104,33 @@ g_pfnVectors:
 ```
 - `Src/stm32f1xx_hal_msp.c` Setting ISRs; user code. IP settings according to user configuration.
 
+#### GPIO
+
+```
+Available GPIO_InitTypeDef.Mode for a GPIO
+
+Pin Mode                        Description
+
+GPIO_MODE_INPUT                 Input Floating Mode
+GPIO_MODE_OUTPUT_PP             Output Push Pull Mode
+GPIO_MODE_OUTPUT_OD             Output Open Drain Mode
+GPIO_MODE_AF_PP                 Alternate Function Push Pull Mode
+GPIO_MODE_AF_OD                 Alternate Function Open Drain Mode
+GPIO_MODE_ANALOG                Analog Mode
+GPIO_MODE_IT_RISING             External Interrupt Mode with Rising edge trigger detection
+GPIO_MODE_IT_FALLING            External Interrupt Mode with Falling edge trigger detection
+GPIO_MODE_IT_RISING_FALLING     External Interrupt Mode with Rising/Falling edge trigger detection
+GPIO_MODE_EVT_RISING            External Event Mode with Rising edge trigger detection
+GPIO_MODE_EVT_FALLING           External Event Mode with Falling edge trigger detection
+GPIO_MODE_EVT_RISING_FALLING    External Event Mode with Rising/Falling edge trigger detection
+
+Available GPIO_InitTypeDef.Pull modes for a GPIO
+
+GPIO_NOPULL                     No Pull-up or Pull-down activation
+GPIO_PULLUP                     Pull-up activation
+GPIO_PULLDOWN                   Pull-down activation
+```
+
 #### Interrupts management
 
 #### Timers
