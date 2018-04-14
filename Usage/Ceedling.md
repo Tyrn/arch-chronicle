@@ -46,7 +46,7 @@ $ git clone --recursive https://github.com/throwtheswitch/ceedling.git
   :inc_root:     Inc/
   :test_root:    test/
 ```
-- Modify `project.yml`:
+- Modify `project.yml`([sample](https://github.com/Tyrn/stmbox/blob/master/project.yml)):
 ```
 ...
 :paths:

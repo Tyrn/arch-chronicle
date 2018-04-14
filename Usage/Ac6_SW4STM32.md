@@ -61,6 +61,7 @@ Guidelines:
 - Make sure that your Eclipse is running.
 - Run `Project > Generate Code` of your STM32CubeMX app.
 - Once code generation is done, select `Open Project`. If everything is correct, the Eclipse project is imported hands off, no user interaction required.
+- In case the Eclipse project won't import hands off after all, import it [manually](http://www.openstm32.org/Importing%2Ba%2BSTCubeMX%2Bgenerated%2Bproject). `Import > General > Existing Projects into Workspace`; `Select root directory`; all options unchecked.
 
 #### GDB Eclipse
 
