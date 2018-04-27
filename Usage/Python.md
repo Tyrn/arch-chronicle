@@ -5,3 +5,8 @@
 
 - [reduce (list of strings) -> string
 ](https://stackoverflow.com/questions/27436748/python-reduce-list-of-strings-string)
+
+#### Django
+##### Bootstrap
+
+- [releases](https://github.com/twbs/bootstrap/releases)
