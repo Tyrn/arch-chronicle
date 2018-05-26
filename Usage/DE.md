@@ -94,3 +94,37 @@ session.screen0.strftimeFormat: %F %a %k:%M
 
 - System styles (`~/.fluxbox/init` (`session:styleFile`)): `Panbox` (very light), `Megatron-red2` (dark red)
 
+### Xinit
+[Archwiki](https://wiki.archlinux.org/index.php/Xinit)
+
+Backing from Nvidia (to Intel Graphics):
+```
+$ yaourt -R nvidia-340xx-utils
+$ glxinfo
+```
+##### Bypassing Display Manager:
+
+- Disable SDDM:
+```
+$ sudo systemctl disable sddm
+```
+- Create  `.xinitrc` (default):
+```
+$ cp /etc/X11/xinit/xinitrc ~/.xinitrc
+```
+- Edit  `.xinitrc`:
+```
+...
+#~ twm &
+#~ xclock -geometry 50x50-1+1 &
+#~ xterm -geometry 80x50+494+51 &
+#~ xterm -geometry 80x20+494-0 &
+#~ exec xterm -geometry 80x66+0+0 -name login
+
+#~ exec startfluxbox
+exec startkde
+```
+- Run DE:
+```
+$ startx
+```
