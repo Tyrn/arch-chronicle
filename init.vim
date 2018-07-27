@@ -27,8 +27,8 @@ let g:vimtex_compiler_latexmk = {
     \ 'continuous' : 0,
 \}
 
-"set spell spelllang=ru_ru
-set spelllang=ru_ru
+"set invspell spelllang=ru_ru
+"set spelllang=ru_ru
 
 set laststatus=2
 set tabstop=4
