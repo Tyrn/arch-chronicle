@@ -2,6 +2,7 @@
 call plug#begin('~/.vim/plugged')
 
 " Make sure you use single quotes
+ Plug 'lambdalisue/suda.vim'
  Plug 'powerman/vim-plugin-ruscmd'
  Plug 'tpope/vim-fugitive'
 " Plug 'xolox/vim-misc'
@@ -36,6 +37,8 @@ set shiftwidth=4
 set number
 
 autocmd FileType help noremap <buffer> q :q<cr>
+" command! -nargs=0 Sw w !sudo tee % > /dev/null
+" command W w !sudo tee "%" > /dev/null
 
 let dart_style_guide = 2
 let dart_format_on_save = 1
