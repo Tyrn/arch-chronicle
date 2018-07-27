@@ -75,7 +75,7 @@ Guidelines:
 
 - Main/Board: `myproject`
 
-- Debugger/GDB Command: `${openstm32_compiler_path}/arm-none-eabi-gdb`
+- Debugger/GDB Command: `${openstm32_compiler_path}/arm-none-eabi-gdb`; as of 2018-10-26 `/usr/bin/arm-none-eabi-gdb`
 
 - Debugger/OCD Command: `"${openstm32_openocd_path}/openocd"`
 
