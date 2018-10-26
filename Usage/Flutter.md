@@ -28,6 +28,13 @@ $ export PATH=`pwd`/flutter/bin:$PATH
 ```
 $ yaourt -S gradle android-sdk android-sdk-build-tools android-platform
 ```
+- Relax permissions for Android SDK:
+```
+$ sudo groupadd sdkusers
+$ sudo gpasswd -a user sdkusers
+$ sudo chown -R :sdkusers /opt/android-sdk/
+$ sudo chmod -R g+w /opt/android-sdk/
+```
 - Add to `.profile`:
 ```
 export ANDROID_HOME=/opt/android-sdk
@@ -36,8 +43,6 @@ In case of manual installation:
 ```
 export PATH=$PATH:/home/alexey/mobile/flutter/bin
 ```
-- Create `sdkusers` group and add your `user`
-
 - Accept licenses:
 ```
 $ sudo /opt/android-sdk/tools/bin/sdkmanager --licenses
