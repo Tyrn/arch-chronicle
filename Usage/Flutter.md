@@ -20,27 +20,43 @@
 
 - [Flutter on Linux](https://flutter.io/setup-linux/):
 ```
-$ cd ~/development
+$ mkdir ~/mobile
+$ cd ~/mobile
 $ tar xf ~/Downloads/flutter_linux_v0.5.1-beta.tar.xz
 $ export PATH=`pwd`/flutter/bin:$PATH
 ```
 - Install toolchain components:
 ```
-$ yaourt -S gradle android-sdk android-sdk-build-tools android-platform
+$ yaourt -S gradle android-sdk android-sdk-build-tools android-sdk-platform-tools android-platform
 ```
 - Add to `.profile`:
 ```
 export ANDROID_HOME=/opt/android-sdk
-```
-In case of manual installation:
-```
 export PATH=$PATH:/home/alexey/mobile/flutter/bin
 ```
-- Create `sdkusers` group and add your `user`
-
+- Relax permissions for Android SDK:
+```
+$ sudo groupadd sdkusers
+$ sudo gpasswd -a user sdkusers
+$ sudo chown -R :sdkusers /opt/android-sdk/
+$ sudo chmod -R g+w /opt/android-sdk/
+```
 - Accept licenses:
 ```
-$ sudo /opt/android-sdk/tools/bin/sdkmanager --licenses
+$ flutter doctor --android-licenses
+
+```
+- Check:
+```
+$ ls -l android-sdk/
+total 24
+drwxrwxr-x 2 root   sdkusers 4096 Oct  2  2017 add-ons
+drwxrwxr-x 3 root   sdkusers 4096 Oct 28 13:03 build-tools
+drwxr-xr-x 2 alexey users    4096 Oct 28 13:07 licenses
+drwxrwxr-x 3 root   sdkusers 4096 Oct 28 13:02 platforms
+drwxrwxr-x 5 root   sdkusers 4096 Oct 28 13:05 platform-tools
+drwxrwxr-x 6 root   sdkusers 4096 Oct 28 13:05 tools
+
 ```
 - Upgrade whenever you wish:
 ```
