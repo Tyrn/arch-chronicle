@@ -26,11 +26,21 @@ $ export PATH=`pwd`/flutter/bin:$PATH
 ```
 - Install toolchain components:
 ```
-$ yaourt -S gradle android-sdk android-sdk-build-tools
+$ yaourt -S gradle android-sdk android-sdk-build-tools android-platform
 ```
-Add to `.profile`:
+- Add to `.profile`:
 ```
 export ANDROID_HOME=/opt/android-sdk
+```
+In case of manual installation:
+```
+export PATH=$PATH:/home/alexey/mobile/flutter/bin
+```
+- Create `sdkusers` group and add your `user`
+
+- Accept licenses:
+```
+$ sudo /opt/android-sdk/tools/bin/sdkmanager --licenses
 ```
 - Upgrade whenever you wish:
 ```
