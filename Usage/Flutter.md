@@ -99,3 +99,13 @@ $ flutter run
 Check your target Android device settings; replug.
 
 - Wrong Android API version. Change `android/defaultConfig/minSdkVersion` in `my_project/android/app/build.gradle` (once) generated file.
+
+- `adb` permissions error:
+```
+Error retrieving device properties for ro.product.cpu.abi:
+error: insufficient permissions for device
+See [http://developer.android.com/tools/device.html] for more information
+```
+Kill (start, if appropriate) the `adb`. Keep your Android device USB settisgs as MTP (Files).
+
+- Trouble (2018-10-28) with ``: [add google() to buildscript repositories]()
