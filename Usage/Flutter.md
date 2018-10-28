@@ -48,7 +48,7 @@ $ flutter doctor --android-licenses
 ```
 - Check:
 ```
-$ ls -l android-sdk/
+$ ls -l /opt/android-sdk/
 total 24
 drwxrwxr-x 2 root   sdkusers 4096 Oct  2  2017 add-ons
 drwxrwxr-x 3 root   sdkusers 4096 Oct 28 13:03 build-tools
