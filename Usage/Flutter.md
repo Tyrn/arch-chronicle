@@ -106,6 +106,11 @@ Error retrieving device properties for ro.product.cpu.abi:
 error: insufficient permissions for device
 See [http://developer.android.com/tools/device.html] for more information
 ```
-Kill (start, if appropriate) the `adb`. Keep your Android device USB settisgs as MTP (Files).
+Kill (start, if appropriate) the `adb`.
+```
+$ adb kill-server
+($ sudo adb start-server)
+```
+Keep your Android device USB settings as MTP (Files).
 
-- Trouble (2018-10-28) with ``: [add google() to buildscript repositories]()
+- Trouble (2018-10-28) with `~/mobile/flutter/packages/flutter_tools/gradle/flutter.gradle`: [add google() to buildscript repositories](https://github.com/flutter/flutter/issues/23095)
