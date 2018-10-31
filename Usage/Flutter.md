@@ -29,6 +29,11 @@ $ export PATH=`pwd`/flutter/bin:$PATH
 ```
 $ yaourt -S gradle android-sdk android-sdk-build-tools android-sdk-platform-tools android-platform
 ```
+- Check:
+```
+$ cat /etc/profile.d/android-sdk-platform-tools.sh 
+export PATH="${PATH}:/opt/android-sdk/platform-tools"
+```
 - Add to `.profile`:
 ```
 export ANDROID_HOME=/opt/android-sdk
@@ -37,7 +42,7 @@ export PATH=$PATH:/home/alexey/mobile/flutter/bin
 - Relax permissions for Android SDK:
 ```
 $ sudo groupadd sdkusers
-$ sudo gpasswd -a user sdkusers
+$ sudo gpasswd -a <user> sdkusers
 $ sudo chown -R :sdkusers /opt/android-sdk/
 $ sudo chmod -R g+w /opt/android-sdk/
 ```
