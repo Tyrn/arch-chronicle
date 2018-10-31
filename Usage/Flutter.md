@@ -29,6 +29,11 @@ $ export PATH=`pwd`/flutter/bin:$PATH
 ```
 $ yaourt -S gradle android-sdk android-sdk-build-tools android-sdk-platform-tools android-platform
 ```
+- Check:
+```
+$ cat /etc/profile.d/android-sdk-platform-tools.sh 
+export PATH="${PATH}:/opt/android-sdk/platform-tools"
+```
 - Add to `.profile`:
 ```
 export ANDROID_HOME=/opt/android-sdk
