@@ -22,6 +22,11 @@ end of `~/.bashrc`:
 `$ find . -type f -name "*.rar" -exec unrar x {} \;`
 
 ### Utilities
+#### sha256sum
+```
+$ echo <sum> <filename> | sha256sum -c -
+```
+
 #### ffmpeg
 
 - For a single file:
