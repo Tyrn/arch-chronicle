@@ -21,7 +21,17 @@ $ groups
 ... sudo ...
 ```
 
-### VirtualBox
+#### Troubleshooting Guest Additions:
+
+- Add and configure, [Step by Step](https://www.linuxbabe.com/desktop-linux/how-to-install-virtualbox-guest-additions-on-debian-step-by-step):
+```
+$ sudo apt-get install build-essential module-assistant
+$ sudo m-a prepare
+# sh /media/cdrom0/VBoxLinuxAdditions.run
+```
+- In case of successful build, the final `VirtualBox Guest Additions: modprobe vboxsf failed` message can be ignored; reboot
+
+### Rasbperry Pi Desktop on VirtualBox
 
 #### (Arch) Linux Host:
 
@@ -31,7 +41,7 @@ $ groups
 
 - `$ sudo gpasswd -a user vboxsf`; relogin
 
-#### Debian Guest:
+#### Raspberry Pi Desktop (Debian) Guest:
 
 - Create an appropriate virtual machine; check [*Raspberry Pi Desktop*](https://www.raspberrypi.org/downloads/) architecture, as a 32-bit distribution runs *almost*  fine on a 64-bit virtual machine :smile:
 
