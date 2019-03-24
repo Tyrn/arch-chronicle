@@ -1,4 +1,26 @@
-## Raspberry Pi miscellany
+## Debian and Raspberry Pi miscellany
+### Tricks
+#### Troubleshooting sudo:
+
+- A failure (user already exists):
+```
+$ sudo echo "Hello!"
+[sudo] password for user:
+
+Username is not in the sudoers file. This incident will be reported.
+```
+- A remedy:
+```
+# apt-get install sudo -y    # May be already there
+# gpasswd -a user sudo
+# chmod 0440 /etc/sudoers
+```
+- Reboot:
+```
+$ groups
+... sudo ...
+```
+
 ### VirtualBox
 
 #### (Arch) Linux Host:
