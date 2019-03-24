@@ -1,5 +1,19 @@
 ## Debian and Raspberry Pi miscellany
 ### Tricks
+#### Installing Python packages:
+
+- [Priceless advice](https://unix.stackexchange.com/questions/508293/debian-installing-a-python-package-apt-get-or-apt-src)
+
+- Checking:
+```
+$ apt-cache madison mutagen
+$ apt showsrc mutagen
+```
+- Installing:
+```
+$ sudo apt install python3-mutagen
+```
+
 #### Troubleshooting sudo:
 
 - A failure (user already exists):
