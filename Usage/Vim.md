@@ -1,5 +1,25 @@
 ## Vim Editor
 ### Vim and Neovim
+#### sudo
+```
+$ sudo -E nvim
+```
+#### Spell checking
+- `init.vim`:
+```
+"set invspell spelllang=ru_ru,en_us
+set spelllang=ru_ru,en_us
+nnoremap 99 :set invspell<CR>
+```
+#### Clipboard
+
+- Install `xsel` (or `xclip`)
+
+- Add to `init.vim` to avoid printing `"+y` for the system clipboard:
+```
+set clipboard=unnamedplus
+```
+
 #### Sharing plugins
 
 - [Arch Wiki](https://wiki.archlinux.org/index.php/Neovim), [Color scheme, etc.](https://vi.stackexchange.com/questions/12794/how-to-share-config-between-vim-and-neovim)
