@@ -53,8 +53,8 @@ set completeopt-=preview
 " Spell checking
 nnoremap 99 :set invspell<CR>
 " Weird things
-nnoremap 00 $
-nnoremap ѵѵ $
+" nnoremap 00 $
+" nnoremap ѵѵ $
 nnoremap ѵ 0
 nnoremap ѱ G
 " Tab management
