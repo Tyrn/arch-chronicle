@@ -2,7 +2,7 @@
 ### Vim and Neovim
 #### Sharing plugins
 
-- [Arch Wiki](https://wiki.archlinux.org/index.php/Neovim)
+- [Arch Wiki](https://wiki.archlinux.org/index.php/Neovim), [Color scheme, etc.](https://vi.stackexchange.com/questions/12794/how-to-share-config-between-vim-and-neovim)
 
 - Create a symlink (to share *autoload* and plugins):
 ```
