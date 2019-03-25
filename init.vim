@@ -27,14 +27,15 @@ let g:vimtex_compiler_latexmk = {
     \ 'continuous' : 0,
 \}
 
-"set invspell spelllang=ru_ru
-"set spelllang=ru_ru
+"set invspell spelllang=ru_ru,en_us
+set spelllang=ru_ru,en_us
 
 set laststatus=2
 set tabstop=4
 set expandtab
 set shiftwidth=4
 set number
+set clipboard=unnamedplus
 
 autocmd FileType help noremap <buffer> q :q<cr>
 " command! -nargs=0 Sw w !sudo tee % > /dev/null
@@ -49,6 +50,8 @@ let g:lsc_auto_map = v:true
 " let g:lsc_reference_highlights = v:false
 set completeopt-=preview
 
+" Spell checking
+nnoremap 99 :set invspell<CR>
 " Weird things
 nnoremap 00 $
 nnoremap ѵѵ $
