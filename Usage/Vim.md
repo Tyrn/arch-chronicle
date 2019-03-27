@@ -33,9 +33,13 @@ $ ln -s /home/alexey/.vim /home/alexey/.local/share/nvim/site
 
 [Superfluous viewer instances](https://github.com/lervag/vimtex/issues/313)
 
-### Okular
+#### Okular
 
 - Vim/Okular interaction (Okular > Settings > Editor > Command):
 ```
 gvim --servername GVIM --remote-silent +%l %f
+```
+- Neovim/Okular, [neovim-remote installed](https://github.com/mhinz/neovim-remote):
+```
+nvr --remote-silent %f -c %l
 ```
