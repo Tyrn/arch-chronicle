@@ -8,6 +8,7 @@ call plug#begin('~/.vim/plugged')
 " Plug 'xolox/vim-misc'
 " Plug 'xolox/vim-session'
  Plug 'lervag/vimtex'
+ Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
  Plug 'dart-lang/dart-vim-plugin'
  Plug 'natebosch/vim-lsc'
 
@@ -15,6 +16,13 @@ call plug#begin('~/.vim/plugged')
 call plug#end()
 
 set guioptions-=T  "remove toolbar
+
+" UltiSnips group
+" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+let g:UltiSnipsSnippetDirectories=[$HOME.'/.vim/plugged/vim-snippets/UltiSnips']
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 " vimtex group (view settings according to vimtex.txt; stands perfectly to reason)
 let g:vimtex_view_method = 'general'
