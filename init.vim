@@ -58,7 +58,9 @@ let g:lsc_auto_map = v:true
 " let g:lsc_reference_highlights = v:false
 set completeopt-=preview
 
-" Spell checking
+" Toggle line wrap
+nnoremap 88 :set wrap!<CR>
+" Toggle spell check
 nnoremap 99 :set invspell<CR>
 " Weird things
 " nnoremap 00 $
