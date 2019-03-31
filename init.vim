@@ -7,6 +7,7 @@ call plug#begin('~/.vim/plugged')
  Plug 'tpope/vim-fugitive'
 " Plug 'xolox/vim-misc'
 " Plug 'xolox/vim-session'
+ Plug 'djoshea/vim-autoread'
  Plug 'lervag/vimtex'
  Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
  Plug 'dart-lang/dart-vim-plugin'
