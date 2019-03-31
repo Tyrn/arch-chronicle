@@ -15,6 +15,15 @@ call plug#begin('~/.vim/plugged')
  Plug 'elixir-editors/vim-elixir'
  Plug 'slashmili/alchemist.vim'
 
+ if has('nvim')
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+ else
+  Plug 'Shougo/deoplete.nvim'
+  Plug 'roxma/nvim-yarp'
+  Plug 'roxma/vim-hug-neovim-rpc'
+ endif
+ let g:deoplete#enable_at_startup = 1
+
 " Initialize plugin system
 call plug#end()
 
@@ -46,7 +55,9 @@ set tabstop=4
 set expandtab
 set shiftwidth=4
 set number
-set clipboard=unnamedplus
+if has('nvim')
+ set clipboard=unnamedplus
+endif
 
 autocmd FileType help noremap <buffer> q :q<cr>
 " command! -nargs=0 Sw w !sudo tee % > /dev/null
