@@ -11,6 +11,8 @@ call plug#begin('~/.vim/plugged')
  Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
  Plug 'dart-lang/dart-vim-plugin'
  Plug 'natebosch/vim-lsc'
+ Plug 'elixir-editors/vim-elixir'
+ Plug 'slashmili/alchemist.vim'
 
 " Initialize plugin system
 call plug#end()
