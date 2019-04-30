@@ -29,6 +29,14 @@ set clipboard=unnamedplus
 $ ln -s /home/alexey/.vim /home/alexey/.local/share/nvim/site
 ```
 
+#### Inhouse config
+
+- `$ cd ~/.config`
+
+- `$ git clone https://github.com/Tyrn/arch-chronicle`
+
+- `$ ln -s /home/alexey/.config/arch-chronicle/init.vim /home/alexey/.config/nvim/init.vim`
+
 ### VimTeX
 
 [Superfluous viewer instances](https://github.com/lervag/vimtex/issues/313)
