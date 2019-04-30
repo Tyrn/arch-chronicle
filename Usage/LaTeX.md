@@ -10,7 +10,15 @@ $ sudo pacman -R texlive-bin
 ```
 $ fmtutil-sys --all
 ```
+- Install GUI library:
+```
+$ yaourt -S perl-tk
+```
+
 - Install texlive: [TUG.org](https://tug.org/texlive/doc/texlive-en/texlive-en.html#x1-140003); [discussion](https://bbs.archlinux.org/viewtopic.php?id=181749)
+```
+$ [sudo] ./install-tl -gui
+```
 
 - add your texlive path to `~/.profile`(do not use `~/.bashrc`!):
 ```
