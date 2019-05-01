@@ -37,6 +37,10 @@ $ ln -s /home/alexey/.vim /home/alexey/.local/share/nvim/site
 
 - `$ ln -s /home/alexey/.config/arch-chronicle/init.vim /home/alexey/.config/nvim/init.vim`
 
+#### Python
+
+[A Complete Guide for Installing and Setting up Neovim for Python Development](https://jdhao.github.io/2018/12/24/centos_nvim_install_use_guide_en/)
+
 ### VimTeX
 
 [Superfluous viewer instances](https://github.com/lervag/vimtex/issues/313)
