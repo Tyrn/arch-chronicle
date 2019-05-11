@@ -14,6 +14,7 @@ call plug#begin('~/.vim/plugged')
  Plug 'natebosch/vim-lsc'
  Plug 'elixir-editors/vim-elixir'
  Plug 'slashmili/alchemist.vim'
+ Plug 'scrooloose/nerdtree'
 
  if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -22,7 +23,18 @@ call plug#begin('~/.vim/plugged')
   Plug 'roxma/nvim-yarp'
   Plug 'roxma/vim-hug-neovim-rpc'
  endif
- let g:deoplete#enable_at_startup = 1
+ Plug 'zchee/deoplete-jedi'
+ Plug 'davidhalter/jedi-vim'
+ Plug 'vim-airline/vim-airline'
+ Plug 'vim-airline/vim-airline-themes'
+
+let g:deoplete#enable_at_startup = 1
+
+" disable autocompletion, cause we use deoplete for completion
+let g:jedi#completions_enabled = 0
+
+" open the go-to function in split, not another buffer
+let g:jedi#use_splits_not_buffers = "right"
 
 " Initialize plugin system
 call plug#end()
