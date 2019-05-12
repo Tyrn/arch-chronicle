@@ -15,6 +15,7 @@ call plug#begin('~/.vim/plugged')
  Plug 'elixir-editors/vim-elixir'
  Plug 'slashmili/alchemist.vim'
  Plug 'scrooloose/nerdtree'
+" Plug 'plytophogy/vim-virtualenv'
 
  if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -40,6 +41,9 @@ let g:jedi#use_splits_not_buffers = "right"
 call plug#end()
 
 set guioptions-=T  "remove toolbar
+
+let g:python3_host_prog = '/usr/bin/python'  " Python 3
+let g:loaded_python_provider = 1  " Disable Python 2 support
 
 " UltiSnips group
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
