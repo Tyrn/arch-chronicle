@@ -36,6 +36,7 @@ let g:jedi#completions_enabled = 0
 
 " open the go-to function in split, not another buffer
 let g:jedi#use_splits_not_buffers = "right"
+let g:jedi#use_tabs_not_buffers = 1
 
 " Initialize plugin system
 call plug#end()
