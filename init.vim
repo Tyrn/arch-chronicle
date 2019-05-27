@@ -61,7 +61,7 @@ let g:vimtex_view_general_options_latexmk = '--unique'
 let g:vimtex_compiler_method = 'latexmk'
 let g:vimtex_compiler_latexmk = {
     \ 'background' : 1,
-    \ 'continuous' : 0,
+    \ 'continuous' : 1,
 \}
 
 "set invspell spelllang=ru_ru,en_us
@@ -90,9 +90,9 @@ let g:lsc_auto_map = v:true
 set completeopt-=preview
 
 " Toggle line wrap
-nnoremap 88 :set wrap!<CR>
+nnoremap 66 :set wrap!<CR>
 " Toggle spell check
-nnoremap 99 :set invspell<CR>
+nnoremap 55 :set invspell<CR>
 " Weird things
 " nnoremap 00 $
 " nnoremap ѵѵ $
@@ -114,9 +114,11 @@ inoremap w; <Esc>
 inoremap ;w <Esc>
 inoremap цж <Esc>
 inoremap жц <Esc>
+inoremap wñ <Esc>
+inoremap ñw <Esc>
 " vimtex miscellany
-map <F5> :VimtexCompile<CR>
-map <F6> :VimtexView<CR>
+nnoremap 77 :VimtexCompile<CR>
+nnoremap 88 :VimtexView<CR>
 " LaTeX and Slavonic miscellany
 inoremap YY {\slv{}}
 inoremap НН {\slv{}}
