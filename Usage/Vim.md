@@ -45,6 +45,8 @@ $ ln -s /home/alexey/.vim /home/alexey/.local/share/nvim/site
 
 [Superfluous viewer instances](https://github.com/lervag/vimtex/issues/313)
 
+[**Configuration issue**](https://github.com/lervag/vimtex/issues/1392)
+
 #### Okular
 
 - Vim/Okular interaction (Okular > Settings > Editor > Command):

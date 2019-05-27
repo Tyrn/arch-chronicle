@@ -116,6 +116,8 @@ inoremap цж <Esc>
 inoremap жц <Esc>
 inoremap wñ <Esc>
 inoremap ñw <Esc>
+" Spanish colon
+nnoremap Ñ :
 " vimtex miscellany
 nnoremap 77 :VimtexCompile<CR>
 nnoremap 88 :VimtexView<CR>
