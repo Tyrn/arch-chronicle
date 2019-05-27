@@ -116,6 +116,8 @@ inoremap цж <Esc>
 inoremap жц <Esc>
 inoremap wñ <Esc>
 inoremap ñw <Esc>
+" Russian dollar
+nnoremap ; $
 " Spanish colon
 nnoremap Ñ :
 " vimtex miscellany
