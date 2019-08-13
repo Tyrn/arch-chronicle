@@ -2,7 +2,19 @@
 call plug#begin('~/.vim/plugged')
 
 " Make sure you use single quotes
- Plug 'lambdalisue/suda.vim'
+" Plug 'lambdalisue/suda.vim'
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+ Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
+ Plug 'neoclide/coc-snippets', {'do': 'yarn install --frozen-lockfile'}
+ Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
+ Plug 'neoclide/coc-prettier', {'do': 'yarn install --frozen-lockfile'}
+ Plug 'neoclide/coc-eslint', {'do': 'yarn install --frozen-lockfile'}
+ Plug 'neoclide/coc-tslint', {'do': 'yarn install --frozen-lockfile'}
+ Plug 'neoclide/coc-css', {'do': 'yarn install --frozen-lockfile'}
+ Plug 'neoclide/coc-lists', {'do': 'yarn install --frozen-lockfile'} " mru and stuff
+ Plug 'neoclide/coc-highlight', {'do': 'yarn install --frozen-lockfile'} " color highlighting
+
  Plug 'powerman/vim-plugin-ruscmd'
  Plug 'tpope/vim-fugitive'
 " Plug 'xolox/vim-misc'
