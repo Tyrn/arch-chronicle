@@ -2,7 +2,6 @@
 call plug#begin('~/.vim/plugged')
 
 " Make sure you use single quotes
-" Plug 'lambdalisue/suda.vim'
 " Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
  Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
@@ -14,11 +13,10 @@ call plug#begin('~/.vim/plugged')
  Plug 'neoclide/coc-css', {'do': 'yarn install --frozen-lockfile'}
  Plug 'neoclide/coc-lists', {'do': 'yarn install --frozen-lockfile'} " mru and stuff
  Plug 'neoclide/coc-highlight', {'do': 'yarn install --frozen-lockfile'} " color highlighting
+ Plug 'neoclide/coc-python', {'do': 'yarn install --frozen-lockfile'}
 
  Plug 'powerman/vim-plugin-ruscmd'
  Plug 'tpope/vim-fugitive'
-" Plug 'xolox/vim-misc'
-" Plug 'xolox/vim-session'
  Plug 'djoshea/vim-autoread'
  Plug 'lervag/vimtex'
  Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
@@ -27,7 +25,6 @@ call plug#begin('~/.vim/plugged')
  Plug 'elixir-editors/vim-elixir'
  Plug 'slashmili/alchemist.vim'
  Plug 'scrooloose/nerdtree'
-" Plug 'plytophogy/vim-virtualenv'
 
  if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
