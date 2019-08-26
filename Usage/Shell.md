@@ -22,6 +22,19 @@ end of `~/.bashrc`:
 `$ find . -type f -name "*.rar" -exec unrar x {} \;`
 
 ### Utilities
+#### autojump
+`~/.bashrc`:
+```
+export WORKON_HOME=~/.virtualenvs
+source /usr/bin/virtualenvwrapper.sh
+
+
+# autojump: Arch Wiki, https://github.com/wting/autojump; Tilix: https://gnunn1.github.io/tilix-web/manual/vteconfig/
+#
+. /etc/profile.d/vte.sh
+. /etc/profile.d/autojump.bash
+
+```
 #### sha256sum
 ```
 $ echo <sum> <filename> | sha256sum -c -

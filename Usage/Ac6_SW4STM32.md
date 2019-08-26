@@ -33,6 +33,17 @@ yaourt -S stm32cubemx
 ```
 The utility is also available as an Eclipse plugin; the standalone application may be easier on your system, though.
 
+NB Manual installaiton can be less troublesome:
+
+- Unpack factory archive and install in `~/STM32CubeMX`
+
+- Create `/usr/bin/stm32cubemx`:
+```
+#/usr/bin/env bash
+exec $HOME/STM32CubeMX/STM32CubeMX
+```
+- `sudo chmod +x /usr/bin/stm32cubemx`
+
 ### Configuration
 #### Create CubeMX project
 

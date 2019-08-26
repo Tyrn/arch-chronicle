@@ -69,10 +69,10 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 set hidden
 
 " Better display for messages
-set cmdheight=2
+set cmdheight=1
 
 " Smaller updatetime for CursorHold & CursorHoldI
-set updatetime=300
+set updatetime=150
 
 " don't give |ins-completion-menu| messages.
 set shortmess+=c
@@ -275,7 +275,9 @@ inoremap ЗЗ ~\textemdash~
 inoremap LL \ldots{}
 inoremap ДД \ldots{}
 "Russian speciality
+inoremap JJ ---~
 inoremap ОО ---~
+inoremap KK ~---~
 inoremap ЛЛ ~---~
 inoremap ББ <<
 inoremap ЮЮ >>

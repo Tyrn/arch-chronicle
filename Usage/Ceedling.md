@@ -36,7 +36,7 @@ myproject $ cd ..
 $ ceedling new myproject
 $ cd myproject/vendor/
 $ rm -rf ceedling/
-$ git clone --recursive https://github.com/throwtheswitch/ceedling.git
+$ git clone --recursive https://github.com/throwtheswitch/ceedling.git # No longer needed.
 ```
 - Modify `vendor/ceedling/plugins/module_generator/config/module_generator.yml`:
 ```
@@ -80,9 +80,11 @@ $ git clone --recursive https://github.com/throwtheswitch/ceedling.git
 
 ##### Eclipse C/C++ Unit plugin
 
+*Unit plugin is available only in Release configuration!*
+
 - Main/Project: `myproject`
 
-- Main/Application: `/home/user/.gem/ruby/2.5.0/bin/ceedling`
+- Main/Application: `/home/user/.gem/ruby/2.6.0/bin/ceedling`
 
 - Main/Disable auto build
 
@@ -91,7 +93,6 @@ $ git clone --recursive https://github.com/throwtheswitch/ceedling.git
 - Testing/Test Runner: `Google Test Runner`
 
 - Environment: Variable `TERM` Value `xterm`
-
 
 
 #### Usage
