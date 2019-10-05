@@ -4,6 +4,14 @@ endif
 
 let g:airline_theme='base16_adwaita'
 
+"set cmdheight=1
+
+" Smaller updatetime for CursorHold & CursorHoldI
+set updatetime=150
+
+" Crude access to the buffer list.
+:nnoremap 99 :ls!<CR>:b<Space>
+
 " vimtex group (view settings according to vimtex.txt; stands perfectly to reason)
 "
 let g:polyglot_disabled = ['latex']
