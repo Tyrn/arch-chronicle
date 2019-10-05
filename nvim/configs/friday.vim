@@ -27,15 +27,19 @@ nmap <leader>мм :vs<CR>
 nmap <leader>мр :sp<CR>
 
 " Split windows navigation.
-:nmap <leader>sh :wincmd h<CR>
-:nmap <leader>sj :wincmd j<CR>
-:nmap <leader>sk :wincmd k<CR>
-:nmap <leader>sl :wincmd l<CR>
+:nmap <leader>h :wincmd h<CR>
+:nmap <leader>j :wincmd j<CR>
+:nmap <leader>k :wincmd k<CR>
+:nmap <leader>l :wincmd l<CR>
 
-:nmap <leader>ыр :wincmd h<CR>
-:nmap <leader>ыо :wincmd j<CR>
-:nmap <leader>ыл :wincmd k<CR>
-:nmap <leader>ыд :wincmd l<CR>
+:nmap <leader>р :wincmd h<CR>
+:nmap <leader>о :wincmd j<CR>
+:nmap <leader>л :wincmd k<CR>
+:nmap <leader>д :wincmd l<CR>
+
+" Leave only current window.
+:nmap <leader>so <c-w>o
+:nmap <leader>ыщ <c-w>o
 
 " Resize current window.
 :nmap <leader>sp :vertical resize +5<CR>
@@ -52,8 +56,29 @@ nmap <leader>мр :sp<CR>
 :nmap <leader>ыЗ :resize +5<CR>
 :nmap <leader>ыЬ :resize -5<CR>
 
-" vimtex group (view settings according to vimtex.txt; stands perfectly to reason)
-"
+" vimtex settings.
+:nmap <localleader>дш :VimtexInfo<CR>                   " li
+:nmap <localleader>дШ :VimtexInfo!<CR>                  " lI
+:nmap <localleader>де :VimtexTocOpen<CR>                " lt
+:nmap <localleader>дЕ :VimtexTocToggle<CR>              " lT
+:nmap <localleader>дй :VimtexLog<CR>                    " lq
+:nmap <localleader>дм :VimtexView<CR>                   " lv
+:nmap <localleader>дк :VimtexRSearch<CR>                " lr
+:nmap <localleader>дд :VimtexCompile<CR>                " ll
+:nmap <localleader>дД :VimtexCompileSelected<CR>        " lL
+:nmap <localleader>дл :VimtexStop<CR>                   " lk
+:nmap <localleader>дЛ :VimtexStopAll<CR>                " lK
+:nmap <localleader>ду :VimtexErrors<CR>                 " le
+:nmap <localleader>дщ :VimtexCompileOutput<CR>          " lo
+:nmap <localleader>дп :VimtexStatus<CR>                 " lg
+:nmap <localleader>дП :VimtexStatus!<CR>                " lG
+:nmap <localleader>дс :VimtexClean<CR>                  " lc
+:nmap <localleader>дС :VimtexClean!<CR>                 " lC
+:nmap <localleader>дь :VimtexImapsList<CR>              " lm
+:nmap <localleader>дч :VimtexReload<CR>                 " lx
+:nmap <localleader>дЧ :VimtexReloadState<CR>            " lX
+:nmap <localleader>ды :VimtexToggleMain<CR>             " ls
+
 let g:polyglot_disabled = ['latex']
 
 let g:vimtex_view_method = 'general'

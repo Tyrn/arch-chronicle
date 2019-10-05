@@ -7,7 +7,6 @@ $ sudo -E nvim
 #### Spell checking
 - `init.vim`:
 ```
-"set invspell spelllang=ru_ru,en_us
 set spelllang=ru_ru,en_us
 nnoremap 99 :set invspell<CR>
 ```
@@ -24,10 +23,6 @@ set clipboard=unnamedplus
 
 - [Arch Wiki](https://wiki.archlinux.org/index.php/Neovim), [Color scheme, etc.](https://vi.stackexchange.com/questions/12794/how-to-share-config-between-vim-and-neovim)
 
-- Create a symlink (to share *autoload* and plugins):
-```
-$ ln -s /home/alexey/.vim /home/alexey/.local/share/nvim/site
-```
 
 #### Inhouse config
 
@@ -35,7 +30,7 @@ $ ln -s /home/alexey/.vim /home/alexey/.local/share/nvim/site
 
 - `$ git clone https://github.com/Tyrn/arch-chronicle`
 
-- `$ ln -s /home/alexey/.config/arch-chronicle/init.vim /home/alexey/.config/nvim/init.vim`
+- `$ ln -s /home/user/.config/arch-chronicle/nvim /home/user/.config/nvim`
 
 #### Python
 
@@ -95,6 +90,17 @@ if has('nvim')
 endif
 
 let g:airline_theme='base16_adwaita'
+
+"set cmdheight=1
+
+" Smaller updatetime for CursorHold & CursorHoldI
+set updatetime=150
+
+" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+"let g:UltiSnipsSnippetDirectories=[$HOME.'/.../plugged/vim-snippets/UltiSnips']
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 " vimtex group (view settings according to vimtex.txt; stands perfectly to reason)
 "

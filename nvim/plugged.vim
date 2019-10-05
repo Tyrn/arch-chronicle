@@ -8,6 +8,8 @@ if empty(glob('~/.local/share/nvim/site/autoload/plug.vim'))
 endif
 
 Plug 'powerman/vim-plugin-ruscmd'                                       " Russian remapping.
+Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
+
 Plug 'vim-airline/vim-airline'                                          " Vim-Airline
 Plug 'vim-airline/vim-airline-themes'                                   " Vim-Airline theme
 Plug 'w0rp/ale'                                                         " ALE (Asynchronous Lint Engine)
