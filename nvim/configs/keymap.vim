@@ -2,8 +2,8 @@
 " Keymap configuration
 "=====================================================
 
-let mapleader = ","
-let maplocalleader = ","
+let mapleader = " "
+let maplocalleader = " "
 
 " Disable arrow keys
 noremap <Up> <Nop>
@@ -48,14 +48,14 @@ vmap <leader>a  <Plug>(coc-codeaction-selected)
 nmap <leader>a  <Plug>(coc-codeaction-selected)
 nmap <leader>ac  <Plug>(coc-codeaction)
 nmap <leader>qf  <Plug>(coc-fix-current)
-nnoremap <silent> <space>a  :<C-u>CocList diagnostics<CR>
-nnoremap <silent> <space>e  :<C-u>CocList extensions<CR>
-nnoremap <silent> <space>c  :<C-u>CocList commands<CR>
-nnoremap <silent> <space>o  :<C-u>CocList outline<CR>
-nnoremap <silent> <space>s  :<C-u>CocList -I symbols<CR>
-nnoremap <silent> <space>j  :<C-u>CocNext<CR>
-nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
-nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
+nnoremap <silent> <space><space>a  :<C-u>CocList diagnostics<CR>
+nnoremap <silent> <space><space>e  :<C-u>CocList extensions<CR>
+nnoremap <silent> <space><space>c  :<C-u>CocList commands<CR>
+nnoremap <silent> <space><space>o  :<C-u>CocList outline<CR>
+nnoremap <silent> <space><space>s  :<C-u>CocList -I symbols<CR>
+nnoremap <silent> <space><space>j  :<C-u>CocNext<CR>
+nnoremap <silent> <space><space>k  :<C-u>CocPrev<CR>
+nnoremap <silent> <space><space>p  :<C-u>CocListResume<CR>
 
 
 " Defx

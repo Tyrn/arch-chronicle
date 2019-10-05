@@ -9,8 +9,48 @@ let g:airline_theme='base16_adwaita'
 " Smaller updatetime for CursorHold & CursorHoldI
 set updatetime=150
 
+" Buffers remapped too.
+nmap <leader>ит :bnext<CR>
+nmap <leader>из :bprevious<CR>
+nmap <leader>иа :bfirst<CR>
+nmap <leader>ив :bdelete<CR>
+
 " Crude access to the buffer list.
-:nnoremap 99 :ls!<CR>:b<Space>
+:nmap <leader>sf :ls!<CR>:b<Space>
+:nmap <leader>ыа :ls!<CR>:b<Space>
+
+" Splitting windows
+nmap <leader>vv :vs<CR>
+nmap <leader>vh :sp<CR>
+
+nmap <leader>мм :vs<CR>
+nmap <leader>мр :sp<CR>
+
+" Split windows navigation.
+:nmap <leader>sh :wincmd h<CR>
+:nmap <leader>sj :wincmd j<CR>
+:nmap <leader>sk :wincmd k<CR>
+:nmap <leader>sl :wincmd l<CR>
+
+:nmap <leader>ыр :wincmd h<CR>
+:nmap <leader>ыо :wincmd j<CR>
+:nmap <leader>ыл :wincmd k<CR>
+:nmap <leader>ыд :wincmd l<CR>
+
+" Resize current window.
+:nmap <leader>sp :vertical resize +5<CR>
+:nmap <leader>sm :vertical resize -5<CR>
+:nmap <leader>spp :vertical resize +12<CR>
+:nmap <leader>smm :vertical resize -12<CR>
+:nmap <leader>sP :resize +5<CR>
+:nmap <leader>sM :resize -5<CR>
+
+:nmap <leader>ыз :vertical resize +5<CR>
+:nmap <leader>ыь :vertical resize -5<CR>
+:nmap <leader>ызз :vertical resize +12<CR>
+:nmap <leader>ыьь :vertical resize -12<CR>
+:nmap <leader>ыЗ :resize +5<CR>
+:nmap <leader>ыЬ :resize -5<CR>
 
 " vimtex group (view settings according to vimtex.txt; stands perfectly to reason)
 "
@@ -29,12 +69,13 @@ let g:vimtex_compiler_latexmk = {
 set spelllang=ru_ru,en_us
 
 " Toggle spell check
-nnoremap 55 :set invspell<CR>
+nmap <leader>ss :set invspell<CR>
+nmap <leader>ыы :set invspell<CR>
 " Toggle line wrap
-nnoremap 66 :set wrap!<CR>
-" Weird things
-" nnoremap 00 $
-" nnoremap ѵѵ $
+nmap <leader>sw :set wrap!<CR>
+nmap <leader>ыц :set wrap!<CR>
+
+
 nnoremap ѵ 0
 nnoremap ѱ G
 " Tab management
@@ -59,9 +100,6 @@ inoremap ñw <Esc>
 nnoremap ; $
 " Spanish colon
 nnoremap Ñ :
-" vimtex miscellany
-nnoremap 77 :VimtexCompile<CR>
-nnoremap 88 :VimtexView<CR>
 " LaTeX and Slavonic miscellany
 inoremap YY {\slv{}}
 inoremap НН {\slv{}}
