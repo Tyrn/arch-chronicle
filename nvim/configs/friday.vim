@@ -9,11 +9,15 @@ let g:airline_theme='base16_adwaita'
 " Smaller updatetime for CursorHold & CursorHoldI
 set updatetime=150
 
+" Undo tree
+nmap <Leader>uh :UndotreeToggle<CR>
+nmap <Leader>гр :UndotreeToggle<CR>
+
 " Buffers remapped too.
-nmap <leader>ит :bnext<CR>
-nmap <leader>из :bprevious<CR>
-nmap <leader>иа :bfirst<CR>
-nmap <leader>ив :bdelete<CR>
+nmap <leader>ат :bnext<CR>
+nmap <leader>аз :bprevious<CR>
+nmap <leader>аа :bfirst<CR>
+nmap <leader>ав :bdelete<CR>
 
 " Crude access to the buffer list.
 :nmap <leader>sf :ls!<CR>:b<Space>

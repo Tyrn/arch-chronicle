@@ -26,10 +26,10 @@ nmap <silent> <leader>aj <Plug>(ale_next_wrap)
 " Buffer
 "nnoremap <A-Right> :bnext<CR>
 "nnoremap <A-Left> :bprevious<CR>
-nmap <leader>bn :bnext<CR>
-nmap <leader>bp :bprevious<CR>
-nmap <leader>bf :bfirst<CR>
-nmap <leader>bd :bdelete<CR>
+nmap <leader>fn :bnext<CR>
+nmap <leader>fp :bprevious<CR>
+nmap <leader>ff :bfirst<CR>
+nmap <leader>fd :bdelete<CR>
 
 " COC
 inoremap <silent><expr> <c-space> coc#refresh()
@@ -48,14 +48,14 @@ vmap <leader>a  <Plug>(coc-codeaction-selected)
 nmap <leader>a  <Plug>(coc-codeaction-selected)
 nmap <leader>ac  <Plug>(coc-codeaction)
 nmap <leader>qf  <Plug>(coc-fix-current)
-nnoremap <silent> <space><space>a  :<C-u>CocList diagnostics<CR>
-nnoremap <silent> <space><space>e  :<C-u>CocList extensions<CR>
-nnoremap <silent> <space><space>c  :<C-u>CocList commands<CR>
-nnoremap <silent> <space><space>o  :<C-u>CocList outline<CR>
-nnoremap <silent> <space><space>s  :<C-u>CocList -I symbols<CR>
-nnoremap <silent> <space><space>j  :<C-u>CocNext<CR>
-nnoremap <silent> <space><space>k  :<C-u>CocPrev<CR>
-nnoremap <silent> <space><space>p  :<C-u>CocListResume<CR>
+nnoremap <silent> <leader>aa  :<C-u>CocList diagnostics<CR>
+nnoremap <silent> <leader>ee  :<C-u>CocList extensions<CR>
+nnoremap <silent> <leader>cc  :<C-u>CocList commands<CR>
+nnoremap <silent> <leader>oo  :<C-u>CocList outline<CR>
+nnoremap <silent> <leader>us   :<C-u>CocList -I symbols<CR>
+nnoremap <silent> <leader>jj  :<C-u>CocNext<CR>
+nnoremap <silent> <leader>kk  :<C-u>CocPrev<CR>
+nnoremap <silent> <leader>pp  :<C-u>CocListResume<CR>
 
 
 " Defx
@@ -191,7 +191,3 @@ vmap <Leader>t" :Tabularize /"<CR>
 
 " Tagbar
 nmap <leader>tb :TagbarToggle<CR>
-
-" Undo tree
-nmap <Leader>ut :UndotreeToggle<CR>
-

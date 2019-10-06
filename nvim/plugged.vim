@@ -29,6 +29,7 @@ function! InstallDeps(info)
             \'coc-java',
             \'coc-yaml',
             \'coc-snippets',
+            \'coc-ultisnips',
             \'coc-tsserver',
             \'coc-json',
             \'coc-python',
