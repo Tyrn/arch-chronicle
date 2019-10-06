@@ -9,6 +9,7 @@ endif
 
 Plug 'powerman/vim-plugin-ruscmd'                                       " Russian remapping.
 Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
+Plug 'djoshea/vim-autoread'
 
 Plug 'vim-airline/vim-airline'                                          " Vim-Airline
 Plug 'vim-airline/vim-airline-themes'                                   " Vim-Airline theme
@@ -23,6 +24,7 @@ function! InstallDeps(info)
         let extensions = [
             \'coc-emmet',
             \'coc-highlight',
+            \'coc-prettier',
             \'coc-html',
             \'coc-css',
             \'coc-vetur',
@@ -32,8 +34,10 @@ function! InstallDeps(info)
             \'coc-ultisnips',
             \'coc-tsserver',
             \'coc-json',
+            \'coc-lists',
             \'coc-python',
             \'coc-rls',
+            \'coc-elixir',
             \]
         call coc#util#install()
         call coc#util#install_extension(extensions)
