@@ -33,3 +33,45 @@ $ sudo apt-get install --reinstall libc6-i386
 $ sudo apt-get install gcc-multilib
 $ sudo apt-get install lib32z1
 ```
+
+#### Building [Buildozer](https://github.com/kivy/buildozer) from source
+*2019-10-9*; *Python 3*
+
+- Configure toolchain:
+```
+$ archlinux-java status
+Available Java environments:
+  java-13-jdk
+  java-8-openjdk (default)
+```
+Everything C/C++ assumed (`autoconf` certainly features prominently :smiley_cat:)
+
+- Supply `libtinfo` (`archlinuxcn` repo required):
+```
+$ sudo pacman -S ncurses5-compat-libs
+```
+- Supply LLVM linker:
+```
+$ sudo pacman -S lld
+```
+- Clone:
+```
+$ cd
+git clone https://github.com/kivy/buildozer
+cd buildozer
+python setup.py build
+sudo pip install -e .
+```
+- `cd` to your (first ever) project directory, then
+```
+$ buildozer init
+```
+- Edit `buildozer.spec`:
+```
+android.accept_sdk_license = True
+```
+- Build:
+```
+$ buildozer android debug
+```
+NB The first run ever takes a lot of time. Android SDK/NDK gets downloaded, all the specific tools get compiled. Some build results go into the global `~/.buildozer` directory, some in the project `.buildozer` directory. The `*.apk` target goes into the project `bin` directory. You will certainly need `cython` as a dependency, global or in the project virtual environment; probably also `pygame` (deprecated).

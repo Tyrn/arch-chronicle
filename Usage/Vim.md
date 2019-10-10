@@ -1,8 +1,13 @@
 ## Vim Editor
-### Vim and Neovim
+*Neovim, mostly*
+
 #### sudo
 ```
 $ sudo -E nvim
+```
+#### Python support
+```
+$ sudo pacman -S python-neovim
 ```
 #### Spell checking
 - `init.vim`:
@@ -12,7 +17,7 @@ nnoremap 99 :set invspell<CR>
 ```
 #### Clipboard
 
-- Install `xsel` (or `xclip`)
+- Install `xclip` (or `xsel`)
 
 - Add to `init.vim` to avoid printing `"+y` for the system clipboard:
 ```
@@ -54,7 +59,9 @@ nvr --remote-silent %f -c %l
 ```
 
 ### Revamping [Guillaume Quittet](https://github.com/gquittet/dotfiles/tree/master/nvim/.config/nvim)'s setup
-This powerful, yet concise and readable, setup is based on [Coc](https://github.com/neoclide/coc.nvim); highly recommended. Tailored to my personal needs as follows:
+This powerful, yet concise and readable, Neovim setup is based on [Coc](https://github.com/neoclide/coc.nvim); highly recommended. Tailoring it to (my) personal needs:
+
+- Install Neovim [nightly](https://github.com/neovim/neovim/releases/nightly) release (v0.4 or greater is essential)
 
 - Ensure [vim-plug](https://github.com/junegunn/vim-plug) to be installed (Auto install may fail):
 ```
@@ -66,9 +73,13 @@ Plug 'powerman/vim-plugin-ruscmd'
 ```
 - Add Coc extensions you need to `~/.config/nvim/plugged.vim`, function `InstallDeps()`:
 ```
-            ...      
+            ...
+            \'coc-highlight',
+            \'coc-prettier',
+            ...
             \'coc-python',
             \'coc-rls',
+            \'coc-elixir',
 ```
 NB Adding Coc extensions to `InstallDeps()` may be insufficient; in case the language server won't work, `:CocInstall coc-python` may help. `:CocInstall coc-python` apparently takes care of the necessary Python dependencies. See also [#54](https://github.com/neoclide/coc-python/issues/54).
 
