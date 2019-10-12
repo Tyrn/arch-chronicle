@@ -57,10 +57,10 @@ $ sudo pacman -S lld
 - Clone:
 ```
 $ cd
-git clone https://github.com/kivy/buildozer
-cd buildozer
-python setup.py build
-sudo pip install -e .
+$ git clone https://github.com/kivy/buildozer
+$ cd buildozer
+$ python setup.py build
+$ sudo pip install -e .
 ```
 - `cd` to your (first ever) project directory, then
 ```
@@ -75,3 +75,40 @@ android.accept_sdk_license = True
 $ buildozer android debug
 ```
 NB The first run ever takes a lot of time. Android SDK/NDK gets downloaded, all the specific tools get compiled. Some build results go into the global `~/.buildozer` directory, some in the project `.buildozer` directory. The `*.apk` target goes into the project `bin` directory. You will certainly need `cython` as a dependency, global or in the project virtual environment; probably also `pygame` (deprecated).
+
+
+#### Building Buildozer docker image
+
+- Build basic image:
+```
+$ cd
+$ git clone https://github.com/kivy/buildozer
+$ cd buildozer
+$ docker build --tag=buildozer .
+$ docker run --volume "$(pwd)":/home/user/hostcwd buildozer --version
+```
+- Create a project:
+```
+[pong]$ docker run --volume "$(pwd)":/home/user/hostcwd buildozer init
+```
+- Edit `buildozer.spec`:
+```
+android.accept_sdk_license = True
+```
+- Build:
+```
+[pong]$ docker run --volume "$(pwd)":/home/user/hostcwd buildozer android debug
+```
+- Check the containers:
+```
+$ docker ps -a
+```
+- Commit the container where the successful build happened, like this:
+```
+$ docker commit angry_black tyrn/buildozer:propio
+$ docker images
+```
+- Run it like this on any project:
+```
+$ docker run --volume "$(pwd)":/home/user/hostcwd tyrn/buildozer:propio android debug
+```
