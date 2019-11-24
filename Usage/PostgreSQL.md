@@ -3,11 +3,16 @@
 
 - Install:
 ```
-- $ yaourt -S postgresql pgadmin4
+$ yaourt -S postgresql pgadmin4
 ```
 - Logging in as `postgres` user:
 ```
 $ sudo -u postgres -i
+```
+Error like the following is not fatal:
+```
+mkdir: cannot create directory ‘/var/lib/postgres/.local’: Permission denied
+[postgres@box ~]$
 ```
 - Database cluster: 
 ```

@@ -184,5 +184,6 @@ bindcode $mod+27 mode "resize"
 bar {
         status_command i3status
 }
+workspace_layout tabbed
 exec --no-startup-id nitrogen --restore
 
