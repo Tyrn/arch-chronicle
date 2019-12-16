@@ -24,7 +24,7 @@ $ inxi -Fxz
 
 #### Realtek RTL8723DE
 
-[Manjaro](https://forum.manjaro.org/t/solved-how-to-install-wifi-driver-for-realtek-rtl8723de/82712/2) (obsolete)
+[Manjaro](https://forum.manjaro.org/t/solved-how-to-install-wifi-driver-for-realtek-rtl8723de/82712/2) (obsolete); [smlinux](https://github.com/smlinux/rtl8723de) (obsolete)
 
 - Install dkms:
 ```
@@ -32,4 +32,7 @@ $ sudo pacman -S dkms
 ```
 NB `dkms` data is to be found in `/var/lib/dkms`.
 
-- Follow the [procedure](https://github.com/smlinux/rtl8723de)
+- Install [the driver](https://forum.manjaro.org/t/solved-wi-fi-rtl8723de-driver-and-kernel-5-2-trouble/115220)
+```
+$ yaourt -S rtlwifi_new-extended-dkms
+```
