@@ -149,3 +149,7 @@ inoremap KK ~---~
 inoremap ЛЛ ~---~
 inoremap ББ <<
 inoremap ЮЮ >>
+inoremap БББ «
+inoremap ЮЮЮ »
+inoremap ññ «
+inoremap ÑÑ »
