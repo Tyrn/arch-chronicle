@@ -144,10 +144,10 @@ inoremap ЗЗ ~\textemdash~
 inoremap LL \ldots{}
 inoremap ДД \ldots{}
 "Russian speciality
-inoremap JJ ---~
-inoremap ОО ---~
-inoremap KK ~---~
-inoremap ЛЛ ~---~
+inoremap HH ---~
+inoremap РР ---~
+inoremap JJ ~---~
+inoremap ОО ~---~
 inoremap ББ <<
 inoremap ЮЮ >>
 inoremap БББ «
