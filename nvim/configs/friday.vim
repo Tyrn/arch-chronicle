@@ -9,6 +9,8 @@ let g:airline_theme='base16_adwaita'
 " Smaller updatetime for CursorHold & CursorHoldI
 set updatetime=150
 
+nmap <leader>тр :nohl<CR>
+
 " Undo tree
 nmap <Leader>uh :UndotreeToggle<CR>
 nmap <Leader>гр :UndotreeToggle<CR>
