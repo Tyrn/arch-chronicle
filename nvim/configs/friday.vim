@@ -130,6 +130,10 @@ inoremap ñw <Esc>
 nnoremap ; $
 " Spanish colon
 nnoremap Ñ :
+" Russian slash
+nnoremap . /
+" Spanish slash
+nnoremap - /
 " LaTeX and Slavonic miscellany
 inoremap YY {\slv{}}
 inoremap НН {\slv{}}
@@ -143,7 +147,6 @@ inoremap PP ~\textemdash~
 inoremap ЗЗ ~\textemdash~
 inoremap LL \ldots{}
 inoremap ДД \ldots{}
-"Russian speciality
 inoremap HH ---~
 inoremap РР ---~
 inoremap JJ ~---~
