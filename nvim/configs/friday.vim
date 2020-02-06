@@ -98,7 +98,7 @@ let g:vimtex_compiler_latexmk = {
     \ 'continuous' : 1,
 \}
 
-set spelllang=ru_ru,en_us
+set spelllang=ru_ru,en_us,es_es
 
 " Toggle spell check
 nmap <leader>ss :set invspell<CR>
