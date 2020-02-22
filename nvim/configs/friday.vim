@@ -8,6 +8,7 @@ let g:airline_theme='base16_adwaita'
 
 " Smaller updatetime for CursorHold & CursorHoldI
 set updatetime=150
+"set synmaxcol=512
 
 nmap <leader>тр :nohl<CR>
 
