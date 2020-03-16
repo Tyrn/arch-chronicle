@@ -5,15 +5,16 @@
 ```
 $ sudo -E nvim
 ```
-#### Python support
+#### Plugin functionality support
 ```
 $ sudo pacman -S python-neovim
+$ sudo pacman -S npm
 ```
 #### Spell checking
 - `init.vim`:
 ```
-set spelllang=ru_ru,en_us
-nnoremap 99 :set invspell<CR>
+set spelllang=ru_ru,en_us,es_es
+nmap <leader>ss :set invspell<CR>
 ```
 #### Clipboard
 
@@ -24,12 +25,12 @@ nnoremap 99 :set invspell<CR>
 set clipboard=unnamedplus
 ```
 
-#### Sharing plugins
+#### Sharing plugins with Vim
 
 - [Arch Wiki](https://wiki.archlinux.org/index.php/Neovim), [Color scheme, etc.](https://vi.stackexchange.com/questions/12794/how-to-share-config-between-vim-and-neovim)
 
 
-#### Inhouse config
+#### Inhouse config (based on [Guillaume Quittet](https://github.com/gquittet/dotfiles/tree/master/nvim/.config/nvim)'s setup)
 
 - `$ cd ~/.config`
 
@@ -37,7 +38,7 @@ set clipboard=unnamedplus
 
 - `$ ln -s /home/user/.config/arch-chronicle/nvim /home/user/.config/nvim`
 
-#### Python
+#### Python support (legacy)
 
 [A Complete Guide for Installing and Setting up Neovim for Python Development](https://jdhao.github.io/2018/12/24/centos_nvim_install_use_guide_en/) (Cocless)
 
@@ -63,9 +64,15 @@ This powerful, yet concise and readable, Neovim setup is based on [Coc](https://
 
 - Install Neovim [nightly](https://github.com/neovim/neovim/releases/nightly) release (v0.4 or greater is essential)
 
+- Install a [Nerd Font](https://www.nerdfonts.com/font-downloads) (*FiraMono Nerd Font* will do); [howto](https://gist.github.com/matthewjberger/7dd7e079f282f8138a9dc3b045ebefa0)
+
 - Ensure [vim-plug](https://github.com/junegunn/vim-plug) to be installed (Auto install may fail):
 ```
 $ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+```
+- Create backup folder:
+```
+$ mkdir ~/.local/share/nvim/backup
 ```
 - Add [vim-plugin-ruscmd](https://github.com/powerman/vim-plugin-ruscmd) to `~/.config/nvim/plugged.vim`:
 ```
@@ -184,3 +191,7 @@ inoremap ЛЛ ~---~
 inoremap ББ <<
 inoremap ЮЮ >>
 ```
+
+#### Troubleshooting coc-based installation
+
+- In Neovim: `:checkhealth provider`

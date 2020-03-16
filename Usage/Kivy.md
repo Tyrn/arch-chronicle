@@ -18,22 +18,6 @@ Examples on the system: `/usr/share/kivy-examples`
 [Widget positioning](https://blog.kivy.org/2014/01/positionsize-of-widgets-in-kivy/)
 
 ### Buildozer
-#### [Kivy Complete VM](https://github.com/Zen-CODE/kivybits/tree/master/KivyCompleteVM)
-
-User: `kivy` Password: `kivy`
-
-Access to shared folders (guest):
-```
-$ sudo adduser kivy vboxsf
-```
-
-Update the system and install:
-```
-$ sudo apt-get install --reinstall libc6-i386
-$ sudo apt-get install gcc-multilib
-$ sudo apt-get install lib32z1
-```
-
 #### Building [Buildozer](https://github.com/kivy/buildozer) from source
 *2019-10-9*; *Python 3*
 
@@ -111,4 +95,45 @@ $ docker images
 - Run it like this on any project:
 ```
 $ docker run --volume "$(pwd)":/home/user/hostcwd tyrn/buildozer:propio android debug
+```
+
+#### [Kivy Complete VM](https://github.com/Zen-CODE/kivybits/tree/master/KivyCompleteVM) alternative
+
+User: `kivy` Password: `kivy`
+
+Access to shared folders (guest):
+```
+$ sudo adduser kivy vboxsf
+```
+
+Update the system and install:
+```
+$ sudo apt-get install --reinstall libc6-i386
+$ sudo apt-get install gcc-multilib
+$ sudo apt-get install lib32z1
+```
+
+##### 2020-03-16, update, v0.7
+
+- *vboxusers* (host):
+```
+$ sudo gpasswd -a user vboxusers
+```
+- Install extensions (host, from [AUR](https://aur.archlinux.org/packages/virtualbox-ext-oracle/))
+```
+$ yaourt -S virtualbox-ext-oracle
+```
+- Update and install:
+```
+$ sudo apt update
+$ sudo apt install curl
+$ sudo apt install npm
+$ sudo apt install tilix
+```
+- In case resizing won't work, install guest additions (on guest):
+
+Mount guest additions;
+```
+$ cd media/kivy/VBox_GAs_6.0.4/
+$ sudo ./VBoxLinuxAdditions.run
 ```
