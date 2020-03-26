@@ -10,6 +10,9 @@ let g:airline_theme='base16_adwaita'
 set updatetime=150
 "set synmaxcol=512
 
+"autocmd FileType python setlocal omnifunc=python3complete#Complete
+"autocmd FileType py set omnifunc=python3complete#Complete
+
 nmap <leader>тр :nohl<CR>
 
 " Undo tree

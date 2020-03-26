@@ -17,7 +17,7 @@ Plug 'w0rp/ale'                                                         " ALE (A
 Plug 'hsanson/vim-android'                                              " Vim-Android
 Plug 'jiangmiao/auto-pairs'                                             " Autopairs
 Plug 'itchyny/calendar.vim'                                             " Calendar
-Plug 'Rip-Rip/clang_complete'                                           " Clang-complete : for C/C++ autocomplete (need to install clang)
+"Plug 'Rip-Rip/clang_complete'                                           " Clang-complete : for C/C++ autocomplete (need to install clang)
 
 function! InstallDeps(info)
     if a:info.status == 'installed' || a:info.force
@@ -62,7 +62,7 @@ Plug 'mattn/emmet-vim'                                                  " Emmet 
 Plug 'tpope/vim-fugitive'                                               " Git
 Plug 'dpelle/vim-Grammalecte'                                           " Grammalecte
 Plug 'nathanaelkane/vim-indent-guides'                                  " Indent Guide
-Plug 'davidhalter/jedi-vim'                                             " Jedi vim : Python completition (don't forget to install this : sudo pip install jedi)
+"Plug 'davidhalter/jedi-vim'                                             " Jedi vim : Python completition (don't forget to install this : sudo pip install jedi)
 
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  } " Markdown
 Plug 'tmhedberg/matchit'                                                " Matchit: useful to switch between the start and the end of a function
@@ -71,7 +71,7 @@ Plug 'scrooloose/nerdcommenter'                                         " NERDCo
 Plug 'moll/vim-node'                                                    " Vim NodeJS
 Plug 'myusuf3/numbers.vim'                                              " Numbers.vim
 Plug 'jceb/vim-orgmode'                                                 " Org mode
-Plug 'lvht/phpcd.vim', { 'for': 'php', 'do': 'composer install' }       " PHP Autocomplete
+"Plug 'lvht/phpcd.vim', { 'for': 'php', 'do': 'composer install' }       " PHP Autocomplete
 Plug 'weirongxu/plantuml-previewer.vim'                                 " Plantuml-previewer
 Plug 'tyru/open-browser.vim'                                            " Plantuml-previewer dependency
 Plug 'tpope/vim-surround'                                               " Surround
