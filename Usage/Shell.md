@@ -138,44 +138,20 @@ super-user-command=sudo
 ```
 `/etc/sudoers`:
 ```
-# sudoers file.
-#
-# This file MUST be edited with the 'visudo' command as root.
-# Failure to use 'visudo' may result in syntax or file permission errors
-# that prevent sudo from running.
-#
-# See the sudoers man page for the details on how to write a sudoers file.
-#
+root ALL=(ALL) ALL
+%wheel ALL=(ALL) ALL
 
-# Host alias specification
+## Same thing without a password
+# %wheel ALL=(ALL) NOPASSWD: ALL
 
-# User alias specification
+## Uncomment to allow members of group sudo to execute any command
+# %sudo	ALL=(ALL) ALL
 
-# Cmnd alias specification
+%alexey ALL=NOPASSWD: /usr/bin/pacman
+%alexey ALL=NOPASSWD: /usr/bin/pacdiffviewer
+%alexey ALL=NOPASSWD: /usr/bin/yay
 
-# Defaults specification
-
-# Runas alias specification
-
-# User privilege specification
-Defaults:alexey timestamp_timeout=8
-root    ALL=(ALL) ALL
-%wheel  ALL=(ALL) ALL
-%users  ALL=NOPASSWD: /usr/bin/pacman
-%users  ALL=NOPASSWD: /usr/bin/pacman-color
-%users  ALL=NOPASSWD: /usr/bin/pacdiffviewer
-%users  ALL=NOPASSWD: /usr/bin/bauerbill
-%users  ALL=NOPASSWD: /usr/bin/clyde
-
-# Uncomment to allow people in group wheel to run all commands
-# %wheel        ALL=(ALL) ALL
-
-# Same thing without a password
-# %wheel        ALL=(ALL) NOPASSWD: ALL
-
-# Samples
-# %users  ALL=/sbin/mount /cdrom,/sbin/umount /cdrom
-# %users  localhost=/sbin/shutdown -h now
+## #includedir /etc/sudoers.d
 ```
 
 #### rfkill
