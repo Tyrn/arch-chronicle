@@ -12,3 +12,7 @@
 *.kate-swp
 *.swp
 .netrwhist
+
+autoload/
+plugged/
+yankring_history*.txt
