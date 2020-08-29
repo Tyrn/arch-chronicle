@@ -1,4 +1,5 @@
 let mapleader = " "
+let maplocalleader = " "
 
 if has('nvim')
  set clipboard=unnamedplus
