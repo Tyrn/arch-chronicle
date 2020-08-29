@@ -70,6 +70,10 @@ This powerful, yet concise and readable, Neovim setup is based on [Coc](https://
 ```
 $ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
+- In case of errors on start:
+```
+:PlugInstall
+```
 - Create backup folder:
 ```
 $ mkdir ~/.local/share/nvim/backup

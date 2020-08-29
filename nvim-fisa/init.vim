@@ -147,6 +147,13 @@ endif
 " Plug 'mattn/webapi-vim'
 " Plug 'jfo/hound.vim'
 
+" {{{{{{{{{{{{{{{{{{{{{{
+
+Plug 'powerman/vim-plugin-ruscmd'                                       " Russian remapping.
+Plug 'lervag/vimtex'                                                    " VimTex
+
+" }}}}}}}}}}}}}}}}}}}}}}
+
 " Tell vim-plug we finished declaring plugins, so it can load them
 call plug#end()
 
