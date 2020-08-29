@@ -58,6 +58,7 @@ gvim --servername GVIM --remote-silent +%l %f
 ```
 nvr --remote-silent %f -c %l
 ```
+*Shift+Left Click*; with Okular working only in *Browse* mode.
 
 ### Revamping [Guillaume Quittet](https://github.com/gquittet/dotfiles/tree/master/nvim/.config/nvim)'s setup
 This powerful, yet concise and readable, Neovim setup is based on [Coc](https://github.com/neoclide/coc.nvim); highly recommended. Tailoring it to (my) personal needs:
