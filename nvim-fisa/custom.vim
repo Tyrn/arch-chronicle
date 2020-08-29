@@ -4,7 +4,7 @@ if has('nvim')
  set clipboard=unnamedplus
 endif
 
-let g:airline_theme='base16_adwaita'
+"let g:airline_theme='base16_adwaita'
 
 "set cmdheight=1
 

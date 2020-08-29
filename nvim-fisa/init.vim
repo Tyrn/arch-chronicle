@@ -6,6 +6,7 @@
 " and use a font from https://github.com/ryanoasis/nerd-fonts in your terminal
 " (if you aren't using one of those fonts, you will see funny characters here.
 " Turst me, they look nice when using one of those fonts).
+" cambio
 let fancy_symbols_enabled = 1
 
 
@@ -147,10 +148,11 @@ endif
 " Plug 'mattn/webapi-vim'
 " Plug 'jfo/hound.vim'
 
-" {{{{{{{{{{{{{{{{{{{{{{
+" {{{{{{{{{{{{{{{{{{{{{{ cambio
 
 Plug 'powerman/vim-plugin-ruscmd'                                       " Russian remapping.
 Plug 'lervag/vimtex'                                                    " VimTex
+Plug 'djoshea/vim-autoread'
 
 " }}}}}}}}}}}}}}}}}}}}}}
 
@@ -401,8 +403,9 @@ let g:choosewin_overlay_enable = 1
 " UPDATE it to reflect your preferences, it will speed up opening files
 let g:signify_vcs_list = ['git', 'hg']
 " mappings to jump to changed blocks
-nmap <leader>sn <plug>(signify-next-hunk)
-nmap <leader>sp <plug>(signify-prev-hunk)
+" cambio
+nmap <leader>gn <plug>(signify-next-hunk)
+nmap <leader>gp <plug>(signify-prev-hunk)
 " nicer colors
 highlight DiffAdd           cterm=bold ctermbg=none ctermfg=119
 highlight DiffDelete        cterm=bold ctermbg=none ctermfg=167
