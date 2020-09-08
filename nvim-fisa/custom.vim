@@ -168,8 +168,12 @@ inoremap LL \ldots{}
 inoremap ДД \ldots{}
 inoremap HH ---~
 inoremap РР ---~
+inoremap HHH ~---
+inoremap РРР ~---
 inoremap JJ ~---~
 inoremap ОО ~---~
+inoremap JJJ ---
+inoremap ООО ---
 inoremap ББ <<
 inoremap ЮЮ >>
 inoremap БББ «
