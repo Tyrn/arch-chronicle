@@ -150,7 +150,7 @@ nnoremap ; $
 " Spanish colon
 nnoremap Ñ :
 " Russian slash
-nnoremap . /
+nnoremap , /
 " Spanish slash
 nnoremap - /
 " LaTeX and Slavonic miscellany
