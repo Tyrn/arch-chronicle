@@ -154,7 +154,7 @@ Plug 'powerman/vim-plugin-ruscmd'                                       " Russia
 Plug 'lervag/vimtex'                                                    " VimTex
 Plug 'djoshea/vim-autoread'
 
-" Place for things to be done loading the plugins
+" Place for things to be done before loading the plugins
 
 let g:polyglot_disabled = ['latex']
 
