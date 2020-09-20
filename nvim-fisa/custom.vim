@@ -101,7 +101,7 @@ nmap <leader>мр :sp<CR>
 :nmap <localleader>дЧ :VimtexReloadState<CR>            " lX
 :nmap <localleader>ды :VimtexToggleMain<CR>             " ls
 
-let g:polyglot_disabled = ['latex']
+"let g:polyglot_disabled = ['latex']  "To be put before plugin loading
 
 let g:tex_flavor = 'latex'
 let g:vimtex_view_method = 'general'
