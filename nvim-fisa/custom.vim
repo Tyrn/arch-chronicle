@@ -5,8 +5,6 @@ if has('nvim')
  set clipboard=unnamedplus
 endif
 
-"let g:airline_theme='base16_adwaita'
-
 "set cmdheight=1
 
 " Smaller updatetime for CursorHold & CursorHoldI
@@ -24,9 +22,11 @@ found = os.uname().release.find("MANJARO")
 vim.command(f"let isManjaro = {0 if found < 0 else 1}")
 EOF
 if isManjaro
-    echo "Yes!"
+    let g:airline_theme='bubblegum'
+    colorscheme vim-monokai-tasty 
 else
-    echo "No!"
+    let g:airline_theme='solarized_flood'
+    colorscheme koehler
 endif
 
 nmap <leader>nh :nohl<CR>
