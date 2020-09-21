@@ -16,6 +16,19 @@ endif
 "autocmd FileType python setlocal omnifunc=python3complete#Complete
 "autocmd FileType py set omnifunc=python3complete#Complete
 
+" Check kernel.
+python3 << EOF
+import os
+import vim
+found = os.uname().release.find("MANJARO")
+vim.command(f"let isManjaro = {0 if found < 0 else 1}")
+EOF
+if isManjaro
+    echo "Yes!"
+else
+    echo "No!"
+endif
+
 nmap <leader>nh :nohl<CR>
 nmap <leader>тр :nohl<CR>
 
