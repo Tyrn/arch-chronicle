@@ -23,7 +23,7 @@ vim.command(f"let isManjaro = {0 if found < 0 else 1}")
 EOF
 if isManjaro
     let g:airline_theme='bubblegum'
-    colorscheme vim-monokai-tasty 
+    colorscheme pablo 
 else
     let g:airline_theme='solarized_flood'
     colorscheme koehler
