@@ -21,16 +21,13 @@ import vim
 found = os.uname().release.find("MANJARO")
 vim.command(f"let isManjaro = {0 if found < 0 else 1}")
 EOF
-if isManjaro
-    let g:airline_theme='bubblegum'
-    colorscheme pablo 
-else
+if !isManjaro
     let g:airline_theme='solarized_flood'
     colorscheme koehler
 endif
 
-nmap <leader>nh :nohl<CR>
-nmap <leader>тр :nohl<CR>
+nmap <leader>nh :nohlsearch<CR>:let @/=""<CR>
+nmap <leader>тр :nohlsearch<CR>:let @/=""<CR>
 
 " Undo tree
 "nmap <Leader>uh :UndotreeToggle<CR>
