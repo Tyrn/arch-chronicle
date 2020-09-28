@@ -43,6 +43,13 @@ nmap <leader>qf  <Plug>(coc-fix-current)
 inoremap <silent><expr> <Tab> coc#refresh()
 
 
+" FileType settings.
+augroup FileTypeSpecificAutocommands
+    autocmd FileType javascript setlocal tabstop=2 softtabstop=2 shiftwidth=2
+    autocmd FileType typescript setlocal tabstop=2 softtabstop=2 shiftwidth=2
+    autocmd FileType php setlocal tabstop=2 softtabstop=2 shiftwidth=2
+augroup END
+
 
 " Check kernel.
 python3 << EOF
