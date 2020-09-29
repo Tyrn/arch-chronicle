@@ -160,8 +160,6 @@ Plug 'maxmellon/vim-jsx-pretty'   " JS and JSX syntax
 Plug 'jparise/vim-graphql'        " GraphQL syntax
 "Plug 'styled-components/vim-styled-components'
 
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
 " Place for things to be done before loading the plugins
 
 let g:polyglot_disabled = ['latex']
