@@ -151,12 +151,6 @@ nnoremap <C-Left> :tabprevious<CR>
 nnoremap <C-Right> :tabnext<CR>
 nnoremap <silent> <A-Left> :execute 'silent! tabmove ' . (tabpagenr()-2)<CR>
 nnoremap <silent> <A-Right> :execute 'silent! tabmove ' . (tabpagenr()+1)<CR>
-" General commands remapped to Insert Mode
-inoremap <c-s> <Esc>:w<CR>
-inoremap SS <Esc>S
-inoremap DD <Esc>dd
-inoremap ЫЫ <Esc>S
-inoremap ВВ <Esc>dd
 " Escape remapped
 inoremap w; <Esc>
 inoremap ;w <Esc>
