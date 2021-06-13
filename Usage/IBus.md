@@ -5,14 +5,14 @@
 - Create `~/.config/autostart/ibus.sh` (to be added to System Settings > Startup and Shutdown > Autostart > Script File):
 ```
 #!/usr/bin/env bash
-exec ibus-daemon -drx
+exec ibus-daemon -drxR
 ```
 
-`~/.xprofile`:
+`/etc/environment`:
 ```
-export GTK_IM_MODULE=ibus
-export XMODIFIERS=@im=ibus
-export QT_IM_MODULE=ibus
+GTK_IM_MODULE=ibus
+QT_IM_MODULE=ibus
+XMODIFIERS=@im=ibus
 ```
 
 - Change IBus Panel icon to red:

@@ -7,7 +7,7 @@
 " (if you aren't using one of those fonts, you will see funny characters here.
 " Turst me, they look nice when using one of those fonts).
 " cambio
-let fancy_symbols_enabled = 1
+let fancy_symbols_enabled = 0
 
 
 set encoding=utf-8
