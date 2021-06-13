@@ -1,7 +1,7 @@
 ## Zshell
 ### Install
 ```
-yay -S oh-my-zsh
+$ yay -S oh-my-zsh
 $ chsh -s $(which zsh)
 ```
 `.zshrc`:
