@@ -1,6 +1,12 @@
 ## Vim Editor
 *Neovim, mostly*
 
+#### IntelliJ IDEA, IdeaVim plugin
+`~/.ideavimrc`:
+```
+set clipboard+=unnamed
+```
+
 #### sudo
 ```
 $ sudo -E nvim
