@@ -4,23 +4,27 @@
 
 - Remove `texlive-bin`:
 ```
-$ sudo pacman -R texlive-bin
+$ yay -R texlive-bin
 ```
 - Trim whatever remains:
 ```
 $ fmtutil-sys --all
 ```
+- Satisfy Arch package management:
+```
+$ yay -S texlive-dummy
+```
 - Install GUI library:
 ```
-$ yaourt -S perl-tk
+$ yay -S perl-tk
 ```
 
-- Install texlive: [TUG.org](https://tug.org/texlive/doc/texlive-en/texlive-en.html#x1-140003); [discussion](https://bbs.archlinux.org/viewtopic.php?id=181749)
+- Install texlive: [current ISO](https://www.tug.org/texlive/acquire.html); [2018 ISO](http://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2018/)
 ```
 $ [sudo] ./install-tl -gui
 ```
 
-- add your texlive path to `~/.profile`(do not use `~/.bashrc`!):
+- add your texlive path to `~/.[x]profile`(do not use `~/.bashrc`!):
 ```
 export PATH=/home/user/.local/share/texlive/2016/bin/x86_64-linux:$PATH
 ```
