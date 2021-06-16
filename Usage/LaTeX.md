@@ -42,12 +42,13 @@ https://github.com/pmiossec/tig-cheat-sheet
 
 #### 2017-12-29
 
-`~/.latexmkrc`:
+- `~/.latexmkrc`:
 ```
 $pdf_mode = 1;
 $pdflatex = 'xelatex -interaction=nonstopmode -synctex=1';
 $pdf_previewer = 'okular --unique';
 ```
+- [Okular & NeoVim](https://github.com/Tyrn/arch-chronicle/blob/master/Usage/Vim.md#okular)
 
 #### PDF
 
