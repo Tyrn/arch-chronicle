@@ -61,11 +61,11 @@ nmap W :w<CR>
 vmap W :w<CR>
 
 " Splitting windows
-nmap <leader>vv :vs<CR>
-nmap <leader>vh :sp<CR>
+nmap <leader>vv :sp<CR>
+nmap <leader>vh :vs<CR>
 
-nmap <leader>мм :vs<CR>
-nmap <leader>мр :sp<CR>
+nmap <leader>мм :sp<CR>
+nmap <leader>мр :vs<CR>
 
 " Split windows navigation.
 :nmap <leader>h :wincmd h<CR>
