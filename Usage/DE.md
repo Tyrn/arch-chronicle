@@ -375,11 +375,10 @@ ethernet _first_ {
 }
 
 cpu_temperature 0 {
-    format = " 🌡 %degrees°C "
-
-    max_threshold = "80"
-    format_above_threshold = "🔥 %degrees°C "
-    path = "/sys/class/thermal/thermal_zone0/temp"
+        format = " 🌡 %degrees°C "
+        max_threshold = "80"
+        format_above_threshold = "🔥 %degrees°C "
+        path = "/sys/class/thermal/thermal_zone0/temp"
 }
 
 cpu_usage {
