@@ -133,7 +133,7 @@ $ startx
 
 #### i3 window manager, [ArchWiki](https://wiki.archlinux.org/title/I3)
 
-- `$ yay -S i3[-manjaro]`
+- `$ yay -S i3-gaps dmenu i3status`
 - `~/.config/plasma-workspace/env/set_window_manager.sh`:
 ```
 export KDEWM=/usr/bin/i3

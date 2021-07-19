@@ -2,7 +2,7 @@
 [ArchWiki](https://wiki.archlinux.org/index.php/IBus)
 #### Plasma
 
-- Install IBus: `$ yay -S ibus`
+- Install IBus: `$ yay -S ibus ibus-m17n`
 - Create `~/.config/autostart/ibus.sh` (to be added to System Settings > Startup and Shutdown > Autostart > Script File):
 ```
 #!/usr/bin/env bash
