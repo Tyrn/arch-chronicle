@@ -16,3 +16,5 @@
 autoload/
 plugged/
 yankring_history*.txt
+
+.nvimlog
