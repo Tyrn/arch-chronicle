@@ -12,24 +12,21 @@ $ docker run -it --name tweaker --rm --mount type=bind,source="$HOME"/,target=/h
 $ docker stop $(docker ps -aq)
 $ docker rm $(docker ps -aq)
 ```
-- Running an official postgres image:
+- Create volume and container:
 ```
-$ docker run -d --name pg13 -p 5432:5432 -e POSTGRES_HOST_AUTH_METHOD=trust postgres[:tag]
-$ docker run -d --name pg13 -p5432:5432 -e POSTGRES_HOST_AUTH_METHOD=trust \
-  -v  /mydatamount/pg-persistent-data:/var/lib/postgresql/data \
-  postgres
-$ docker exec -ti ae33afff32c6 sh -c "psql -U postgres -h localhost -p 5432 -c "show server_version" postgres
-
-$ docker exec -it pg13 hostname -I
-$ docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' pg13
-
-$ docker exec -it pg13 /bin/bash
-
 $ docker volume create pg13-data
 $ docker run -d --name pg13 -p5432:5432 -e POSTGRES_HOST_AUTH_METHOD=trust \
   -v  pg13-data:/var/lib/postgresql/data \
   postgres
 $ docker inspect pg13-data
+```
+- Various inspections:
+```
+$ docker exec -ti ae33afff32c6 sh -c "psql -U postgres -h localhost -p 5432 -c "show server_version" postgres
+$ docker exec -it pg13 hostname -I
+$ docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' pg13
+
+$ docker exec -it pg13 /bin/bash
 ```
 - Starting, stopping and restarting:
 ```
