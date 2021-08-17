@@ -2,6 +2,7 @@
 
 ### Basic usage
 
+- [Running Postgres in Docker](https://www.cybertec-postgresql.com/en/running-postgres-in-docker-why-and-how/)
 - Run and mount:
 ```
 $ docker run -it --name tweaker --rm --mount type=bind,source="$HOME"/,target=/home/mnt tweaker[:tag]
@@ -29,6 +30,12 @@ $ docker run -d --name pg13 -p5432:5432 -e POSTGRES_HOST_AUTH_METHOD=trust \
   -v  pg13-data:/var/lib/postgresql/data \
   postgres
 $ docker inspect pg13-data
+```
+- Starting, stopping and restarting:
+```
+$ docker stop pg13
+$ docker start pg13
+$ docker update --restart unless-stopped pg13
 ```
 
 ### Curiosities
