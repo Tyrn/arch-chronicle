@@ -32,7 +32,11 @@ $ sudo pacman -S dkms
 ```
 NB `dkms` data is to be found in `/var/lib/dkms`.
 
-- Install [the driver](https://forum.manjaro.org/t/solved-wi-fi-rtl8723de-driver-and-kernel-5-2-trouble/115220)
+- After kernel update, remove the driver and reinstall it from AUR:
 ```
-$ yaourt -S rtlwifi_new-extended-dkms
+$ dkms status
+...
+$ sudo dkms remove -m rtl8723de-5.1.1.8_21285.20171026_COEX20170111 -v 1414 --all
+$ yay -S rtw88-dkms-git
 ```
+- Safely reboot
