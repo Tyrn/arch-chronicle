@@ -125,11 +125,14 @@ source /usr/bin/virtualenvwrapper.sh
 export VISUAL=/usr/bin/nvim
 export EDITOR="$VISUAL"
 
+export SAM_CLI_TELEMETRY=0
+
 alias exstat="expac -H M '%m\t%n' | sort -h"
 alias exst="exstat | tail -n 10"
 
 function pipver-col() { curl -s https://pypi.org/rss/project/$1/releases.xml | sed -n 's/\s*<title>\([^<]*\).*/\1/p' ;}
 function pipver() { curl -s https://pypi.org/rss/project/$1/releases.xml | sed -n 's/\s*<title>\([^<]*\).*/ \1/p' | paste -sd, ;}
+function tpipver() { curl -s https://test.pypi.org/rss/project/$1/releases.xml | sed -n 's/\s*<title>\([^<]*\).*/ \1/p' | paste -sd, ;}
 
 if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
         source /etc/profile.d/vte.sh
