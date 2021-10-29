@@ -122,6 +122,8 @@ vac()
 export WORKON_HOME=~/.virtualenvs
 source /usr/bin/virtualenvwrapper.sh
 
+export PATH="$PATH":"$HOME/.pub-cache/bin"
+
 export VISUAL=/usr/bin/nvim
 export EDITOR="$VISUAL"
 
@@ -129,6 +131,8 @@ export SAM_CLI_TELEMETRY=0
 
 alias exstat="expac -H M '%m\t%n' | sort -h"
 alias exst="exstat | tail -n 10"
+alias lg="lazygit"
+alias dm=damastes
 
 function pipver-col() { curl -s https://pypi.org/rss/project/$1/releases.xml | sed -n 's/\s*<title>\([^<]*\).*/\1/p' ;}
 function pipver() { curl -s https://pypi.org/rss/project/$1/releases.xml | sed -n 's/\s*<title>\([^<]*\).*/ \1/p' | paste -sd, ;}
@@ -141,4 +145,7 @@ fi
 source /etc/profile.d/autojump.zsh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/bin/terraform terraform
 ```
