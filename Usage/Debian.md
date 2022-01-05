@@ -15,6 +15,16 @@
 $ sudo sh /mnt/VBoxLinuxAdditions.run
 $ sudo adduser $USER vboxsf
 ```
+- Time and Date:
+```
+$ timedatectl set-timezone Europe/Moscow
+```
+- `autojump`:
+```
+To `~/.bashrc`:    . /usr/share/autojump/autojump.sh
+...
+$ sudo apt install autojump
+```
 - Rustup:
 ```
 $ sudo apt install snapd
