@@ -76,9 +76,7 @@ DISABLE_AUTO_UPDATE="true"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(
-    git python docker systemd sudo autojump vi-mode
-)
+plugins=(git python docker systemd sudo autojump vi-mode)
 
 
 # User configuration
@@ -107,17 +105,19 @@ plugins=(
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+
+vac()
+{
+    . $(pdm venv activate "$1")
+}
+
+
 ZSH_CACHE_DIR=$HOME/.oh-my-zsh-cache
 if [[ ! -d $ZSH_CACHE_DIR ]]; then
   mkdir $ZSH_CACHE_DIR
 fi
 
 source $ZSH/oh-my-zsh.sh
-
-vac()
-{
-    . $(pdm venv activate "$1")
-}
 
 export WORKON_HOME=~/.virtualenvs
 source /usr/bin/virtualenvwrapper.sh
@@ -129,10 +129,12 @@ export EDITOR="$VISUAL"
 
 export SAM_CLI_TELEMETRY=0
 
+alias lss="ls --color=always | less -r"
 alias exstat="expac -H M '%m\t%n' | sort -h"
 alias exst="exstat | tail -n 10"
 alias lg="lazygit"
 alias dm=damastes
+alias dp=procrustes
 
 function pipver-col() { curl -s https://pypi.org/rss/project/$1/releases.xml | sed -n 's/\s*<title>\([^<]*\).*/\1/p' ;}
 function pipver() { curl -s https://pypi.org/rss/project/$1/releases.xml | sed -n 's/\s*<title>\([^<]*\).*/ \1/p' | paste -sd, ;}
@@ -143,6 +145,7 @@ if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
 fi
 
 source /etc/profile.d/autojump.zsh
+source ~/z.sh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
