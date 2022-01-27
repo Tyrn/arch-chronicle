@@ -5,6 +5,8 @@ if has('nvim')
  set clipboard=unnamedplus
 endif
 
+set fileformats=unix
+
 "set cmdheight=1
 
 " Smaller updatetime for CursorHold & CursorHoldI
