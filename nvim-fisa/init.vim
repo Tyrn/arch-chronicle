@@ -149,6 +149,7 @@ endif
 " Plug 'jfo/hound.vim'
 
 " {{{{{{{{{{{{{{{{{{{{{{ cambio
+Plug 'Olical/conjure'                                                   " , { 'tag': 'v4.3.1' }
 
 Plug 'powerman/vim-plugin-ruscmd'                                       " Russian remapping.
 Plug 'lervag/vimtex'                                                    " VimTex
