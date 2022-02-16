@@ -56,3 +56,19 @@ $ jupyter notebook list
 - [Interactive visualization](https://towardsdatascience.com/interactive-visualizations-in-jupyter-notebook-3be02ab2b8cd), [GitHub](https://github.com/5agado)
 
 - [plotly](https://plot.ly/python/widget-app/) Interactive Data Analysis with ipywidgets in Python
+
+#### Jupyterlab
+
+- [Cheat Sheet](https://blog.ja-ke.tech/2019/01/20/jupyterlab-shortcuts.html)
+- [ArchWiki](https://wiki.archlinux.org/title/Jupyter)
+```
+$ jupyter lab paths
+```
+```
+$ export JUPYTERLAB_DIR=$HOME/.local/share/jupyter/lab
+$ jupyter lab build
+```
+- Start:
+```
+$ jupyter lab
+```
