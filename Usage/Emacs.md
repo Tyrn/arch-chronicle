@@ -1,5 +1,32 @@
 ## Emacs
+### Doom Emacs
+
+- [Project](https://github.com/hlissner/doom-emacs)
+- [Personal Configuration](https://github.com/Tyrn/.doom.d)
+- Cheat Sheets: [1](https://github.com/niyumard/Doom-Emacs-Cheat-Sheet), [2](https://gist.github.com/hjertnes/9e14416e8962ff5f03c6b9871945b165)
+
+#### Install
+- Add to `~/.xprofile`:
+```
+export PATH=$PATH:$HOME/.emacs.d/bin
+```
+```
+$ cd ~
+$ rm -rf .emacs.d/
+$ rm -rf .doom.d/
+$ git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d
+$ yay -S emacs
+$ doom install
+```
+- Before creating your first project/using `M-x projectile-discover-projects-in-search-path`
+```
+$ cd ~/spaces
+$ emacs
+```
+
 #### Miscellany
+
+#### Obsolete
 ##### AUCTeX bug (?): no stepping through the compilation errors
 
 `/etc/texmf/web2c/texmf.cnf`:
