@@ -2,7 +2,7 @@
 _Arch Linux Take_
 
 ### Installation
-#### Install Eclipse
+#### Install Eclipse (legacy)
 ```
 $ yaourt -S eclipse-java
 ```
@@ -11,7 +11,7 @@ Eclipse upgrade is destructive, so `/etc/pacman.conf`:
 
 *NB* `eclipse-php` or `eclipse-cpp` will do; the latter has CDT plugins preinstalled.
 
-#### Install Eclipse CDT plugin
+#### Install Eclipse CDT plugin (legacy)
 
 Install CDT, CDT SDK, and C/C++ Unit Testing Support via `Help > Install New Software...`
 
@@ -19,7 +19,7 @@ The working version: http://download.eclipse.org/tools/cdt/releases/9.3
 
 Newer releases will ~~probably~~ work, too.
 
-#### Install Eclipse SW4STM32 plugin
+#### Install Eclipse SW4STM32 plugin (legacy)
 
 Install System Workbench for STM32 - Bare Machine edition via `Help > Install New Software...`
 
@@ -27,7 +27,7 @@ http://ac6-tools.com/Eclipse-updates/org.openstm32.system-workbench.update-site-
 
 [Install Emb Sys Registers plugin](https://mcuoneclipse.com/2017/07/26/embsysregview-0-2-6-for-eclipse-neon-and-oxygen/) (In `/usr/lib/eclipse/plugins`)
 
-#### Install STM32CubeMX
+#### Install STM32CubeMX (legacy)
 ```
 yaourt -S stm32cubemx
 ```
@@ -43,6 +43,25 @@ NB Manual installaiton can be less troublesome:
 exec $HOME/STM32CubeMX/STM32CubeMX
 ```
 - `sudo chmod +x /usr/bin/stm32cubemx`
+
+#### Install STM32CubeIDE
+
+- [Download](https://aur.archlinux.org/packages/stm32cubeide) (Pinned Comment)
+```
+$ yay -S stm32cubeide
+```
+- Install ST-Link:
+```
+$ yay -S stlink-git
+$ st-info --probe
+...
+  chipid:     0x410    ;; Must not be zero.
+...
+```
+- Install STLinkUpgrade (Disconnect from the Pill before running ``$ STLinkUpgrade``!)
+```
+$ yay -S stsw-link007
+```
 
 ### Configuration
 #### Create CubeMX project
