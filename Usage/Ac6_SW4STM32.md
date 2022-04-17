@@ -50,7 +50,7 @@ exec $HOME/STM32CubeMX/STM32CubeMX
 ```
 $ yay -S stm32cubeide
 ```
-- Install ST-Link:
+- Install ST-Link (a nice set of the [udev rules](https://probe.rs/docs/getting-started/probe-setup/), if not already there):
 ```
 $ yay -S stlink-git
 $ st-info --probe
