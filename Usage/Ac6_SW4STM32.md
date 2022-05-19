@@ -133,9 +133,13 @@ Guidelines:
 
 [Eclipse configuration](http://alphaloewe.com/2017/01/24/enable-semi-hosting-with-openstm32-system-workbench/)
 
-##### Eclipse Debug configuration
+##### Eclipse Debug configuration (OpenOCD)
 
-- Append to `Project properties > C/C++ Build > Settings > Tool Settings > MCU GCC Linker > Miscellaneous > Linker flags` the following: ` -specs=rdimon.specs -lc -lrdimon` (many `-specs` options separated by space are OK).
+- Add filter: `Project properties > C/C++ General > Paths and Symbols > Source Locations: /myproject/Core` a filter: `Src/syscalls.c`
+
+- Append to `Project properties > C/C++ Build > Settings > Tool Settings > MCU GCC Linker > Libraries: Libraries` the following: `rdimon`.
+
+- Append to `Project properties > C/C++ Build > Settings > Tool Settings > MCU GCC Linker > Miscellaneous > Linker/Other flags` the following: ` -specs=rdimon.specs [-lc -lrdimon]` (many `-specs` options separated by space are OK).
 
 - Add to `Debug Configurations > (New Configuration) > Startup > Run Commands` the following: `monitor arm semihosting enable`.
 
