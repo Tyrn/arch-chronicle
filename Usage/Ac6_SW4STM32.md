@@ -52,7 +52,7 @@ $ yay -S stm32cubeide
 ```
 - Install [Linux Tools](http://wiki.eclipse.org/Linux_Tools_Project/PluginInstallHelp) Eclipse Plugin, `http://download.eclipse.org/linuxtools/update` (C/C++ Call Graph Visualization and a lot more)
 
-- Install ST-Link (and [/etc/udev/rules.d/69-probe-rs.rules](https://probe.rs/docs/getting-started/probe-setup/), if not already there):
+- Install ST-Link and put in place [/etc/udev/rules.d/69-probe-rs.rules](https://probe.rs/docs/getting-started/probe-setup/):
 ```
 # Copy this file to /etc/udev/rules.d/
 # If rules fail to reload automatically, you can refresh udev rules
