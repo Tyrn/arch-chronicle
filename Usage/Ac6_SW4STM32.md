@@ -119,6 +119,7 @@ If you don't care to relogin:
 $ sudo udevadm control --reload
 $ sudo udevadm trigger
 ```
+ST-Link, at last:
 ```
 $ yay -S stlink-git
 $ st-info --probe
