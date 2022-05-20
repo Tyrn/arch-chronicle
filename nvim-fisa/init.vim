@@ -61,6 +61,8 @@ endif
 
 " Now the actual plugins:
 
+" C language call tree
+Plug 'hari-rangarajan/CCTree'
 " Override configs by directory
 Plug 'arielrossanigo/dir-configs-override.vim'
 " Code commenter
@@ -75,8 +77,8 @@ Plug 'vim-scripts/IndexedSearch'
 " Plug 'fisadev/fisa-vim-colorscheme'
 Plug 'patstockwell/vim-monokai-tasty'
 " Airline
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+"Plug 'vim-airline/vim-airline'
+"Plug 'vim-airline/vim-airline-themes'
 " Code and files fuzzy finder
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
