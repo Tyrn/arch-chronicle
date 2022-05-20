@@ -50,6 +50,8 @@ exec $HOME/STM32CubeMX/STM32CubeMX
 ```
 $ yay -S stm32cubeide
 ```
+- Install [Linux Tools](http://wiki.eclipse.org/Linux_Tools_Project/PluginInstallHelp) Eclipse Plugin, `http://download.eclipse.org/linuxtools/update` (C/C++ Call Graph Visualization and a lot more)
+
 - Install ST-Link (a nice set of the [udev rules](https://probe.rs/docs/getting-started/probe-setup/), if not already there):
 ```
 $ yay -S stlink-git
