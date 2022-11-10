@@ -155,6 +155,7 @@ endif
 " Plug 'jfo/hound.vim'
 
 " {{{{{{{{{{{{{{{{{{{{{{ cambio
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'Olical/conjure'                                                   " , { 'tag': 'v4.3.1' }
 
 Plug 'powerman/vim-plugin-ruscmd'                                       " Russian remapping.

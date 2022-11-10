@@ -12,8 +12,11 @@ set clipboard+=unnamed
 $ sudo -E nvim
 ```
 #### Plugin functionality support
+
+- [TSUpdate error, related to nvim-treesitter plugin](https://github.com/nvim-treesitter/nvim-treesitter/issues/913)
 ```
 $ sudo pacman -S python-neovim
+$ sudo pacman -S python-jedi
 $ sudo pacman -S npm
 ```
 #### Spell checking
