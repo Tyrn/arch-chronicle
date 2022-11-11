@@ -5,7 +5,10 @@ $ yay -S oh-my-zsh[-git]
 $ chsh -s $(which zsh)
 ```
 - Troubleshooting: [Extra shells](https://unix.stackexchange.com/questions/39881/running-chsh-does-not-change-shell)
-
+```
+$ ps -p $$
+$ echo $SHELL
+```
 - Extras: [Rust utilities](https://deepu.tech/rust-terminal-tools-linux-mac-windows-fish-zsh/)
 ```
 $ yay -S zoxide
