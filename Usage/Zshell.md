@@ -1,9 +1,17 @@
 ## Zshell
 ### Install
 ```
-$ yay -S oh-my-zsh
+$ yay -S oh-my-zsh[-git]
 $ chsh -s $(which zsh)
 ```
+- Troubleshooting: [Extra shells](https://unix.stackexchange.com/questions/39881/running-chsh-does-not-change-shell)
+
+- Extras: [Rust utilities](https://deepu.tech/rust-terminal-tools-linux-mac-windows-fish-zsh/)
+```
+$ yay -S zoxide
+$ yay -S python-virtualenvwrapper
+```
+
 `.zshrc`:
 ```
 # If you come from bash you might have to change your $PATH.
@@ -76,7 +84,9 @@ DISABLE_AUTO_UPDATE="true"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git python docker systemd sudo autojump vi-mode)
+plugins=(
+    git python docker systemd sudo vi-mode
+)
 
 
 # User configuration
@@ -105,19 +115,17 @@ plugins=(git python docker systemd sudo autojump vi-mode)
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-
-vac()
-{
-    . $(pdm venv activate "$1")
-}
-
-
 ZSH_CACHE_DIR=$HOME/.oh-my-zsh-cache
 if [[ ! -d $ZSH_CACHE_DIR ]]; then
   mkdir $ZSH_CACHE_DIR
 fi
 
 source $ZSH/oh-my-zsh.sh
+
+vac()
+{
+    . $(pdm venv activate "$1")
+}
 
 export WORKON_HOME=~/.virtualenvs
 source /usr/bin/virtualenvwrapper.sh
@@ -127,8 +135,11 @@ export PATH="$PATH":"$HOME/.pub-cache/bin"
 export VISUAL=/usr/bin/nvim
 export EDITOR="$VISUAL"
 
+#export CODE=~/spaces
+
 export SAM_CLI_TELEMETRY=0
 
+alias lls="ls -lha --color=always | less -r"
 alias lss="ls --color=always | less -r"
 alias exstat="expac -H M '%m\t%n' | sort -h"
 alias exst="exstat | tail -n 10"
@@ -144,11 +155,13 @@ if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
         source /etc/profile.d/vte.sh
 fi
 
-source /etc/profile.d/autojump.zsh
-source ~/z.sh
+eval "$(zoxide init zsh)"
+alias cd=z
+#source ~/z.sh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/bin/terraform terraform
+#eval "$(starship init zsh)"
 ```

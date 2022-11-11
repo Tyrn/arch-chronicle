@@ -1,11 +1,15 @@
 ## Emacs
 ### Doom Emacs
 
-- [Project](https://github.com/hlissner/doom-emacs)
+- [Project](https://github.com/doomemacs/doomemacs)
 - [Personal Configuration](https://github.com/Tyrn/.doom.d)
-- Cheat Sheets: [1](https://github.com/niyumard/Doom-Emacs-Cheat-Sheet), [2](https://gist.github.com/hjertnes/9e14416e8962ff5f03c6b9871945b165)
+- Cheat Sheets: [1](https://github.com/niyumard/Doom-Emacs-Cheat-Sheet), [2](https://gist.github.com/hjertnes/9e14416e8962ff5f03c6b9871945b165), [Ultimate](https://naghdbishi.ir/Doom-Emacs-Cheat-Sheet/README.html)
 
 #### Install
+- Extras:
+```
+$ yay -S python-lsp-server
+```
 - Add to `~/.xprofile`:
 ```
 export PATH=$PATH:$HOME/.emacs.d/bin
@@ -14,7 +18,7 @@ export PATH=$PATH:$HOME/.emacs.d/bin
 $ cd ~
 $ rm -rf .emacs.d/
 $ rm -rf .doom.d/
-$ git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d
+$ git clone --depth 1 https://github.com/doomemacs/doomemacs ~/.emacs.d
 $ yay -S emacs
 $ doom install
 ```
