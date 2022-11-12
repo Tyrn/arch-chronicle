@@ -23,11 +23,6 @@ $ git clone --depth 1 https://github.com/doomemacs/doomemacs ~/.emacs.d
 $ yay -S emacs
 $ doom install
 ```
-- Before creating your first project/using `M-x projectile-discover-projects-in-search-path`
-```
-$ cd ~/spaces
-$ emacs
-```
 
 #### Miscellany
 
