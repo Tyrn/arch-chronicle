@@ -9,6 +9,7 @@
 - Extras:
 ```
 $ yay -S python-lsp-server
+$ yay -S rust-analyzer
 ```
 - Add to `~/.xprofile`:
 ```
