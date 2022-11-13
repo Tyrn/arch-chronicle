@@ -134,9 +134,30 @@ $ startx
 #### i3 window manager, [ArchWiki](https://wiki.archlinux.org/title/I3)
 
 - `$ yay -S i3-gaps dmenu i3status`
-- `~/.config/plasma-workspace/env/set_window_manager.sh`:
+- `~/.config/plasma-workspace/env/set_window_manager.sh` (Obsolete):
 ```
 export KDEWM=/usr/bin/i3
+```
+- Create i3 service (`~/.config/systemd/user/plasma-custom-wm.service`):
+```
+[Install]
+WantedBy=plasma-workspace.target
+
+[Unit]
+Description=Plasma Custom Window Manager
+Before=plasma-workspace.target
+
+[Service]
+ExecStart=/usr/bin/i3
+Slice=session.slice
+Restart=on-failure
+```
+- Check the running KWin, mask it, enable i3, and reboot:
+```
+ᐅ systemctl status --user plasma-kwin_x11
+...
+ᐅ systemctl mask --user plasma-kwin_x11
+ᐅ systemctl enable --user plasma-custom-wm.service
 ```
 - `~/.config/i3/config`:
 ```
