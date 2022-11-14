@@ -3,10 +3,21 @@
 #### Plasma
 
 - Install IBus: `$ yay -S ibus ibus-m17n`
-- Create `~/.config/autostart/ibus.sh` (to be added to System Settings > Startup and Shutdown > Autostart > Script File):
+- Create `~/.config/autostart/ibee.sh` (to be added to System Settings > Startup and Shutdown > Autostart > Login Scripts; default Properties are OK):
 ```
 #!/usr/bin/env bash
+sleep 10
 exec ibus-daemon -drxR
+```
+- Make it executable:
+```
+ᐅ chmod +x ibee.sh
+```
+- Relogin and check:
+```
+ᐅ ls $XDG_RUNTIME_DIR/systemd/generator.late
+...
+ᐅ systemctl status --user "app-ibee.sh@autostart.service"
 ```
 
 `/etc/environment`:
