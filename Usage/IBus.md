@@ -3,6 +3,13 @@
 #### Plasma
 
 - Install IBus: `$ yay -S ibus ibus-m17n`
+
+`/etc/environment`:
+```
+GTK_IM_MODULE=ibus
+QT_IM_MODULE=ibus
+XMODIFIERS=@im=ibus
+```
 - Create `~/.config/autostart/ibee.sh` (to be added to System Settings > Startup and Shutdown > Autostart > Login Scripts; default Properties are OK):
 ```
 #!/usr/bin/env bash
@@ -19,14 +26,6 @@ exec ibus-daemon -drxR
 ...
 ᐅ systemctl status --user "app-ibee.sh@autostart.service"
 ```
-
-`/etc/environment`:
-```
-GTK_IM_MODULE=ibus
-QT_IM_MODULE=ibus
-XMODIFIERS=@im=ibus
-```
-
 - Change IBus Panel icon to red:
 ```
 $ dconf write /desktop/ibus/panel/xkb-icon-rgba "'#FF0000'"
