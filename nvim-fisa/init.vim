@@ -75,7 +75,8 @@ Plug 'majutsushi/tagbar'
 Plug 'vim-scripts/IndexedSearch'
 " A couple of nice colorschemes
 " Plug 'fisadev/fisa-vim-colorscheme'
-Plug 'patstockwell/vim-monokai-tasty'
+" Plug 'patstockwell/vim-monokai-tasty'
+Plug 'crusoexia/vim-monokai'
 " Lualine theme
 Plug 'nvim-lualine/lualine.nvim'
 " Lualine: if you want to have icons in your statusline choose one of these
@@ -247,7 +248,7 @@ if has('gui_running') || using_neovim || (&term =~? 'mlterm\|xterm\|xterm-256\|s
     if !has('gui_running')
         let &t_Co = 256
     endif
-    colorscheme vim-monokai-tasty
+    colorscheme monokai
 else
     colorscheme delek
 endif
