@@ -19,6 +19,14 @@ $ pip install kivymd --user -v
 ```
 Examples on the system: `/usr/share/kivy-examples`
 
+### Signing APKs
+
+[Merge/install split APKs](https://stackoverflow.com/questions/55212788/is-it-possible-to-merge-install-split-apk-files-aka-app-bundle-on-android-d)
+[Signing tools: uber-apk-signer, etc.](https://stackoverflow.com/questions/4853011/how-to-sign-an-android-apk-file)
+[Uber Apk Signer Showcase](https://asciinema.org/a/91092)
+[Debug Kivy for Android](https://stackoverflow.com/questions/59384085/how-to-debug-a-kivy-kivymd-app-for-android)
+[Bundletool](https://www.north-47.com/knowledge-base/bundletool-and-how-to-utilize-android-app-bundle/)
+
 ### Resources
 [Reference](https://kivy.org/docs/)
 [Widget positioning](https://blog.kivy.org/2014/01/positionsize-of-widgets-in-kivy/)
