@@ -21,6 +21,7 @@ set $mod Mod1
 # Don’t spawn an empty window for the Plasma Desktop
 for_window [title="Desktop — Plasma"] kill, floating enable, border none
 for_window [title="Contero"] floating enable
+for_window [title="Ron"] floating enable
 
 # Don’t let notifications and non-interactive pop-up windows steal focus
 ##no_focus [class="plasmashell" window_type="notification"]

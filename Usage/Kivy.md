@@ -99,69 +99,38 @@ $ cd buildozer
 $ docker build --tag=buildozer .
 $ docker run --volume "$(pwd)":/home/user/hostcwd buildozer --version
 ```
-- Create a project:
+
+#### Create your own (Git) project to be used with dockered buildozer
+
+- Create build directories, once for the project's lifetime:
 ```
-[pong]$ docker run --volume "$(pwd)":/home/user/hostcwd buildozer init
+$ mkdir .buildozer
+$ echo "*" >> .buildozer/.gitignore
+$ git add .buildozer/.gitignore
+$ mkdir .gradle
+$ echo "*" >> .gradle/.gitignore
+$ git add .gradle/.gitignore
 ```
-- Edit `buildozer.spec`:
+- Create `docker-compose.yml`:
 ```
-android.accept_sdk_license = True
+services:
+  buildozer:
+    image: buildozer:latest
+    volumes:
+      - .:/home/user/hostcwd
+      - ./.buildozer:/home/user/.buildozer
+      - ./.gradle:/home/user/.gradle
 ```
-- Build:
+- Run `buildozer` in the project directory:
 ```
-[pong]$ docker run --volume "$(pwd)":/home/user/hostcwd buildozer android debug
-```
-- Check the containers:
-```
-$ docker ps -a
-```
-- Commit the container where the successful build happened, like this:
-```
-$ docker commit angry_black tyrn/buildozer:propio
-$ docker images
-```
-- Run it like this on any project:
-```
-$ docker run --volume "$(pwd)":/home/user/hostcwd tyrn/buildozer:propio android debug
+$ docker-compose run buildozer <...>
 ```
 
-#### [Kivy Complete VM](https://github.com/Zen-CODE/kivybits/tree/master/KivyCompleteVM) alternative
+#### ADB
 
-User: `kivy` Password: `kivy`
-
-Access to shared folders (guest):
 ```
-$ sudo adduser kivy vboxsf
-```
-
-Update the system and install:
-```
-$ sudo apt-get install --reinstall libc6-i386
-$ sudo apt-get install gcc-multilib
-$ sudo apt-get install lib32z1
-```
-
-##### 2020-03-16, update, v0.7
-
-- *vboxusers* (host):
-```
-$ sudo gpasswd -a user vboxusers
-```
-- Install extensions (host, from [AUR](https://aur.archlinux.org/packages/virtualbox-ext-oracle/))
-```
-$ yaourt -S virtualbox-ext-oracle
-```
-- Update and install:
-```
-$ sudo apt update
-$ sudo apt install curl
-$ sudo apt install npm
-$ sudo apt install tilix
-```
-- In case resizing won't work, install guest additions (on guest):
-
-Mount guest additions;
-```
-$ cd media/kivy/VBox_GAs_6.0.4/
-$ sudo ./VBoxLinuxAdditions.run
+$ docker-compose run buildozer android debug
+$ adb install -r bin/*.apk
+$ adb devices
+$ adb logcat -s "python"  ;; Drop quotes safely :)
 ```
