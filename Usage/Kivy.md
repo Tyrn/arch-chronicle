@@ -4,6 +4,14 @@ Groups:
 ```
 $ sudo gpasswd -a user input
 ```
+Input, laptop touch pad (`~/.kivy/config.ini`):
+```
+...
+[input]
+mouse = mouse
+#%(name)s = probesysfs
+...
+```
 Location:
 ```
 import os, kivy
