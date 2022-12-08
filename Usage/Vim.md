@@ -15,7 +15,7 @@ $ sudo -E nvim
 
 - [TSUpdate error, related to nvim-treesitter plugin](https://github.com/nvim-treesitter/nvim-treesitter/issues/913)
 ```
-$ sudo pacman -S python-neovim
+$ sudo pacman -S python-pynvim
 $ sudo pacman -S python-jedi
 $ sudo pacman -S npm
 ```
