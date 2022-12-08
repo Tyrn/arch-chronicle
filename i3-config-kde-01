@@ -187,5 +187,5 @@ bar {
         status_command i3status
 }
 workspace_layout tabbed
-exec --no-startup-id nitrogen --restore
-
+#exec --no-startup-id nitrogen --restore
+exec --no-startup-id feh --bg-fill /usr/share/wallpapers/Honeywave/contents/images/5120x2880.jpg
