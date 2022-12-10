@@ -2,6 +2,11 @@
 
 ### Basic usage
 
+- Create group docker and add user to it (relogin required):
+```
+$ sudo groupadd docker
+$ sudo gpasswd -a $USER docker
+```
 - [Running Postgres in Docker](https://www.cybertec-postgresql.com/en/running-postgres-in-docker-why-and-how/)
 - Run and mount:
 ```
