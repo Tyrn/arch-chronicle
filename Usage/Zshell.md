@@ -26,7 +26,24 @@ $ yay -S alacritty
 $ yay -S alacritty-themes
 ```
 
-`.zshrc`:
+`~/.xprofile`:
+```
+export TERMINAL=/usr/bin/alacritty
+
+#export PATH=/usr/local/texlive/2018/bin/x86_64-linux:$PATH
+export PATH=/usr/local/texlive/2021/bin/x86_64-linux:$PATH
+export PATH=$HOME/.local/bin:$PATH
+export PATH=$HOME/.cargo/bin:$PATH
+export PATH=$HOME/.emacs.d/bin:$PATH
+#export PATH=$HOME/STM32CubeMX:$PATH
+export PATH=$HOME/.gem/ruby/3.0.0/bin:$PATH
+export PATH=$HOME/.stack/programs/x86_64-linux/stack-2.7.3:$PATH
+
+export CODE=$HOME/spaces
+export JUPYTERLAB_DIR=$HOME/.local/share/jupyter/lab
+```
+
+`~/.zshrc`:
 ```
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
