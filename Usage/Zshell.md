@@ -23,6 +23,7 @@ $ yay -S python-virtualenvwrapper
 ```
 $ yay -S noto-color-emoji-fontconfig
 $ yay -S alacritty
+$ yay -S alacritty-themes
 ```
 
 `.zshrc`:
