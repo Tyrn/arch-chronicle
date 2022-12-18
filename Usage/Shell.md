@@ -33,6 +33,7 @@ $ sudo usermod -aG <group> $USER
 ```
 #### Useful groups easily fortotten
 - *uucp*: user acces to serial ports (*dialout* for Debian/Ubuntu)
+- *vboxsf*: user access to VirtualBox shared folders
 - *docker*
 - *input*
 - *sdkusers*: user access to SDKs installed in `/opt`
