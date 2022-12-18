@@ -29,13 +29,13 @@ $ sudo gpasswd -a $USER <group>
 ```
 or
 ```
-$ sudo usermod -a -G <group> $USER
+$ sudo usermod -aG <group> $USER
 ```
 #### Useful groups easily fortotten
 - *uucp*: user acces to serial ports (*dialout* for Debian/Ubuntu)
 - *docker*
 - *input*
-- *sdkusers*: SDKs installed in `/opt`
+- *sdkusers*: user access to SDKs installed in `/opt`
 
 ### Utilities
 #### autojump
