@@ -21,6 +21,22 @@ end of `~/.bashrc`:
 
 `$ find . -type f -name "*.rar" -exec unrar x {} \;`
 
+### Groups
+
+```
+$ sudo groupadd <group>
+$ sudo gpasswd -a $USER <group>
+```
+or
+```
+$ sudo usermod -a -G <group> $USER
+```
+#### Useful groups easily fortotten
+- *uucp*: user acces to serial ports (*dialout* for Debian/Ubuntu)
+- *docker*
+- *input*
+- *sdkusers*: SDKs installed in `/opt`
+
 ### Utilities
 #### autojump
 `~/.bashrc`:
