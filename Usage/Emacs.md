@@ -10,6 +10,7 @@
 ```
 $ yay -S python-lsp-server
 $ yay -S rust-analyzer
+$ yay -S texlab
 ```
 - Add to `~/.xprofile`:
 ```
