@@ -185,6 +185,8 @@ inoremap HH ---~
 inoremap РР ---~
 inoremap HJ ~---
 inoremap РО ~---
+inoremap JH ~---
+inoremap ОР ~---
 inoremap JJ ~---~
 inoremap ОО ~---~
 inoremap ББ <<
