@@ -154,12 +154,12 @@ nnoremap <C-Right> :tabnext<CR>
 nnoremap <silent> <A-Left> :execute 'silent! tabmove ' . (tabpagenr()-2)<CR>
 nnoremap <silent> <A-Right> :execute 'silent! tabmove ' . (tabpagenr()+1)<CR>
 " Escape remapped
-inoremap w; <Esc>
-inoremap ;w <Esc>
-inoremap цж <Esc>
-inoremap жц <Esc>
-inoremap wñ <Esc>
-inoremap ñw <Esc>
+" inoremap w; <Esc>
+" inoremap ;w <Esc>
+" inoremap цж <Esc>
+" inoremap жц <Esc>
+" inoremap wñ <Esc>
+" inoremap ñw <Esc>
 " Russian dollar
 nnoremap ; $
 " Spanish colon
@@ -183,15 +183,13 @@ inoremap LL \ldots{}
 inoremap ДД \ldots{}
 inoremap HH ---~
 inoremap РР ---~
-inoremap HHH ~---
-inoremap РРР ~---
+inoremap HJ ~---
+inoremap РО ~---
 inoremap JJ ~---~
 inoremap ОО ~---~
-inoremap JJJ ---
-inoremap ООО ---
 inoremap ББ <<
 inoremap ЮЮ >>
-inoremap БББ «
-inoremap ЮЮЮ »
+inoremap БЬ «
+inoremap ЮЬ »
 inoremap ññ «
 inoremap ÑÑ »
