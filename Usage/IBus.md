@@ -10,22 +10,31 @@ GTK_IM_MODULE=ibus
 QT_IM_MODULE=ibus
 XMODIFIERS=@im=ibus
 ```
-- Create `~/.config/autostart/ibee.sh` (to be added to System Settings > Startup and Shutdown > Autostart > Login Scripts; default Properties are OK):
+- Create `~/.config/systemd/user/ibus-custom.service`:
 ```
-#!/usr/bin/env bash
-sleep 10
-exec ibus-daemon -drxR
+[Unit]
+PartOf=graphical-session.target
+
+Description=IBus Service
+After=graphical-session.target
+
+[Service]
+Type=exec
+ExitType=cgroup
+ExecStartPre=/usr/bin/sleep 10
+ExecStart=/usr/bin/ibus-daemon -drxR
+Restart=no
+TimeoutSec=15s
+Slice=app.slice
+
+[Install]
+WantedBy=graphical-session.target
 ```
-- Make it executable:
+- Enable:
 ```
-ᐅ chmod +x ibee.sh
+$ systemctl enable --user ibus-custom
 ```
-- Relogin and check:
-```
-ᐅ ls $XDG_RUNTIME_DIR/systemd/generator.late
-...
-ᐅ systemctl status --user "app-ibee.sh@autostart.service"
-```
+- [Autostart history, generated service](https://forum.manjaro.org/t/kde-login-script/126769)
 - Change IBus Panel icon to red:
 ```
 $ dconf write /desktop/ibus/panel/xkb-icon-rgba "'#FF0000'"
