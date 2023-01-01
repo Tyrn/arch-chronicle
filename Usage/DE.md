@@ -131,6 +131,21 @@ $ startx
 
 ### KDE
 
+#### KWallet, [discussion](https://forum.manjaro.org/t/i3-alongside-kde-no-wi-fi-no-mail-accounts-for-google-chrome-kwallet-problem/130570)
+
+- Remove KWallet, if necessary (forgotten password, etc.):
+```
+$ rm .local/share/kwalletd/kdewallet.kwl
+```
+- Google Chrome config, [ArchWiki](https://wiki.archlinux.org/title/KDE_Wallet#KDE_Wallet_for_Chrome_and_Chromium):
+```
+$ cat .config/chrome-flags.conf
+# Google Chrome start.
+
+--password-store=detect
+# --password-store=kwallet5
+```
+
 #### i3 window manager, [ArchWiki](https://wiki.archlinux.org/title/I3)
 
 - `$ yay -S i3-gaps dmenu[-manjaro] i3status`
