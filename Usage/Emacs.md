@@ -12,6 +12,12 @@ $ yay -S python-lsp-server
 $ yay -S rust-analyzer
 $ yay -S texlab
 ```
+- Emacs client executable (for i3):
+```
+~ ᐅ cat /usr/local/bin/eframe
+#!/usr/bin/env bash
+exec emacsclient --alternate-editor= --create-frame
+```
 - Add to `~/.xprofile`:
 ```
 export PATH=$PATH:$HOME/.emacs.d/bin
