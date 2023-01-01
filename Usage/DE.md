@@ -140,7 +140,7 @@ $ rm .local/share/kwalletd/kdewallet.kwl
 - Google Chrome config, [ArchWiki](https://wiki.archlinux.org/title/KDE_Wallet#KDE_Wallet_for_Chrome_and_Chromium):
 ```
 $ cat .config/chrome-flags.conf
---password-store=detect
+--password-store=kwallet5
 ```
 
 #### i3 window manager, [ArchWiki](https://wiki.archlinux.org/title/I3)
