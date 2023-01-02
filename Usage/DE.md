@@ -171,11 +171,11 @@ Restart=on-failure
 ᐅ systemctl mask --user plasma-kwin_x11
 ᐅ systemctl enable --user plasma-custom-wm.service
 ```
-- Enable `i3lock` use, [issue #119](https://github.com/i3/i3lock/issues/119), [Shutdown](https://wiki.archlinux.org/title/i3#Shutdown.2C_reboot.2C_lock_screen):
+- Enable `i3lock` use, if necessary; [issue #119](https://github.com/i3/i3lock/issues/119), [Better approach to lock, shutdown, etc.](https://wiki.archlinux.org/title/i3#Shutdown.2C_reboot.2C_lock_screen):
 ```
 ~ ᐅ ls -l /usr/bin/unix_chkpwd
 -rwsr-sr-x 1 root root 38744 Sep  9  2021 /usr/bin/unix_chkpwd
-~ ᐅ sudo chmod 4755 $(which unix_chkpwd)
+~ ᐅ sudo chmod 4755 $(which unix_chkpwd)     ;; From 6755.
 ~ ᐅ ls -l /usr/bin/unix_chkpwd
 -rwsr-xr-x 1 root root 38744 Sep  9  2021 /usr/bin/unix_chkpwd
 ```
