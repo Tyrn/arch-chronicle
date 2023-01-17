@@ -5,6 +5,8 @@
 `~/.ideavimrc`:
 ```
 set clipboard+=unnamed
+set ideajoin
+set idearefactormode=keep
 ```
 
 #### sudo
