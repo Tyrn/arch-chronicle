@@ -1,5 +1,8 @@
 ## Flutter
 *A mobile application framework, Arch take*
+
+- :snowflake: - Supposedly obsolete entry.
+
 ### Resources
 
 [Everything on GitHub](https://github.com/Solido/awesome-flutter)
@@ -119,3 +122,4 @@ $ adb kill-server
 Keep your Android device USB settings as MTP (Files).
 
 - Trouble (2018-10-28) with `~/mobile/flutter/packages/flutter_tools/gradle/flutter.gradle`: [add google() to buildscript repositories](https://github.com/flutter/flutter/issues/23095)
+
