@@ -5,23 +5,25 @@
 
 ### Resources
 
-[Awesome Flutter on GitHub](https://github.com/Solido/awesome-flutter)
+- [Awesome Flutter on GitHub](https://github.com/Solido/awesome-flutter)
 
-[Flutter Awesome](https://flutterawesome.com/)
+- [Flutter Awesome](https://flutterawesome.com/)
 
-[Awesome Flutter](https://awesomeflutter.com/)
+- [Awesome Flutter](https://awesomeflutter.com/)
 
-[Flutter Architecture, official samples](https://github.com/brianegan/flutter_architecture_samples)
+- [Flutter Architecture, official samples](https://github.com/brianegan/flutter_architecture_samples)
 
-[Flutter Planets](https://github.com/sergiandreplace/flutter_planets_tutorial) :snowflake:
+- [Flutter Planets](https://github.com/sergiandreplace/flutter_planets_tutorial) :snowflake:
 
 #### BLoC
 
-[Bloc Library, including Examples](https://bloclibrary.dev); [on GitHub](https://github.com/felangel/bloc)
+- [Bloc Library, including Examples](https://bloclibrary.dev); [on GitHub](https://github.com/felangel/bloc)
 
-[BLoC and Bluetooth BLE](https://lupyuen.github.io/pinetime-rust-mynewt/articles/bloc)
+- [BLoC and Bluetooth BLE](https://lupyuen.github.io/pinetime-rust-mynewt/articles/bloc)
 
-[EZ Flutter](https://github.com/Ephenodrom/EZ-Flutter)
+- [EZ Flutter](https://github.com/Ephenodrom/EZ-Flutter)
+
+- [Unit testing with BLoC](https://medium.com/flutter-community/unit-testing-with-bloc-b94de9655d86)
 
 #### Very Good CLI
 
