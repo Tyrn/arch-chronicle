@@ -143,6 +143,16 @@ $ cat .config/chrome-flags.conf
 --password-store=kwallet5
 ```
 
+#### i3 Network Manager
+
+- [nmcli](https://jaketrent.com/post/network-manager-terminal-i3/) is part of `networkmanager`:
+```
+$ yay -F nmcli
+extra/networkmanager 1.40.8-1 [installed]
+    usr/bin/nmcli
+    usr/share/bash-completion/completions/nmcli
+```
+
 #### i3 window manager, [ArchWiki](https://wiki.archlinux.org/title/I3)
 
 - `$ yay -S i3-gaps dmenu[-manjaro] i3status`
