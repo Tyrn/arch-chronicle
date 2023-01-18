@@ -68,6 +68,12 @@ $ dart pub global run intl_utils:generate
 
 #### Crossplatform build
 
+- Create (add) Linux project:
+```
+my_project $ flutter create --platforms=linux .
+```
+- [Building Linux apps with Flutter](https://docs.flutter.dev/development/platform-integration/linux/building)
+
 - [Native vs Host](https://wiki.loliot.net/docs/lang/flutter/engine/flutter-app-for-linux-arm64/)
 
 - [Issue #74929](https://github.com/flutter/flutter/issues/74929)
