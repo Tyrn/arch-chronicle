@@ -1,17 +1,80 @@
 ## Flutter
 *A mobile application framework, Arch take*
 
-- :snowflake: - Supposedly obsolete entry.
+- :snowflake: - supposedly obsolete entry.
 
 ### Resources
 
-[Everything on GitHub](https://github.com/Solido/awesome-flutter)
+[Awesome Flutter on GitHub](https://github.com/Solido/awesome-flutter)
+
+[Flutter Awesome](https://flutterawesome.com/)
+
+[Awesome Flutter](https://awesomeflutter.com/)
 
 [Flutter Architecture, official samples](https://github.com/brianegan/flutter_architecture_samples)
 
-[Flutter Planets](https://github.com/sergiandreplace/flutter_planets_tutorial)
+[Flutter Planets](https://github.com/sergiandreplace/flutter_planets_tutorial) :snowflake:
 
-#### Redux
+#### BLoC
+
+[Bloc Library, including Examples](https://bloclibrary.dev); [on GitHub](https://github.com/felangel/bloc)
+
+[BLoC and Bluetooth BLE](https://lupyuen.github.io/pinetime-rust-mynewt/articles/bloc)
+
+[EZ Flutter](https://github.com/Ephenodrom/EZ-Flutter)
+
+#### Very Good CLI
+
+- [On pub.dev](https://pub.dev/packages/very_good_cli)
+
+- [Flutter Todos Tutorial](https://bloclibrary.dev/#/fluttertodostutorial)
+
+- [Testing](https://verygood.ventures/blog/flutter-tests-very-good-cli)
+
+- [development/staging/production](https://verygood.ventures/blog/flutter-starter-app-very-good-core-cli)
+
+- Install:
+```
+$ dart pub global activate very_good_cli
+```
+- Create project:
+```
+$ very_good create flutter_todos --desc "An example todos app that showcases bloc state management patterns."
+```
+
+- Create various projects inside `packages` (`flutter_todos/packages`):
+```
+flutter_todos $ very_good create todos_api -o packages -t dart_pkg --desc "The interface and models for an API providing access to todos."
+
+flutter_todos $ very_good create local_storage_todos_api -o packages -t flutter_pkg --desc "A Flutter implementation of the TodosApi that uses local storage."
+
+flutter_todos $ very_good create todos_repository -o packages -t dart_pkg --desc "A repository that handles todo related requests."
+```
+- Install all the dependencies recursively:
+```
+$ very_good packages get -r
+```
+- Check Android Studio *Run > Edit Configurations...*
+
+#### Localization
+
+- [Flutter Intl plugin for Android Studio](https://stackoverflow.com/questions/73375594/flutter-intl-plugin-how-to-set-location-of-l10n-directory-that-is-generated)
+
+- [Intl Utils](https://pub.dev/packages/intl_utils)
+```
+$ dart pub global activate intl_utils
+$ dart pub global run intl_utils:generate
+```
+
+#### Crossplatform build
+
+- [Native vs Host](https://wiki.loliot.net/docs/lang/flutter/engine/flutter-app-for-linux-arm64/)
+
+- [Issue #74929](https://github.com/flutter/flutter/issues/74929)
+
+- [eLinux](https://github.com/sony/flutter-elinux)
+
+#### Redux :snowflake:
 
 [Flutter Redux](https://github.com/brianegan/flutter_redux)
 
@@ -19,7 +82,7 @@
 
 [Official Redux example](https://github.com/brianegan/flutter_architecture_samples/tree/master/example/redux)
 
-### Installation
+### Installation (mostly :snowflake:)
 
 - [Flutter on Linux](https://flutter.io/setup-linux/):
 ```
@@ -45,9 +108,13 @@ export PATH=$PATH:/home/alexey/mobile/flutter/bin
 - Relax permissions for Android SDK:
 ```
 $ sudo groupadd sdkusers
-$ sudo gpasswd -a <user> sdkusers
+$ sudo gpasswd -a $USER sdkusers
 $ sudo chown -R :sdkusers /opt/android-sdk/
 $ sudo chmod -R g+w /opt/android-sdk/
+```
+or just like this:
+```
+$ sudo chown -R $USER /opt
 ```
 - Accept licenses:
 ```
@@ -101,7 +168,7 @@ $ flutter pub pub deps
 $ flutter run
 ```
 
-### Troubleshooting
+### Troubleshooting :snowflake:
 
 - `Error retrieving device properties for ro.product.cpu.abi Permission denied...`
 Check your target Android device settings; replug.
