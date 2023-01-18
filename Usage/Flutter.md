@@ -19,6 +19,8 @@
 
 - [Bloc Library, including Examples](https://bloclibrary.dev); [on GitHub](https://github.com/felangel/bloc)
 
+- [Bloc & Cubit, +Video 2018](https://resocoder.com/2020/08/04/flutter-bloc-cubit-tutorial/)
+
 - [BLoC and Bluetooth BLE](https://lupyuen.github.io/pinetime-rust-mynewt/articles/bloc)
 
 - [EZ Flutter](https://github.com/Ephenodrom/EZ-Flutter)
