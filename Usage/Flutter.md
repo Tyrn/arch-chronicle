@@ -29,6 +29,10 @@
 
 - [Unit testing with BLoC](https://medium.com/flutter-community/unit-testing-with-bloc-b94de9655d86)
 
+- [`mapEventToState()` deprecated](https://blog.logrocket.com/introduction-flutter-bloc-8/)
+
+- Lessons in Russian, [Video](https://youtu.be/khuaUejT3zw), [91](https://github.com/JonFir/lazyload_flutter/tree/arch/lesson/91-bloc-on-events), [92](https://github.com/JonFir/lazyload_flutter/tree/arch/lesson/92-bloc-libs-cubit), [93](https://github.com/JonFir/lazyload_flutter/tree/arch/lesson/93-bloc-libs-bloc), [94](https://github.com/JonFir/lazyload_flutter/tree/arch/lesson/94-bloc-libs-flutter-bloc), [95](https://github.com/JonFir/lazyload_flutter/tree/arch/lesson/95-bloc-libs-flutter-bloc-observer)
+
 #### Very Good CLI
 
 - [On pub.dev](https://pub.dev/packages/very_good_cli)
