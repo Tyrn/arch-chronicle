@@ -19,6 +19,8 @@
 
 - [Bloc Library, including Examples](https://bloclibrary.dev); [on GitHub](https://github.com/felangel/bloc)
 
+- [About `Future<void> main() async {}`](https://stackoverflow.com/questions/56129121/good-or-bad-declaring-main-method-async-in-dart-flutter)
+
 - [Bloc & Cubit, +Video 2018](https://resocoder.com/2020/08/04/flutter-bloc-cubit-tutorial/)
 
 - [BLoC and Bluetooth BLE](https://lupyuen.github.io/pinetime-rust-mynewt/articles/bloc)
@@ -37,7 +39,7 @@
 
 - [development/staging/production](https://verygood.ventures/blog/flutter-starter-app-very-good-core-cli)
 
-- Install:
+- Install/upgrade:
 ```
 $ dart pub global activate very_good_cli
 ```
