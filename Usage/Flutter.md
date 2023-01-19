@@ -5,6 +5,8 @@
 
 ### Resources
 
+- [Understanding null safety](https://dart.dev/null-safety/understanding-null-safety)
+
 - [Awesome Flutter on GitHub](https://github.com/Solido/awesome-flutter)
 
 - [Flutter Awesome](https://flutterawesome.com/)
