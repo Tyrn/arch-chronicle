@@ -43,10 +43,12 @@ $ dart pub global activate very_good_cli
 ```
 - Create project:
 ```
+$ very_good help create [flutter_app|flame_game...]
+...
 $ very_good create flutter_todos --desc "An example todos app that showcases bloc state management patterns."
 ```
 
-- Create various projects inside `packages` (`flutter_todos/packages`):
+- Create various projects inside `packages` (`flutter_todos/packages`) (old syntax?):
 ```
 flutter_todos $ very_good create todos_api -o packages -t dart_pkg --desc "The interface and models for an API providing access to todos."
 
