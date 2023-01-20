@@ -13,6 +13,8 @@
 
 - [Awesome Flutter](https://awesomeflutter.com/)
 
+- [Flutter Internals](https://www.didierboelens.com/2019/09/flutter-internals/)
+
 - [Flutter by Example](https://flutterbyexample.com/)
 
 - [Flutter Architecture, official samples](https://github.com/brianegan/flutter_architecture_samples)
