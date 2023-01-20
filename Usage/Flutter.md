@@ -33,7 +33,13 @@
 
 - [`mapEventToState()` deprecated](https://blog.logrocket.com/introduction-flutter-bloc-8/)
 
-- Lessons in Russian, [Video](https://youtu.be/khuaUejT3zw), [91](https://github.com/JonFir/lazyload_flutter/tree/arch/lesson/91-bloc-on-events), [92](https://github.com/JonFir/lazyload_flutter/tree/arch/lesson/92-bloc-libs-cubit), [93](https://github.com/JonFir/lazyload_flutter/tree/arch/lesson/93-bloc-libs-bloc), [94](https://github.com/JonFir/lazyload_flutter/tree/arch/lesson/94-bloc-libs-flutter-bloc), [95](https://github.com/JonFir/lazyload_flutter/tree/arch/lesson/95-bloc-libs-flutter-bloc-observer)
+- Lessons in Russian, [Video](https://youtu.be/khuaUejT3zw),
+[47](https://github.com/JonFir/lazyload_flutter/tree/lesson/47-build-context)
+[91](https://github.com/JonFir/lazyload_flutter/tree/arch/lesson/91-bloc-on-events),
+[92](https://github.com/JonFir/lazyload_flutter/tree/arch/lesson/92-bloc-libs-cubit),
+[93](https://github.com/JonFir/lazyload_flutter/tree/arch/lesson/93-bloc-libs-bloc),
+[94](https://github.com/JonFir/lazyload_flutter/tree/arch/lesson/94-bloc-libs-flutter-bloc),
+[95](https://github.com/JonFir/lazyload_flutter/tree/arch/lesson/95-bloc-libs-flutter-bloc-observer)
 
 #### Very Good CLI
 
