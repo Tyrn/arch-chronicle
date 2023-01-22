@@ -29,3 +29,31 @@ packages/quote_repository
 ```
 
 ```
+
+### Chapter 3: Managing State With Cubits & the Bloc Library
+
+### Chapter 4: Validating Forms With Cubits
+
+### Chapter 5: Managing Complex State With Blocs
+
+### Chapter 6: Authenticating Users
+
+### Chapter 7: Routing & Navigating
+
+### Chapter 8: Deep Linking
+
+### Chapter 9: Internationalizing & Localizing
+
+### Chapter 10: Dynamic Theming & Dark Mode
+
+### Chapter 11: Creating Your Own Widget Catalog
+
+### Chapter 12: Supporting the Development Lifecycle With Firebase
+
+### Chapter 13: Running Live Experiments With A/B Testing & Feature Flags
+
+### Chapter 14: Automated Testing
+
+#### Unit Tests
+
+### Chapter 15: Automating Test Executions & Build Distributions
