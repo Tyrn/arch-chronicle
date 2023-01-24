@@ -21,6 +21,10 @@
 
 - [Flutter Planets](https://github.com/sergiandreplace/flutter_planets_tutorial) :snowflake:
 
+- [Katz, Moore & Ngo, source](https://github.com/kodecocodes/flta-materials)
+
+- [Bueno & Palcar, source](https://github.com/kodecocodes/rwf-materials)
+
 #### BLoC
 
 - [Bloc Library, including Examples](https://bloclibrary.dev); [on GitHub](https://github.com/felangel/bloc)
