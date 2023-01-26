@@ -2,6 +2,8 @@
 
 ## Chapter 1: Setting up Your Environment
 
+- [flutter_dotenv](https://developer.school/tutorials/how-to-use-environment-variables-with-flutter-dotenv)
+
 ![alt text](assets/BuenoPalcar/ww-package-distribution.png)
 
 ## Chapter 2: Mastering the Repository Pattern
