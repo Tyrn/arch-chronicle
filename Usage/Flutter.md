@@ -50,6 +50,7 @@
 [93](https://github.com/JonFir/lazyload_flutter/tree/arch/lesson/93-bloc-libs-bloc),
 [94](https://github.com/JonFir/lazyload_flutter/tree/arch/lesson/94-bloc-libs-flutter-bloc),
 [95](https://github.com/JonFir/lazyload_flutter/tree/arch/lesson/95-bloc-libs-flutter-bloc-observer),
+[103](https://github.com/JonFir/lazyload_flutter/tree/arch/lesson/103-dependency-managemant-sl),
 [104](https://github.com/JonFir/lazyload_flutter/tree/arch/lesson/104-dependency-managemant-get_it)
 
 #### Very Good CLI
