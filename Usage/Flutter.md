@@ -23,6 +23,10 @@
 
 - [Внедрение зависимостей (Dependency Injection) с GetIt во Flutter](https://habr.com/ru/company/rshb/blog/564158/)
 
+- [Flutter widgets cheat sheet](https://blog.codemagic.io/flutter-widget-cheat-sheet/)
+
+- [A beginner’s guide to go_router in Flutter](https://blog.codemagic.io/flutter-go-router-guide/)
+
 - [Katz, Moore & Ngo, source](https://github.com/kodecocodes/flta-materials)
 
 - [Bueno & Palcar, source](https://github.com/kodecocodes/rwf-materials)
