@@ -21,6 +21,8 @@
 
 - [Flutter Planets](https://github.com/sergiandreplace/flutter_planets_tutorial) :snowflake:
 
+- [Внедрение зависимостей (Dependency Injection) с GetIt во Flutter](https://habr.com/ru/company/rshb/blog/564158/)
+
 - [Katz, Moore & Ngo, source](https://github.com/kodecocodes/flta-materials)
 
 - [Bueno & Palcar, source](https://github.com/kodecocodes/rwf-materials)
