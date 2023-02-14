@@ -3,16 +3,6 @@
 
 - :snowflake: - supposedly obsolete entry.
 
-### Resources
-
-- []()
-
-- []()
-
-- []()
-
-- []()
-
 ### Install
 
 - Get JetBrains Toolbox:
@@ -52,4 +42,13 @@ export PATH=$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-t
 export PATH=$ANDROID_HOME/cmdline-tools/latest/bin:$PATH
 export PATH=$ANDROID_HOME/cmdline-tools/latest:$PATH
 export CHROME_EXECUTABLE=/usr/bin/google-chrome-stable
+```
+- Manage permissions (relogin required):
+```
+$ sudo groupadd flutterusers
+$ sudo gpasswd -a $USER flutterusers
+```
+- Check:
+```
+$ flutter doctor
 ```
