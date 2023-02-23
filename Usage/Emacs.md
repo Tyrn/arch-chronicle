@@ -14,7 +14,7 @@ $ yay -S texlab
 ```
 - Emacs client executable (for i3):
 ```
-~ ᐅ cat /usr/local/bin/eframe
+~ ᐅ cat /usr/local/bin/e-doom
 #!/usr/bin/env bash
 exec emacsclient --alternate-editor= --create-frame
 ```
@@ -29,6 +29,14 @@ $ rm -rf .doom.d/
 $ git clone --depth 1 https://github.com/doomemacs/doomemacs ~/.emacs.d
 $ yay -S emacs
 $ doom install
+```
+
+### Troubleshoot
+
+- [Stale elc files](https://github.com/doomemacs/doomemacs/issues/4171):
+```
+$ rm -rf ~/.emacs.d/.local/straight/build*/*
+$ doom sync
 ```
 
 #### Miscellany
