@@ -86,6 +86,11 @@ $ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw
 ```
 :PlugInstall
 ```
+- In case of errors on update:
+```
+:PlugClean
+:PlugInstall
+```
 - Create backup folder:
 ```
 $ mkdir ~/.local/share/nvim/backup
