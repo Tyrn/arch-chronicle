@@ -9,6 +9,7 @@
 - Extras:
 ```
 $ yay -S python-lsp-server
+$ yay -S pyright
 $ yay -S rust-analyzer
 $ yay -S texlab
 ```
