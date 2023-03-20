@@ -116,6 +116,18 @@ my_project $ flutter create --platforms=linux .
 
 - [eLinux](https://github.com/sony/flutter-elinux)
 
+#### Rx Bloc
+
+- [Main Page and Docs](https://github.com/Prime-Holding/rx_bloc)
+
+- [Rx Bloc CLI](https://pub.dev/packages/rx_bloc_cli)
+
+- [build_runner](https://pub.dev/packages/build_runner)
+
+- [Routers](https://dhruvnakum.xyz/most-popular-routing-packages-in-flutter)
+
+- [RxDart Network Samples](https://github.com/apgapg/rx_dart_samples)
+
 #### Redux :snowflake:
 
 [Flutter Redux](https://github.com/brianegan/flutter_redux)
