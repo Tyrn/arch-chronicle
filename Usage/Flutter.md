@@ -65,6 +65,10 @@
 
 - [bloc_concurrency, transformer:, debounce](https://stackoverflow.com/questions/62972731/flutter-transform-flutter-bloc-event-to-add-debounce)
 
+- [Routers](https://dhruvnakum.xyz/most-popular-routing-packages-in-flutter)
+
+- [AutoRouter](https://www.coletiv.com/blog/flutter-navigator-2.0-made-easy-with-auto-router/)
+
 #### Very Good CLI
 
 - [On pub.dev](https://pub.dev/packages/very_good_cli)
@@ -131,8 +135,6 @@ my_project $ flutter create --platforms=linux .
 - [Rx Bloc CLI](https://pub.dev/packages/rx_bloc_cli)
 
 - [build_runner](https://pub.dev/packages/build_runner)
-
-- [Routers](https://dhruvnakum.xyz/most-popular-routing-packages-in-flutter)
 
 - [RxDart Network Samples](https://github.com/apgapg/rx_dart_samples)
 
