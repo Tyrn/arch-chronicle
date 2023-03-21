@@ -17,6 +17,8 @@
 
 - [Flutter by Example](https://flutterbyexample.com/)
 
+- [Material components widgets](https://docs.flutter.dev/development/ui/widgets/material)
+
 - [Flutter Architecture, official samples](https://github.com/brianegan/flutter_architecture_samples)
 
 - [Flutter Planets](https://github.com/sergiandreplace/flutter_planets_tutorial) :snowflake:
