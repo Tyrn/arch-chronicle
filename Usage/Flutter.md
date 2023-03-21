@@ -33,6 +33,8 @@
 
 - [dartdoc, Dart documentation generator](https://stackoverflow.com/questions/64602658/what-is-the-macro-annotation-in-flutter-and-dart-documentation)
 
+- [json_serializable, code generation](https://pub.dev/packages/json_serializable)
+
 #### BLoC
 
 - [Bloc Library, including Examples](https://bloclibrary.dev); [on GitHub](https://github.com/felangel/bloc)
