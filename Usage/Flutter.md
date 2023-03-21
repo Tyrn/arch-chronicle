@@ -57,6 +57,10 @@
 [103](https://github.com/JonFir/lazyload_flutter/tree/arch/lesson/103-dependency-managemant-sl),
 [104](https://github.com/JonFir/lazyload_flutter/tree/arch/lesson/104-dependency-managemant-get_it)
 
+- [Debounce, transformer](https://stackoverflow.com/questions/71054791/how-to-debounce-events-in-bloc)
+
+- [bloc_concurrency, debounce](https://stackoverflow.com/questions/62972731/flutter-transform-flutter-bloc-event-to-add-debounce)
+
 #### Very Good CLI
 
 - [On pub.dev](https://pub.dev/packages/very_good_cli)
