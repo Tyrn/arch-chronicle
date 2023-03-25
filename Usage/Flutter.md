@@ -85,26 +85,88 @@
 ```
 $ dart pub global activate very_good_cli
 ```
-- Create project:
+
+#### Create a Hello project
+
+- Use Very Good CLI:
 ```
-$ very_good help create [flutter_app|flame_game...]
+$ very_good create flutter_app very_hello
+$ cd very_hello
+```
+- Add Linux platform:
+```
+$ flutter create --platforms=linux .
+```
+- Remove standard boilerplate; new `lib/main.dart`:
+```
+import 'package:very_hello/main_development.dart' as development;
+import 'package:very_hello/main_production.dart' as production;
+import 'package:very_hello/main_staging.dart' as staging;
+
+void main() {
+  return development.main();
+}
+```
+- Remove error from `test/widget_test.dart`:
+```
+import 'package:very_hello/app/app.dart';
 ...
-$ very_good create flutter_todos --desc "An example todos app that showcases bloc state management patterns."
+    await tester.pumpWidget(const App());
 ```
+- Add to `dependencies` (`$ flutter pub add`):
+```
+  auto_route:
+  flutter_rx_bloc:
+  window_size:
+    git:
+      url: https://github.com/google/flutter-desktop-embedding.git
+      path: plugins/window_size
+      ref: 6c66ad23ee79749f30a8eece542cf54eaf157ed8
+```
+- Add to `dev_dependencies` (`$ flutter pub add -d`):
+```
+  import_sorter:
+  auto_route_generator:
+  build_runner:
+```
+- [Import sorter](https://pub.dev/packages/import_sorter) usage:
+```
+$ flutter pub run import_sorter:main
+```
+- Create `lib/platform.dart`:
+```
+import 'package:flutter/foundation.dart';
 
-- Create various projects inside `packages` (`flutter_todos/packages`) (old syntax?):
-```
-flutter_todos $ very_good create todos_api -o packages -t dart_pkg --desc "The interface and models for an API providing access to todos."
+class Platform {
+  static bool get isDesktop {
+    return isLinux || isMacOS || isWindows;
+  }
 
-flutter_todos $ very_good create local_storage_todos_api -o packages -t flutter_pkg --desc "A Flutter implementation of the TodosApi that uses local storage."
+  static bool get isLinux {
+    return defaultTargetPlatform == TargetPlatform.linux;
+  }
 
-flutter_todos $ very_good create todos_repository -o packages -t dart_pkg --desc "A repository that handles todo related requests."
+  static bool get isMacOS {
+    return defaultTargetPlatform == TargetPlatform.macOS;
+  }
+
+  static bool get isWindows {
+    return defaultTargetPlatform == TargetPlatform.windows;
+  }
+
+  static bool get isFuchsia {
+    return defaultTargetPlatform == TargetPlatform.fuchsia;
+  }
+
+  static bool get isAndroid {
+    return defaultTargetPlatform == TargetPlatform.android;
+  }
+
+  static bool get isIOS {
+    return defaultTargetPlatform == TargetPlatform.iOS;
+  }
+}
 ```
-- Install all the dependencies recursively:
-```
-$ very_good packages get -r
-```
-- Check Android Studio *Run > Edit Configurations...*
 
 #### Localization
 
