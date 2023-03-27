@@ -34,7 +34,13 @@ $ yay -S thonny
 
 - [micropython-lib](https://pypi.org/user/micropython-lib/) (What is it?)
 
+- [MicroPython Stubber](https://github.com/Josverl/micropython-stubber)
+
+- [MicroPython Stubs](https://github.com/Josverl/micropython-stubs)
+
 - Unit testing not working as expected, [#10275](https://github.com/orgs/micropython/discussions/10275)
+
+- [micropy-cli](https://www.agilepartner.net/en/micropython-esp8266-and-vscode/)
 
 #### Examples
 
