@@ -202,6 +202,55 @@ my_project $ flutter create --platforms=linux .
 
 - [RxDart Network Samples](https://github.com/apgapg/rx_dart_samples)
 
+#### Bluetooth BLE
+
+- [flutter-reactive-ble-example](https://github.com/ubiqueIoT/flutter-reactive-ble-example)
+
+#### Kotlin upgrade (2023-03-28)
+
+- [Kotlin release details](https://kotlinlang.org/docs/releases.html#release-details)
+
+- `android/build.gradle`:
+```
+...
+buildscript {
+    ext.kotlin_version = '1.8.10'  // Change!
+    repositories {
+        google()
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.2.0'  // Change!
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+...
+```
+- `android/gradle/wrapper/gradle-wrapper.properties`:
+```
+#Fri Jun 23 08:50:38 CEST 2017
+distributionBase=GRADLE_USER_HOME
+distributionPath=wrapper/dists
+zipStoreBase=GRADLE_USER_HOME
+zipStorePath=wrapper/dists
+distributionUrl=https\://services.gradle.org/distributions/gradle-7.5-all.zip  // Change!
+```
+- `android/app/build.gradle`:
+```
+...
+    defaultConfig {
+        // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
+        applicationId "com.example.stream_provider_ble"
+        // minSdkVersion flutter.minSdkVersion
+        minSdkVersion 21  // Change!
+        targetSdkVersion flutter.targetSdkVersion
+        versionCode flutterVersionCode.toInteger()
+        versionName flutterVersionName
+    }
+...
+```
+
 #### Redux :snowflake:
 
 [Flutter Redux](https://github.com/brianegan/flutter_redux)
