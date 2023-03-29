@@ -53,6 +53,10 @@
 
 - [`mapEventToState()` deprecated](https://blog.logrocket.com/introduction-flutter-bloc-8/)
 
+- [Lessons learned from switching Flutter app from Provider to Bloc — part I](https://urgo.medium.com/lessons-learned-from-switching-flutter-app-from-provider-to-bloc-part-i-96a301962849)
+
+- [Lessons learned from switching Flutter app from Provider to Bloc — part II](https://urgo.medium.com/lessons-learned-from-switching-flutter-app-to-bloc-part-ii-63bac496435a)
+
 - Lessons in Russian, [Video](https://youtu.be/khuaUejT3zw),
 [47](https://github.com/JonFir/lazyload_flutter/tree/lesson/47-build-context),
 [91](https://github.com/JonFir/lazyload_flutter/tree/arch/lesson/91-bloc-on-events),
