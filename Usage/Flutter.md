@@ -37,6 +37,10 @@
 
 - [json_serializable, code generation](https://pub.dev/packages/json_serializable)
 
+- [Dhruv Nakum, GitHub](https://github.com/red-star25)
+
+- [Dhruv Nakum, site](https://dhruvnakum.xyz/)
+
 #### BLoC
 
 - [Bloc Library, including Examples](https://bloclibrary.dev); [on GitHub](https://github.com/felangel/bloc)
