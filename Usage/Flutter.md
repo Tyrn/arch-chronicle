@@ -85,7 +85,7 @@
 
 - [freezed_weather (hydrated_bloc, too)](https://github.com/yh-luo/freezed_weather)
 
-- [Why Bloc + Freezed is a match made in heaven](https://dev.to/ptrbrynt/why-bloc-freezed-is-a-match-made-in-heaven-29ai)
+- [Why Bloc + Freezed is a match made in heaven (counter)](https://dev.to/ptrbrynt/why-bloc-freezed-is-a-match-made-in-heaven-29ai)
 
 - [Testing Bloc with Mockito | Part-2](https://www.nahitfidanci.com/blog/testing-bloc-with-mockito-part-2?utm_source=nahitfidanci&utm_medium=referral&utm_campaign=flutter_bloc_tests_article&utm_content=article_on_nahitfidanci_blog)
 
