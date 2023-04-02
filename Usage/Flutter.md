@@ -87,6 +87,8 @@
 
 - [Why Bloc + Freezed is a match made in heaven](https://dev.to/ptrbrynt/why-bloc-freezed-is-a-match-made-in-heaven-29ai)
 
+- [Testing Bloc with Mockito | Part-2](https://www.nahitfidanci.com/blog/testing-bloc-with-mockito-part-2?utm_source=nahitfidanci&utm_medium=referral&utm_campaign=flutter_bloc_tests_article&utm_content=article_on_nahitfidanci_blog)
+
 - [Routers](https://dhruvnakum.xyz/most-popular-routing-packages-in-flutter)
 
 - [AutoRouter](https://www.coletiv.com/blog/flutter-navigator-2.0-made-easy-with-auto-router/)
