@@ -85,6 +85,8 @@
 
 - [freezed_weather (hydrated_bloc, too)](https://github.com/yh-luo/freezed_weather)
 
+- [Why Bloc + Freezed is a match made in heaven](https://dev.to/ptrbrynt/why-bloc-freezed-is-a-match-made-in-heaven-29ai)
+
 - [Routers](https://dhruvnakum.xyz/most-popular-routing-packages-in-flutter)
 
 - [AutoRouter](https://www.coletiv.com/blog/flutter-navigator-2.0-made-easy-with-auto-router/)
