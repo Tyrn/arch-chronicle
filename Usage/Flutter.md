@@ -92,6 +92,8 @@
 - Install/upgrade:
 ```
 $ dart pub global activate very_good_cli
+...
+$ dart pub global list
 ```
 
 #### Create a Hello project
