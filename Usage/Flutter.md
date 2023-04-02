@@ -83,6 +83,8 @@
 
 - [Konstantin Kokorin - Freezed and Bloc 2/2 (ru)](https://youtu.be/viQX4T2TNb8), [source](https://github.com/Virer2013/Learn_Flutter/tree/master/bloc_freezed_example)
 
+- [freezed_weather (hydrated_bloc, too)](https://github.com/yh-luo/freezed_weather)
+
 - [Routers](https://dhruvnakum.xyz/most-popular-routing-packages-in-flutter)
 
 - [AutoRouter](https://www.coletiv.com/blog/flutter-navigator-2.0-made-easy-with-auto-router/)
