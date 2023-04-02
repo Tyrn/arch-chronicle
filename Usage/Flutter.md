@@ -79,9 +79,9 @@
 
 - [Flutter: BLOCs at Scale | 2 — Keeping BLOCs Lean](https://itnext.io/flutter-blocs-at-scale-2-keeping-blocs-lean-1b659536e3ec)
 
-- [Konstantin Kokorin - Freezed and Bloc 1/2](https://youtu.be/J5W5ebOKTxY), [source](https://github.com/Virer2013/Learn_Flutter/tree/master/freezed_example)
+- [Konstantin Kokorin - Freezed and Bloc 1/2 (ru)](https://youtu.be/J5W5ebOKTxY), [source](https://github.com/Virer2013/Learn_Flutter/tree/master/freezed_example)
 
-- [Konstantin Kokorin - Freezed and Bloc 2/2](https://youtu.be/viQX4T2TNb8), [source](https://github.com/Virer2013/Learn_Flutter/tree/master/bloc_freezed_example)
+- [Konstantin Kokorin - Freezed and Bloc 2/2 (ru)](https://youtu.be/viQX4T2TNb8), [source](https://github.com/Virer2013/Learn_Flutter/tree/master/bloc_freezed_example)
 
 - [Routers](https://dhruvnakum.xyz/most-popular-routing-packages-in-flutter)
 
