@@ -9,22 +9,6 @@ $ cd very_hello
 ```
 $ flutter create --platforms=linux .
 ```
-- Remove standard boilerplate; new `lib/main.dart`:
-```
-import 'package:very_hello/main_development.dart' as development;
-import 'package:very_hello/main_production.dart' as production;
-import 'package:very_hello/main_staging.dart' as staging;
-
-void main() {
-  return development.main();
-}
-```
-- Remove error from `test/widget_test.dart`:
-```
-import 'package:very_hello/app/app.dart';
-...
-    await tester.pumpWidget(const App());
-```
 - Add to `dependencies` (`$ flutter pub add`):
 ```
   auto_route:
@@ -38,7 +22,9 @@ import 'package:very_hello/app/app.dart';
 - Add to `dev_dependencies` (`$ flutter pub add -d`):
 ```
   import_sorter:
+  rx_bloc_generator:
   auto_route_generator:
+  rx_bloc_test:
   build_runner:
 ```
 - [Import sorter](https://pub.dev/packages/import_sorter) usage:
@@ -79,5 +65,20 @@ class Platform {
   }
 }
 ```
+- Remove standard boilerplate; new `lib/main.dart`:
+```
+import 'package:very_hello/main_development.dart' as development;
+import 'package:very_hello/main_production.dart' as production;
+import 'package:very_hello/main_staging.dart' as staging;
 
+void main() {
+  return development.main();
+}
+```
+- Remove error from `test/widget_test.dart`:
+```
+import 'package:very_hello/app/app.dart';
+...
+    await tester.pumpWidget(const App());
+```
 
