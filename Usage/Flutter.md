@@ -75,6 +75,10 @@
 
 - [bloc_concurrency, transformer:, debounce](https://stackoverflow.com/questions/62972731/flutter-transform-flutter-bloc-event-to-add-debounce)
 
+- [Flutter: BLOCs at Scale | 1 — The State Machine](https://itnext.io/flutter-blocs-at-scale-1-the-state-machine-fce5f086d7b9)
+
+- [Flutter: BLOCs at Scale | 2 — Keeping BLOCs Lean](https://itnext.io/flutter-blocs-at-scale-2-keeping-blocs-lean-1b659536e3ec)
+
 - [Routers](https://dhruvnakum.xyz/most-popular-routing-packages-in-flutter)
 
 - [AutoRouter](https://www.coletiv.com/blog/flutter-navigator-2.0-made-easy-with-auto-router/)
