@@ -27,7 +27,11 @@ $ sudo pacman -S npm
 set spelllang=ru_ru,en_us,es_es
 nmap <leader>ss :set invspell<CR>
 ```
-- `*.spl` files are found in `/.local/share/nvim/site/spell`
+- `*.spl` files are found in `/.local/share/nvim/site/spell`; also
+```
+$ locate en.utf-8.spl
+/usr/share/nvim/runtime/spell/en.utf-8.spl
+```
 #### Clipboard
 
 - Install `xclip` (or `xsel`)
