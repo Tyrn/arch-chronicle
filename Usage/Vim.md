@@ -91,6 +91,14 @@ $ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw
 :PlugClean
 :PlugInstall
 ```
+- Total cleanup:
+```
+$ rm -rf ~/.cache/nvim ~/.config/nvim/plugged ~/.local/share/nvim
+```
+- Sometimes useful:
+```
+:UpdateRemotePlugins
+```
 - Create backup folder:
 ```
 $ mkdir ~/.local/share/nvim/backup
