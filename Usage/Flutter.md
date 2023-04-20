@@ -5,7 +5,8 @@
 
 ### Resources
 
-- [Vandad Nahavandipoor's Flutter video course](https://www.youtube.com/playlist?list=PL6yRaaP0WPkVtoeNIGqILtRAgd3h2CNpT)
+- [Vandad Nahavandipoor's Flutter video course](https://www.youtube.com/playlist?list=PL6yRaaP0WPkVtoeNIGqILtRAgd3h2CNpT),
+[GitHub](https://github.com/vandadnp)
 
 - [Understanding null safety](https://dart.dev/null-safety/understanding-null-safety)
 
