@@ -48,7 +48,9 @@ $ yay -S thonny
 
 - [ESP32 BLE](https://techtotinker.com/2021/08/025-esp32-micropython-esp32-bluetooth-low-energy/)
 
-- [HD44780](https://raphaelkabo.com/blog/pi-pico-hd44780/)
+- [HD44780, RPi Pico](https://raphaelkabo.com/blog/pi-pico-hd44780/)
+
+- [HD44780, ESP32, ESP8266](https://microcontrollerslab.com/i2c-lcd-esp32-esp8266-micropython-tutorial/)
 
 #### Thonny Tips and Tricks
 
