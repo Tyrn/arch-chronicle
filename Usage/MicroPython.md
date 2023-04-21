@@ -47,3 +47,8 @@ $ yay -S thonny
 - [Thonny, multifile project](https://techexplorations.com/guides/esp32/micropython-with-the-esp32/14-micropython-programming-with-files/)
 
 - [ESP32 BLE](https://techtotinker.com/2021/08/025-esp32-micropython-esp32-bluetooth-low-energy/)
+
+#### Thonny Tips and Tricks
+
+- Remember that access to MicroPython shell is possible only when the flashed firmware is running, so use RST button.
+Use Ctrl-F2 on the dead red console; use Ctrl-C on not quite good console; use Ctrl-D on Python shell `>>>` whenever you want.
