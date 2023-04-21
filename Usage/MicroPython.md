@@ -48,6 +48,8 @@ $ yay -S thonny
 
 - [ESP32 BLE](https://techtotinker.com/2021/08/025-esp32-micropython-esp32-bluetooth-low-energy/)
 
+- [HD44780](https://raphaelkabo.com/blog/pi-pico-hd44780/)
+
 #### Thonny Tips and Tricks
 
 - Remember that access to MicroPython shell is possible only when the flashed firmware is running, so use RST button.
