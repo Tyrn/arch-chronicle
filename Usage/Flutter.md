@@ -74,6 +74,7 @@ $ rg -w blerio --files-with-matches | xargs sed -i 's/blerio/bleriomob/g'
 
 - Lessons in Russian, [Video](https://youtu.be/khuaUejT3zw),
 [47](https://github.com/JonFir/lazyload_flutter/tree/lesson/47-build-context),
+[78](https://github.com/JonFir/lazyload_flutter/tree/arch/lesson/78-provider),
 [91](https://github.com/JonFir/lazyload_flutter/tree/arch/lesson/91-bloc-on-events),
 [92](https://github.com/JonFir/lazyload_flutter/tree/arch/lesson/92-bloc-libs-cubit),
 [93](https://github.com/JonFir/lazyload_flutter/tree/arch/lesson/93-bloc-libs-bloc),
