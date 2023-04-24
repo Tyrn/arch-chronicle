@@ -3,6 +3,13 @@
 
 - :snowflake: - supposedly obsolete entry.
 
+### Misc
+
+- Replace a word in all the files:
+```
+$ rg -w blerio --files-with-matches | xargs sed -i 's/blerio/bleriomob/g'
+```
+
 ### Resources
 
 - [Vandad Nahavandipoor's Flutter video course](https://www.youtube.com/playlist?list=PL6yRaaP0WPkVtoeNIGqILtRAgd3h2CNpT),
