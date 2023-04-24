@@ -10,9 +10,9 @@ GTK_IM_MODULE=ibus
 QT_IM_MODULE=ibus
 XMODIFIERS=@im=ibus
 ```
-- Add to `xprofile`:
+- Add to `~/.xprofile`:
 ```
-exec ibus-daemon -drx &
+exec /usr/bin/ibus-daemon -drx &
 ```
 - [Autostart history, generated service](https://forum.manjaro.org/t/kde-login-script/126769)
 - Change IBus Panel icon to red:
