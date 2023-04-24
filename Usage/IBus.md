@@ -10,29 +10,9 @@ GTK_IM_MODULE=ibus
 QT_IM_MODULE=ibus
 XMODIFIERS=@im=ibus
 ```
-- Create `~/.config/systemd/user/ibus-custom.service`:
+- Add to `xprofile`:
 ```
-[Unit]
-PartOf=graphical-session.target
-
-Description=IBus Service
-After=graphical-session.target
-
-[Service]
-Type=exec
-ExitType=cgroup
-ExecStartPre=/usr/bin/sleep 10
-ExecStart=/usr/bin/ibus-daemon -drxR
-Restart=no
-TimeoutSec=15s
-Slice=app.slice
-
-[Install]
-WantedBy=graphical-session.target
-```
-- Enable:
-```
-$ systemctl enable --user ibus-custom
+exec ibus-daemon -drx &
 ```
 - [Autostart history, generated service](https://forum.manjaro.org/t/kde-login-script/126769)
 - Change IBus Panel icon to red:
