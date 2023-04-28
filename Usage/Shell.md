@@ -27,7 +27,7 @@ end of `~/.bashrc`:
 $ sudo groupadd <group>
 $ sudo gpasswd -a $USER <group>
 ```
-or
+[or](https://askubuntu.com/questions/1366061/when-gpasswd-vs-usermod-deluser)
 ```
 $ sudo usermod -aG <group> $USER
 ```
