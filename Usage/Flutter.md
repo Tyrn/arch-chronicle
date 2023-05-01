@@ -52,6 +52,8 @@ $ rg -w blerio --files-with-matches | xargs sed -i 's/blerio/bleriomob/g'
 
 - [Dhruv Nakum, site](https://dhruvnakum.xyz/)
 
+- [Rody Davis, Riverpod](https://github.com/rodydavis/flutter_todo_app), [Video](https://www.youtube.com/live/WvGHJef7O-g?feature=share)
+
 #### BLoC
 
 - [Bloc Library, including Examples](https://bloclibrary.dev); [on GitHub](https://github.com/felangel/bloc)
