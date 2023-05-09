@@ -155,12 +155,12 @@ extra/networkmanager 1.40.8-1 [installed]
 
 #### i3 window manager, [ArchWiki](https://wiki.archlinux.org/title/I3)
 
-- `$ yay -S i3-gaps dmenu[-manjaro] i3status`
+- `$ yay -S i3-gaps dmenu[-manjaro] i3status` (moved to dotfiles)
 - `~/.config/plasma-workspace/env/set_window_manager.sh` (Obsolete):
 ```
 export KDEWM=/usr/bin/i3
 ```
-- Create i3 service (`~/.config/systemd/user/plasma-custom-wm.service`):
+- Create i3 service, `~/.config/systemd/user/plasma-custom-wm.service` (moved to dotfiles):
 ```
 [Install]
 WantedBy=plasma-workspace.target
@@ -182,3 +182,9 @@ Restart=on-failure
 ᐅ systemctl enable --user plasma-custom-wm.service
 ```
 - On `i3lock` use: [issue #119](https://github.com/i3/i3lock/issues/119), [Better approach to lock, shutdown, etc.](https://wiki.archlinux.org/title/i3#Shutdown.2C_reboot.2C_lock_screen)
+
+- `~/.config/plasma-localerc`, default:
+```
+[Formats]
+LANG=en_US.UTF-8
+```
