@@ -330,7 +330,7 @@ $ sudo gpasswd -a $USER sdkusers
 $ sudo chown -R :sdkusers /opt/android-sdk/
 $ sudo chmod -R g+w /opt/android-sdk/
 ```
-or just like this:
+[or just like this](https://dev.to/kaysoohyun/install-flutter-vscode-on-linux-successfully-2hpg):
 ```
 $ sudo chown -R $USER /opt/flutter
 ```
