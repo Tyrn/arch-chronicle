@@ -332,7 +332,7 @@ $ sudo chmod -R g+w /opt/android-sdk/
 ```
 or just like this:
 ```
-$ sudo chown -R $USER /opt
+$ sudo chown -R $USER /opt/flutter
 ```
 - Accept licenses:
 ```
