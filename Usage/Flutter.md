@@ -12,6 +12,10 @@ $ rg -w blerio --files-with-matches | xargs sed -i 's/blerio/bleriomob/g'
 
 ### Resources
 
+- [Flutter state management solutions](https://fluttergems.dev/state-management/)
+
+- [Most popular Flutter state management libraries in 2023](https://dev.to/mjablecnik/most-popular-flutter-state-management-libraries-in-2023-amc)
+
 - [Vandad Nahavandipoor's Flutter video course](https://www.youtube.com/playlist?list=PL6yRaaP0WPkVtoeNIGqILtRAgd3h2CNpT),
 [GitHub](https://github.com/vandadnp),
 [Flutter Tips and Tricks](https://github.com/vandadnp/flutter-tips-and-tricks)
@@ -52,9 +56,21 @@ $ rg -w blerio --files-with-matches | xargs sed -i 's/blerio/bleriomob/g'
 
 - [Dhruv Nakum, site](https://dhruvnakum.xyz/)
 
+#### Creator
+
+- [Xianzhe Liang - Create a Flutter state management library with 100 lines of code](https://medium.com/@xianzhe/create-a-flutter-state-management-library-with-100-lines-of-code-e80bd865f4bd),
+[creator](https://github.com/liangxianzhe/creator)
+
+#### Riverpod
+
 - [Rody Davis, Riverpod](https://github.com/rodydavis/flutter_todo_app), [Video](https://www.youtube.com/live/WvGHJef7O-g?feature=share)
 
+- [Andrea Bizzotto - Flutter Riverpod 2.0: The Ultimate Guide](https://codewithandrea.com/articles/flutter-state-management-riverpod/)
+
 #### BLoC
+
+- [Didier Boelens - Reactive Programming, BLoC and Streams (rxdart only!)](https://www.didierboelens.com/blog/en/reactive-programming-streams-bloc),
+[GitHub](https://github.com/boeledi/Streams-Block-Reactive-Programming-in-Flutter)
 
 - [Bloc Library, including Examples](https://bloclibrary.dev); [on GitHub](https://github.com/felangel/bloc)
 
