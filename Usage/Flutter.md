@@ -69,6 +69,8 @@ $ rg -w blerio --files-with-matches | xargs sed -i 's/blerio/bleriomob/g'
 
 #### BLoC
 
+- [Biplab Dutta - A Taste of Reactive Programming in Flutter with RxDart and flutter_bloc](https://dev.to/b_plab98/a-taste-of-reactive-programming-in-flutter-with-rxdart-and-flutterbloc-3p12)
+
 - [Didier Boelens - Reactive Programming, BLoC and Streams (rxdart only!)](https://www.didierboelens.com/blog/en/reactive-programming-streams-bloc),
 [GitHub](https://github.com/boeledi/Streams-Block-Reactive-Programming-in-Flutter)
 
