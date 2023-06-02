@@ -63,6 +63,8 @@ $ rg -w blerio --files-with-matches | xargs sed -i 's/blerio/bleriomob/g'
 
 #### Riverpod
 
+- [Docs v2 (dev)](https://docs-v2.riverpod.dev/)
+
 - [Rody Davis, Riverpod](https://github.com/rodydavis/flutter_todo_app), [Video](https://www.youtube.com/live/WvGHJef7O-g?feature=share)
 
 - [Andrea Bizzotto - Flutter Riverpod 2.0: The Ultimate Guide](https://codewithandrea.com/articles/flutter-state-management-riverpod/)
