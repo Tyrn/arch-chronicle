@@ -69,6 +69,10 @@ $ rg -w blerio --files-with-matches | xargs sed -i 's/blerio/bleriomob/g'
 
 - [Andrea Bizzotto - Flutter Riverpod 2.0: The Ultimate Guide](https://codewithandrea.com/articles/flutter-state-management-riverpod/)
 
+- [Andrea Bizzotto - How to Auto-Generate your Providers with Flutter Riverpod Generator](https://codewithandrea.com/articles/flutter-riverpod-generator/)
+
+- [Andrea Bizzotto - How to use Notifier and AsyncNotifier with the new Flutter Riverpod Generator](https://codewithandrea.com/articles/flutter-riverpod-async-notifier/)
+
 #### BLoC
 
 - [Biplab Dutta - A Taste of Reactive Programming in Flutter with RxDart and flutter_bloc](https://dev.to/b_plab98/a-taste-of-reactive-programming-in-flutter-with-rxdart-and-flutterbloc-3p12)
