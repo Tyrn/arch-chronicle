@@ -410,7 +410,15 @@ $ flutter pub pub deps
 $ flutter run
 ```
 
-### Troubleshooting :snowflake:
+### Troubleshooting
+
+- [Got a stack frame from package:stack_trace, where a vm or web frame was expected](https://stackoverflow.com/questions/73591769/got-a-stack-frame-from-packagestack-trace-where-a-vm-or-web-frame-was-expected)
+
+- [Bad state: Stream has already been listened to](https://stackoverflow.com/questions/51396769/flutter-bad-state-stream-has-already-been-listened-to)
+
+- [Migrate StreamProvider from Provider to Riverpod](https://www.reddit.com/r/flutterhelp/comments/13z9kn1/provider_streamprovider_how_to_migrate_to_riverpod/)
+
+:snowflake:
 
 - `Error retrieving device properties for ro.product.cpu.abi Permission denied...`
 Check your target Android device settings; replug.
