@@ -73,6 +73,10 @@ $ rg -w blerio --files-with-matches | xargs sed -i 's/blerio/bleriomob/g'
 
 - [Andrea Bizzotto - How to use Notifier and AsyncNotifier with the new Flutter Riverpod Generator](https://codewithandrea.com/articles/flutter-riverpod-async-notifier/)
 
+- [Andrea Bizzotto - Use AsyncValue](https://codewithandrea.com/articles/flutter-use-async-value-not-future-stream-builder/)
+
+- [Migrate StreamProvider from Provider to Riverpod](https://www.reddit.com/r/flutterhelp/comments/13z9kn1/provider_streamprovider_how_to_migrate_to_riverpod/)
+
 #### BLoC
 
 - [Biplab Dutta - A Taste of Reactive Programming in Flutter with RxDart and flutter_bloc](https://dev.to/b_plab98/a-taste-of-reactive-programming-in-flutter-with-rxdart-and-flutterbloc-3p12)
@@ -415,8 +419,6 @@ $ flutter run
 - [Got a stack frame from package:stack_trace, where a vm or web frame was expected](https://stackoverflow.com/questions/73591769/got-a-stack-frame-from-packagestack-trace-where-a-vm-or-web-frame-was-expected)
 
 - [Bad state: Stream has already been listened to](https://stackoverflow.com/questions/51396769/flutter-bad-state-stream-has-already-been-listened-to)
-
-- [Migrate StreamProvider from Provider to Riverpod](https://www.reddit.com/r/flutterhelp/comments/13z9kn1/provider_streamprovider_how_to_migrate_to_riverpod/)
 
 :snowflake:
 
