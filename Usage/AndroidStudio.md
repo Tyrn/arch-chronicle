@@ -9,20 +9,6 @@
 ```
 $ yay -S jetbrains-toolbox
 ```
-After installation via JetBrains Toolbox the running path will look like this:
-```
-~/.local/share/JetBrains/Toolbox/apps/AndroidStudio/ch-0/221.6008.13.2211.9514443/bin/studio.sh
-```
-- Create a convenient soft link in home directory:
-```
-$ ln -s .local/share/JetBrains/Toolbox/apps/AndroidStudio/ch-0/221.6008.13.2211.9514443 AndroidStudio
-```
-- Create a starting script, to be visible for *dmenu*:
-```
-$ cat /usr/local/bin/android-studio
-#!/usr/bin/env bash
-exec ~/AndroidStudio/bin/studio.sh
-```
 - In case of [Unable to find bundled Java version on Flutter](https://stackoverflow.com/questions/51281702/unable-to-find-bundled-java-version-on-flutter) trouble, create a soft link:
 ```
 $ cd ~/AndroidStudio
@@ -38,6 +24,7 @@ $ flutter config --android-sdk ~/Android/Sdk
 ```
 export PATH=/opt/flutter/bin:$PATH
 export ANDROID_HOME=~/Android/Sdk
+export PATH=$HOME/.local/share/JetBrains/Toolbox/scripts:$PATH
 export PATH=$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools:$ANDROID_HOME/emulator:$PATH
 export PATH=$ANDROID_HOME/cmdline-tools/latest/bin:$PATH
 export PATH=$ANDROID_HOME/cmdline-tools/latest:$PATH
