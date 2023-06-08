@@ -56,3 +56,29 @@ $ yay -S thonny
 
 - Remember that access to MicroPython shell is possible only when the flashed firmware is running, so use RST button.
 Use Ctrl-F2 on the dead red console; use Ctrl-C on not quite good console; use Ctrl-D on Python shell `>>>` whenever you want.
+
+#### Micropy Cli and rshell
+
+- Create (`$ mkdir hello`) or adopt a cloned project
+```
+$ git clone .../hello.git
+$ cd hello/
+$ python -m venv .venv
+$ source .venv/bin/activate
+(.venv) $ pip install micropy-cli
+(.venv) $ pip install rshell
+(.venv) $ pip install pylint
+(.venv) $ pip install micropython-esp32-stubs
+(.venv) $ cd ..
+(.venv) $ micropy init hello
+...
+(.venv) $ cd hello
+(.venv) $ micropy stubs add micropython-esp32-stubs-1.20.0.post1
+```
+- Start `rshell`
+```
+(.venv) $ cd hello/
+(.venv) $ rshell -p /dev/ttyUSB0
+...
+> help
+```
