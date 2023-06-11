@@ -70,15 +70,22 @@ $ source .venv/bin/activate
 (.venv) $ pip install pylint
 (.venv) $ pip install micropython-esp32-stubs
 (.venv) $ cd ..
-(.venv) $ micropy init hello
+(.venv) $ micropy init hello    # Agree to "Settings for Autocompletion", if you have all cloned and already here.
 ...
-(.venv) $ cd hello
 (.venv) $ micropy stubs add micropython-esp32-stubs-1.20.0.post1
+(.venv) $ cd hello
 ```
-- Start `rshell`
+- Start `rshell` in the project directory
 ```
-(.venv) $ cd hello/
 (.venv) $ rshell -p /dev/ttyUSB0
 ...
 > help
+```
+- Inside `rshell`, follow this pattern:
+```
+repl.C-d         => soft_reboot; mcu.running
+    .C-x         => rshell; mcu.?
+
+soft_reboot.C-c  => repl; mcu.?
+          [.C-x  => rshell; mcu.?; game_over]
 ```
