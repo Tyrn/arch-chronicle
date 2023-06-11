@@ -59,9 +59,9 @@ Use Ctrl-F2 on the dead red console; use Ctrl-C on not quite good console; use C
 
 #### Micropy Cli and rshell
 
-- Create (`$ mkdir hello`) or adopt a cloned project
+- Create a project
 ```
-$ git clone .../hello.git
+$ mkdir hello
 $ cd hello/
 $ python -m venv .venv
 $ source .venv/bin/activate
@@ -69,6 +69,18 @@ $ source .venv/bin/activate
 (.venv) $ pip install rshell
 (.venv) $ pip install pylint
 (.venv) $ pip install micropython-esp32-stubs
+...
+```
+- ...or adopt a cloned Poetry project
+```
+$ git clone .../hello.git
+$ cd hello
+$ poetry install
+$ poetry shell
+(.venv) $
+```
+- ...initialize newly created or adopted project
+```
 (.venv) $ cd ..
 (.venv) $ micropy init hello    # Agree to "Settings for Autocompletion", if you have all cloned and already here.
 ...
