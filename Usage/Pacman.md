@@ -29,11 +29,11 @@ SyncFirst    = manjaro-system archlinux-keyring manjaro-keyring
 Architecture = auto
 
 # Pacman won't upgrade packages listed in IgnorePkg and members of IgnoreGroup
-IgnorePkg   = m17n-cu eclipse-common eclipse-cpp eclipse-java eclipse-javascript eclipse-jee eclipse-php eclipse-rust neovim-nightly stm32cubeide
-IgnorePkg   = yacreader
-#IgnorePkg   = autojump
-#IgnorePkg   = linux-latest linux-latest-headers linux-latest-r8168 linux-latest-virtualbox-host-modules
-#IgnorePkg   = jdk jre
+IgnorePkg   = pulseview-git libsigrok-git libserialport-git libsigrokdecode-git
+IgnorePkg   = eclipse-javascript eclipse-php eclipse-cpp eclipse-common stm32cubeide
+IgnorePkg   = stlink-git
+IgnorePkg   = kicad-git
+IgnorePkg   = deadbeef-git m17n-cu yacreader neovim-nightly
 #IgnoreGroup =
 
 #NoUpgrade   =
