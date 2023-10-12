@@ -15,6 +15,6 @@ https://github.com/stm32duino/BoardManagerFiles/raw/main/package_stmicroelectron
 
 - `stm32cubeprog` AUR package, menu entries (via kmenuedit):
 ```
-/home/alexey/STMicroelectronics/STM32Cube/STM32CubeProgrammer/bin/STM32CubeProgrammer
-/home/alexey/STMicroelectronics/STM32Cube/STM32CubeProgrammer/bin/STM32TrustedPackageCreator
+~/STMicroelectronics/STM32Cube/STM32CubeProgrammer/bin/STM32CubeProgrammer
+~/STMicroelectronics/STM32Cube/STM32CubeProgrammer/bin/STM32TrustedPackageCreator
 ```
