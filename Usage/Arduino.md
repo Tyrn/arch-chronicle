@@ -12,3 +12,9 @@ https://github.com/stm32duino/BoardManagerFiles/raw/main/package_stmicroelectron
 - Tools > Board: "Generic STM32F1 series"
 
 - Tools > Board part number "Blue Pill F103C8"
+
+- `stm32cubeprog` AUR package, menu entries (via kmenuedit):
+```
+/home/alexey/STMicroelectronics/STM32Cube/STM32CubeProgrammer/bin/STM32CubeProgrammer
+/home/alexey/STMicroelectronics/STM32Cube/STM32CubeProgrammer/bin/STM32TrustedPackageCreator
+```
