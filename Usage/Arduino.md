@@ -24,6 +24,12 @@ https://github.com/stm32duino/BoardManagerFiles/raw/main/package_stmicroelectron
 $ yay -S stlink-git
 ```
 
+### Libraries
+
+- [HD44780_LCD_PCF8574](https://github.com/gavinlyonsrepo/HD44780_LCD_PCF8574)
+
+- [LiquidCrystalIO](https://github.com/davetcc/LiquidCrystalIO)
+
 ### Misc
 
 - `stm32cubeprog` AUR package, menu entries (via kmenuedit):
