@@ -19,6 +19,13 @@ https://github.com/stm32duino/BoardManagerFiles/raw/main/package_stmicroelectron
 
 - Tools > Usb support (if available): "CDC (generic 'Serial' supersede U(S)ART)"
 
+- Make sure the AUR version of ST-Link installed (stlink is certainly required by Cube Programmer; maybe stlink-git has something to do with Serial Monitor functionality)
+```
+$ yay -S stlink-git
+```
+
+### Misc
+
 - `stm32cubeprog` AUR package, menu entries (via kmenuedit):
 ```
 ~/STMicroelectronics/STM32Cube/STM32CubeProgrammer/bin/STM32CubeProgrammer
