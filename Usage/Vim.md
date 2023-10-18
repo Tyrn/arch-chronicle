@@ -92,6 +92,11 @@ $ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw
 ```
 $ rm -rf ~/.cache/nvim ~/.config/nvim/plugged ~/.local/share/nvim
 ```
+AstroNvim
+```
+$ rm -rf ~/.cache/nvim ~/.config/nvim ~/.local/share/nvim ~/.local/state/nvim
+$ git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim
+```
 - Sometimes useful:
 ```
 :UpdateRemotePlugins
