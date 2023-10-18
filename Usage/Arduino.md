@@ -13,6 +13,12 @@ https://github.com/stm32duino/BoardManagerFiles/raw/main/package_stmicroelectron
 
 - Tools > Board part number "Blue Pill F103C8"
 
+- Tools > C Runtime Library: "Newlib Nano (default)"
+
+- Tools > Upload method: "STM32CubeProgrammer (SWD)"
+
+- Tools > Usb support (if available): "CDC (generic 'Serial' supersede U(S)ART)"
+
 - `stm32cubeprog` AUR package, menu entries (via kmenuedit):
 ```
 ~/STMicroelectronics/STM32Cube/STM32CubeProgrammer/bin/STM32CubeProgrammer
