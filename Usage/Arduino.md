@@ -19,7 +19,8 @@ $ yay -S stlink-git
 
 - [HID Bootloader](https://github.com/Serasidis/STM32_HID_Bootloader),
 [releases](https://github.com/Serasidis/STM32_HID_Bootloader/releases),
-[**permissions**](https://github.com/Serasidis/STM32_HID_Bootloader#linux-udev-setup)
+[**permissions**](https://github.com/Serasidis/STM32_HID_Bootloader#linux-udev-setup),
+[experience](https://www.stm32duino.com/viewtopic.php?t=2168&sid=7427ef62c2bd3e6ce43c6ab105b2731a)
 
 #### Project settings for HID Bootloader (Arduino IDE 2, Tools menu)
 
