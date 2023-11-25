@@ -14,19 +14,19 @@ $ fmtutil-sys --all
 ```
 $ yay -S texlive-dummy
 ```
-- Install GUI library:
+- Download and install texlive: [current ISO](https://www.tug.org/texlive/acquire.html);
+[2021 ISO](http://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2021/)
 ```
-$ yay -S perl-tk
+$ md5sum -c texlive2021-20210325.iso.md5
+$ sudo mkdir /mnt/iso
+$ sudo mount -o loop texlive2021-20210325.iso /mnt/iso
+$ sudo ./install-tl
+...
+$ sudo umount /mnt/iso
 ```
-
-- Install texlive: [current ISO](https://www.tug.org/texlive/acquire.html); [2018 ISO](http://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2018/)
+- Add your texlive path to `~/.[x]profile`(do not use `~/.bashrc`!):
 ```
-$ [sudo] ./install-tl -gui
-```
-
-- add your texlive path to `~/.[x]profile`(do not use `~/.bashrc`!):
-```
-export PATH=/home/user/.local/share/texlive/2016/bin/x86_64-linux:$PATH
+export PATH=/usr/local/texlive/2021/bin/x86_64-linux:$PATH
 ```
 
 #### TeXstudio:
