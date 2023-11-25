@@ -14,6 +14,7 @@ Make sure the AUR version of ST-Link installed
 $ yay -S arduino-ide-bin
 $ yay -S stlink-git
 ```
+- [Arduino IDE 2.x extensions](https://www.stm32duino.com/viewtopic.php?t=2201), particularly Vim plugin
 
 ### Blue Pill Onboard (HID) Bootloader
 
