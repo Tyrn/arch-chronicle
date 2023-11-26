@@ -14,7 +14,8 @@ $ fmtutil-sys --all
 ```
 $ yay -S texlive-dummy
 ```
-- Download and install texlive: [current ISO](https://www.tug.org/texlive/acquire.html);
+- Download and install texlive: [current options](https://www.tug.org/texlive/acquire.html);
+[current ISO](https://www.tug.org/texlive/acquire-iso.html);
 [2021 ISO](http://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2021/)
 ```
 $ md5sum -c texlive2021-20210325.iso.md5
