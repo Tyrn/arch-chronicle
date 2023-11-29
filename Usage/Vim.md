@@ -11,7 +11,7 @@ set idearefactormode=keep
 
 #### sudo
 ```
-$ sudo -E nvim
+$ sudo -e nvim
 ```
 #### Plugin functionality support
 
