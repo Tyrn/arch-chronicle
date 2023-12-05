@@ -1,15 +1,18 @@
 ## KiCad
 ### Install
-Temporary situation with KiCad 5.0.0 rc2; make sure `wxpython` is replaced with `wxpython-gtk2`. The following AUR packages make a viable set:
+
+- Advanced/nightly version
 ```
-kicad-scripting-git
-kicad-symbols-git
-kicad-footprints-git
+$ yay -S kicad-git
 ```
-#### FreeRouter
+- Symbols and footprints (version directory is subject to change)
 ```
-$ yaourt -S freeroute-bin --noconfirm
+$ cd ~/.local/share/kicad/7.99/symbols
+$ git clone https://gitlab.com/kicad/libraries/kicad-symbols.git
+$ cd ~/.local/share/kicad/7.99/footprints
+$ git clone https://gitlab.com/kicad/libraries/kicad-footprints.git
 ```
+Accept them via *Preferences > Manage Symbol/Footprint Libraries...*
 
 ### Files
 
@@ -30,5 +33,3 @@ $ yaourt -S freeroute-bin --noconfirm
 - `*.ses` Specctra Session
 
 - `*.net` netlist
-
-[Complete reference](http://kicad-pcb.org/help/file-formats/)
