@@ -24,7 +24,7 @@ $ yay -S tree-sitter-python-git
 $ yay -S python-jedi
 $ yay -S npm
 ```
-#### Spell checking
+#### Spell checking (legacy)
 - `init.vim`:
 ```
 set spelllang=ru_ru,en_us,es_es
@@ -44,7 +44,7 @@ $ locate en.utf-8.spl
 set clipboard=unnamedplus
 ```
 
-#### Sharing plugins with Vim
+#### Sharing plugins with Vim (legacy)
 
 - [Arch Wiki](https://wiki.archlinux.org/index.php/Neovim), [Color scheme, etc.](https://vi.stackexchange.com/questions/12794/how-to-share-config-between-vim-and-neovim)
 
@@ -58,18 +58,6 @@ set clipboard=unnamedplus
 [Superfluous viewer instances](https://github.com/lervag/vimtex/issues/313)
 
 [**Configuration issue**](https://github.com/lervag/vimtex/issues/1392)
-
-#### Okular
-
-- Vim/Okular interaction (Okular > Settings > Editor > Command):
-```
-gvim --servername GVIM --remote-silent +%l %f
-```
-- Neovim/Okular, [neovim-remote installed](https://github.com/mhinz/neovim-remote):
-```
-nvr --remote-silent %f -c %l
-```
-*Shift+Left Click*; with Okular working only in *Browse* mode.
 
 #### Misc
 
@@ -92,11 +80,6 @@ $ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw
 ```
 $ rm -rf ~/.cache/nvim ~/.config/nvim/plugged ~/.local/share/nvim
 ```
-AstroNvim
-```
-$ rm -rf ~/.cache/nvim ~/.config/nvim ~/.local/share/nvim ~/.local/state/nvim
-$ git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim
-```
 - Sometimes useful:
 ```
 :UpdateRemotePlugins
@@ -106,3 +89,57 @@ $ git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim
 $ mkdir ~/.local/share/nvim/backup
 ```
 - In Neovim: `:checkhealth provider`
+
+#### Okular
+
+- Vim/Okular interaction (Okular > Settings > Editor > Command):
+```
+gvim --servername GVIM --remote-silent +%l %f
+```
+- **Neovim/Okular**, [neovim-remote installed](https://github.com/mhinz/neovim-remote):
+```
+nvr --remote-silent %f -c %l
+```
+*Shift+Left Click*; with Okular working only in *Browse* mode.
+
+#### AstroNvim
+
+- [Re]install
+```
+$ rm -rf ~/.cache/nvim ~/.config/nvim ~/.local/share/nvim ~/.local/state/nvim
+$ git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim
+```
+- AstroNvim mappings: `~/.config/nvim/lua/astronvim/mappings.lua`
+- User mappings, `~/.config/nvim/lua/user/mappings.lua`, example:
+```
+...
+-- Slavonic/Russian/Spanish special remapping
+local opts = { noremap = true, silent = true }
+local keymap = vim.api.nvim_set_keymap
+keymap("n", "ѵ", "0", opts)
+keymap("n", "ѱ", "G", opts)
+keymap("n", ";", "$", opts) -- Russian dollar
+keymap("n", "Ñ", ":", opts) -- Spanish colon
+keymap("n", ".", "/", opts) -- Russian slash
+keymap("n", "-", "/", opts) -- Spanish slash
+...
+```
+- User mappings, `~/.config/nvim/after/ftplugin/tex.lua`, example:
+```
+-- (La)TeX remapping
+local opts = { noremap = true, silent = true }
+local keymap = vim.api.nvim_buf_set_keymap
+
+...
+keymap(0, "i", "LL", "\\ldots{}", opts)
+keymap(0, "i", "ДД", "\\ldots{}", opts)
+...
+-- Slavonic/Russian/Spanish special remapping
+-- local keymap = vim.api.nvim_set_keymap
+keymap(0, "n", "ѵ", "0", opts)
+keymap(0, "n", "ѱ", "G", opts)
+keymap(0, "n", ";", "$", opts) -- Russian dollar
+keymap(0, "n", "Ñ", ":", opts) -- Spanish colon
+keymap(0, "n", ".", "/", opts) -- Russian slash
+keymap(0, "n", "-", "/", opts) -- Spanish slash
+```
