@@ -57,6 +57,9 @@ $ git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim
 - User mappings, `~/.config/nvim/lua/user/mappings.lua`, example:
 ```
 ...
+maps.n["<leader>lla"] = { ":VimtexContextMenu<CR>", desc = "VimTex context menu" }
+maps.n["<leader>ддф"] = { "<cmd>VimtexContextMenu<cr>", desc = "VimTex context menu" }
+...
 -- Slavonic/Russian/Spanish special remapping
 local opts = { noremap = true, silent = true }
 local keymap = vim.api.nvim_set_keymap
