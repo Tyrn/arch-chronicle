@@ -53,6 +53,15 @@ nvr --remote-silent %f -c %l
 $ rm -rf ~/.cache/nvim ~/.config/nvim ~/.local/share/nvim ~/.local/state/nvim
 $ git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim
 ```
+If your user configuration is on `dotfiles`, install it right away:
+```
+chezmoi apply -v
+```
+If the [support packages](https://github.com/Tyrn/arch-chronicle/blob/master/Usage/Vim.md#plugin-functionality-support)
+are already installed,
+```
+$ nvim
+```
 - AstroNvim mappings: `~/.config/nvim/lua/astronvim/mappings.lua`, do not edit
 - User mappings, `~/.config/nvim/lua/user/mappings.lua`, example:
 ```
