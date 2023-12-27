@@ -62,7 +62,8 @@ are already installed,
 ```
 $ nvim
 ```
-- AstroNvim mappings: `~/.config/nvim/lua/astronvim/mappings.lua`, do not edit
+- [Astrcommunity](https://github.com/AstroNvim/astrocommunity) plugins, `~/.config/nvim/lua/user/plugins/community.lua`
+- AstroNvim mappings: `~/.config/nvim/lua/astronvim/mappings.lua`, **do not edit**
 - User mappings, `~/.config/nvim/lua/user/mappings.lua`, example:
 ```
 ...
