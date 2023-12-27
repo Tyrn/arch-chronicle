@@ -62,7 +62,10 @@ are already installed,
 ```
 $ nvim
 ```
-- [Astrcommunity](https://github.com/AstroNvim/astrocommunity) plugins, `~/.config/nvim/lua/user/plugins/community.lua`
+- [Astrcommunity](https://github.com/AstroNvim/astrocommunity) plugins,
+specifically [languages](https://github.com/AstroNvim/astrocommunity/tree/main/lua/astrocommunity/pack),
+`~/.config/nvim/lua/user/plugins/community.lua`
+
 - AstroNvim mappings: `~/.config/nvim/lua/astronvim/mappings.lua`, **do not edit**
 - User mappings, `~/.config/nvim/lua/user/mappings.lua`, example:
 ```
