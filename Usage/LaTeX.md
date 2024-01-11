@@ -51,6 +51,13 @@ $pdf_previewer = 'okular --unique';
 ```
 - [Okular & NeoVim](https://github.com/Tyrn/arch-chronicle/blob/master/Usage/Vim.md#okular)
 
+#### Format
+
+- `latexindent`:
+```
+$ latexindent -w -s <target>
+```
+
 #### PDF
 
 - LaTeX, pdfpages; extracting pages 167..173 from ScalaReference.pdf
