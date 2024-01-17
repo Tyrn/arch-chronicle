@@ -3,6 +3,12 @@
 
 - :snowflake: - supposedly obsolete entry.
 
+### Notes
+
+- Directories to be most heavily populated:
+    - `~/Android/Sdk`
+    - `~/.local/share/JetBrains`
+
 ### Install
 
 - Get JetBrains Toolbox:
@@ -30,7 +36,7 @@ export PATH=$ANDROID_HOME/cmdline-tools/latest/bin:$PATH
 export PATH=$ANDROID_HOME/cmdline-tools/latest:$PATH
 export CHROME_EXECUTABLE=/usr/bin/google-chrome-stable
 ```
-- Manage permissions (relogin required):
+- Manage permissions (relogin required): :snowflake:
 ```
 $ sudo groupadd flutterusers
 $ sudo gpasswd -a $USER flutterusers
