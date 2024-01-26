@@ -1,12 +1,12 @@
-## Vim Editor
+# Vim Editor
 *Neovim, mostly*
 
-### sudo
+## sudo
 ```
 $ sudo -e nvim
 ```
 
-### IntelliJ IDEA, IdeaVim plugin
+## IntelliJ IDEA, IdeaVim plugin
 `~/.ideavimrc`:
 ```
 set clipboard+=unnamed
@@ -14,7 +14,7 @@ set ideajoin
 set idearefactormode=keep
 ```
 
-### Plugin functionality support
+## Plugin functionality support
 
 - [TSUpdate error, related to nvim-treesitter plugin](https://github.com/nvim-treesitter/nvim-treesitter/issues/913)
 ```
@@ -25,7 +25,7 @@ $ yay -S tree-sitter-python-git
 $ yay -S python-jedi
 $ yay -S npm
 ```
-### Clipboard
+## Clipboard
 
 - Install `xclip` (or `xsel`)
 
@@ -34,7 +34,7 @@ $ yay -S npm
 set clipboard=unnamedplus
 ```
 
-### Okular
+## Okular
 
 - Vim/Okular interaction (Okular > Settings > Editor > Command):
 ```
@@ -46,7 +46,7 @@ nvr --remote-silent %f -c %l
 ```
 *Shift+Left Click*; with Okular working only in *Browse* mode.
 
-### AstroNvim
+## AstroNvim
 
 - [Re]install
 ```
@@ -104,7 +104,47 @@ keymap(0, "n", ".", "/", opts) -- Russian slash
 keymap(0, "n", "-", "/", opts) -- Spanish slash
 ```
 
-### Spell checking (legacy)
+### VimTeX & Okular
+
+- Okular Settings > Configure Okular... > Editor > Custom Text Editor
+```
+nvr --remote-silent %f -c %l
+```
+- `~/.latexmkrc`
+```
+$pdf_mode = 1;
+$pdflatex = 'xelatex -interaction=nonstopmode -synctex=1';
+$pdf_previewer = 'okular --unique';
+```
+- `~/.config/nvim/lua/user/plugins/vimtex.lua`
+```
+return {
+	-- VImTex configuration
+	{
+		"lervag/vimtex",
+		init = function()
+			vim.g.tex_flavor = "latex"
+			vim.g.vimtex_view_method = "general"
+			vim.g.vimtex_view_general_viewer = "okular"
+			vim.g.vimtex_view_general_options = "--unique file:@pdf#src:@line@tex"
+			-- vim.g.vimtex_view_general_options_latexmk = '--unique'
+			vim.g.vimtex_compiler_progname = "nvr"
+			vim.g.vimtex_compiler_method = "latexmk"
+			vim.g.vimtex_compiler_latexmk = {
+				background = 1,
+				continuous = 1,
+			}
+		end,
+		event = "BufRead",
+        keys = { ... },
+	},
+}
+
+```
+
+### VimTeX & Zathura
+
+## Spell checking (legacy)
 - `init.vim`:
 ```
 set spelllang=ru_ru,en_us,es_es
@@ -115,22 +155,22 @@ nmap <leader>ss :set invspell<CR>
 $ locate en.utf-8.spl
 /usr/share/nvim/runtime/spell/en.utf-8.spl
 ```
-### Sharing plugins with Vim (legacy)
+## Sharing plugins with Vim (legacy)
 
 - [Arch Wiki](https://wiki.archlinux.org/index.php/Neovim), [Color scheme, etc.](https://vi.stackexchange.com/questions/12794/how-to-share-config-between-vim-and-neovim)
 
 
-### Python support (legacy)
+## Python support (legacy)
 
 [A Complete Guide for Installing and Setting up Neovim for Python Development](https://jdhao.github.io/2018/12/24/centos_nvim_install_use_guide_en/) (Cocless)
 
-### VimTeX (legacy)
+## VimTeX (legacy)
 
 [Superfluous viewer instances](https://github.com/lervag/vimtex/issues/313)
 
 [**Configuration issue**](https://github.com/lervag/vimtex/issues/1392)
 
-### Misc (legacy)
+## Misc (legacy)
 
 - Install a [Nerd Font](https://www.nerdfonts.com/font-downloads) (*FiraMono Nerd Font* will do); [howto](https://gist.github.com/matthewjberger/7dd7e079f282f8138a9dc3b045ebefa0)
 
