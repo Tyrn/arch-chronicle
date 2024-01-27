@@ -41,3 +41,4 @@ $ poetry shell
 - [pathlib](http://pbpython.com/pathlib-intro.html)
 - [reduce (list of strings) -> string
 ](https://stackoverflow.com/questions/27436748/python-reduce-list-of-strings-string)
+- In case of a conflict, [force import](https://stackoverflow.com/questions/70220763/import-a-shadowed-module-from-a-package)

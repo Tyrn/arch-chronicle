@@ -34,18 +34,6 @@ $ yay -S npm
 set clipboard=unnamedplus
 ```
 
-## Okular
-
-- Vim/Okular interaction (Okular > Settings > Editor > Command):
-```
-gvim --servername GVIM --remote-silent +%l %f
-```
-- **Neovim/Okular**, [neovim-remote installed](https://github.com/mhinz/neovim-remote):
-```
-nvr --remote-silent %f -c %l
-```
-*Shift+Left Click*; with Okular working only in *Browse* mode.
-
 ## AstroNvim
 
 - [Re]install
@@ -106,7 +94,7 @@ keymap(0, "n", "-", "/", opts) -- Spanish slash
 
 ### VimTeX & Okular
 
-- Okular Settings > Configure Okular... > Editor > Custom Text Editor
+- Okular Settings > Configure Okular... > Editor > Custom Text Editor ([neovim-remote installed](https://github.com/mhinz/neovim-remote))
 ```
 nvr --remote-silent %f -c %l
 ```
@@ -141,8 +129,38 @@ return {
 }
 
 ```
+- *Shift+Left Click* (inverse search) with Okular is working only in *Browse* mode.
 
 ### VimTeX & Zathura
+
+- `~/.latexmkrc`
+```
+$pdf_mode = 1;
+$pdflatex = 'xelatex -interaction=nonstopmode -synctex=1';
+```
+- `~/.config/nvim/lua/user/plugins/vimtex.lua`
+```
+return {
+	-- VImTex configuration
+	{
+		"lervag/vimtex",
+		lazy = false,
+		init = function()
+			vim.g.tex_flavor = "latex"
+			vim.g.vimtex_view_method = "zathura"
+			vim.g.vimtex_compiler_method = "latexmk"
+			vim.g.vimtex_compiler_latexmk = {
+				background = 1,
+				continuous = 1,
+			}
+		end,
+		event = "BufRead",
+        keys = { ... },
+	},
+}
+
+```
+- *Ctrl+Left Click* - inverse search
 
 ## Spell checking (legacy)
 - `init.vim`:
