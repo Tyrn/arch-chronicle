@@ -155,6 +155,10 @@ extra/networkmanager 1.40.8-1 [installed]
 
 #### i3 window manager, [ArchWiki](https://wiki.archlinux.org/title/I3)
 
+- Manage dialog windows (X11 only?), `~/.config/i3/config`
+```
+for_window [window_role="dialog"] floating enable
+```
 - `$ yay -S i3-gaps dmenu[-manjaro] i3status` (moved to dotfiles)
 - `~/.config/plasma-workspace/env/set_window_manager.sh` (Obsolete):
 ```
