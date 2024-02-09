@@ -9,6 +9,10 @@
     - `~/Android/Sdk`
     - `~/.local/share/JetBrains`
 
+- Important directories:
+    - `~/.local/share/JetBrains/Toolbox/apps/android-studio` (JBR (JetBrains Runtime) and things)
+    - `~/.local/share/JetBrains/Toolbox/scripts` (IDE starters, like **pycharm** and **studio**)
+
 ### Install
 
 - Get JetBrains Toolbox:
