@@ -7,6 +7,8 @@
   [URL](https://github.com/stm32duino/Arduino_Core_STM32#getting-started) for _Files > Preferences > Settings > Additional boards manager URLs_
   (make sure that core release is indeed > 2.0.0)
 
+- Check out _Generic STM32F1 series_
+
 - Arch Linux packages.
   Make sure the AUR version of ST-Link installed
   (stlink is certainly required by STM32CubeProgrammer; maybe `stlink-git` has something to do with Arduino Serial Monitor functionality)
