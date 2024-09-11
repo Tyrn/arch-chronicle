@@ -5,7 +5,7 @@ _Neovim, mostly_
 ## sudo
 
 ```
-$ sudo -e nvim
+$ sudo -E nvim
 ```
 
 ## IntelliJ IDEA, IdeaVim plugin
