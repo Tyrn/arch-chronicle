@@ -28,3 +28,11 @@ input {
 ```
 alacritty
 ```
+
+- `~/.config/qt6ct/qt6ct.conf`:
+
+```
+...
+custom_palette=false
+...
+```
