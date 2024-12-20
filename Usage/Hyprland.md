@@ -7,6 +7,10 @@
 - `~/.config/hypr/conf/keybindings/default.conf`:
 
 ```
+# Move focus horizontally, alternate take
+bind = $mainMod, H, movefocus, l # Move focus left
+bind = $mainMod, L, movefocus, r # Move focus right
+
 # Move between grouped windows
 bind = $mainMod CTRL , H, changegroupactive, b
 bind = $mainMod CTRL , L, changegroupactive, f
