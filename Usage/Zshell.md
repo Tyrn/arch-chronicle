@@ -1,12 +1,22 @@
 ## Zshell
+
+### Remove exec permissions from all the [ordinary files](https://unix.stackexchange.com/questions/296967/how-to-recursively-remove-execute-permissions-from-files-without-touching-folder)
+
+```
+chmod a-x asvetliakov.vscode-neovim-1.6.0-universal/**/*(D.)
+```
+
 ### Install
+
 ```
 $ yay -S oh-my-zsh[-git]
 $ chsh -s $(which zsh)
 $ ps -p $$
 $ echo $SHELL
 ```
+
 - Troubleshooting: [Extra shells](https://unix.stackexchange.com/questions/39881/running-chsh-does-not-change-shell)
+
 ```
 $ who
 danny  pts/0        Nov 6 13:53 (10.1.6.121)
@@ -14,12 +24,16 @@ danny  pts/1        Nov 5 12:30 (10.1.6.165)
 danny  pts/2        Nov 4 12:33 (10.1.6.197)
 $ pkill -KILL -u danny
 ```
+
 - Required:
+
 ```
 $ yay -S zoxide
 $ yay -S python-virtualenvwrapper
 ```
+
 - Extras: [Rust utilities](https://deepu.tech/rust-terminal-tools-linux-mac-windows-fish-zsh/)
+
 ```
 $ yay -S noto-color-emoji-fontconfig
 $ yay -S alacritty
@@ -27,6 +41,7 @@ $ yay -S alacritty-themes
 ```
 
 `~/.xprofile`:
+
 ```
 export TERMINAL=/usr/bin/alacritty
 
@@ -44,6 +59,7 @@ export JUPYTERLAB_DIR=$HOME/.local/share/jupyter/lab
 ```
 
 `~/.zshrc`:
+
 ```
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
