@@ -45,6 +45,12 @@ $ yay -S stlink-git
 cp -r ~/.vscode-oss/extensions/asvetliakov.vscode-neovim-1.1.3-universal ~/.arduinoIDE/extensions
 ```
 
+as of 2025-01-20, since the current asvetliakov plugin isn't working with Arduino IDE
+
+```
+~/.arduinoIDE/extensions> git clone git@github.com:Tyrn/asvetliakov.vscode-neovim-1.6.0-universal.git
+```
+
 - Arduino IDE directories:
   - `~/Arduino` for projects
   - `~/Arduino/libraries` for libraries, installed manually or otherwise
