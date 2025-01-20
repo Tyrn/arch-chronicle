@@ -1,5 +1,27 @@
 ## Arduino
 
+### Arduino IDE 2 for ESP32
+
+- JSONs for ESP32 (and STM32), _File > Preferences_
+
+```
+https://espressif.github.io/arduino-esp32/package_esp32_index.json
+https://github.com/stm32duino/BoardManagerFiles/raw/main/package_stmicroelectronics_index.json
+```
+
+- Select ESP32 and STM32 core libraries (by fiddling with _Tools > Board > Boards Manager_, if necessary)
+
+- Check, as of 2025-01-20
+
+```
+~> ac
+~/.arduino15/packages/esp32/hardware/esp32/3.1.1
+~/.arduino15/packages/STMicroelectronics/hardware/stm32/2.9.0
+~> which ac
+ac: aliased to printf '%s\n' ~/.arduino15/packages/*/hard*/*/*
+~>
+```
+
 ### Arduino IDE 2 for the Blue Pill
 
 - [stm32duino](https://github.com/stm32duino), forum, wiki, bits and pieces
@@ -14,7 +36,6 @@
   (stlink is certainly required by STM32CubeProgrammer; maybe `stlink-git` has something to do with Arduino Serial Monitor functionality)
 
 ```
-$ yay -S arduino-ide-bin
 $ yay -S stlink-git
 ```
 
