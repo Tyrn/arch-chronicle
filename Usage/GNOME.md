@@ -2,8 +2,8 @@
 
 Mostly Fedora
 
-- Update/[Upgrade](https://docs.fedoraproject.org/en-US/quick-docs/upgrading-fedora-offline/) System, see also (dnf cheat sheet)
-  [https://opensource.com/sites/default/files/gated-content/osdc_cheatsheet-dnf-2021.5.15.pdf]
+- Update/[Upgrade](https://docs.fedoraproject.org/en-US/quick-docs/upgrading-fedora-offline/) System, see also [dnf cheat sheet]
+  (https://opensource.com/sites/default/files/gated-content/osdc_cheatsheet-dnf-2021.5.15.pdf)
 
 ```
 sudo dnf update --refresh
